@@ -1,6 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\04. PrintColumns\bin\Debug\_04.PrintColumns.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\04. PrintColumns\bin\Debug\_04.PrintColumns.exe
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\04. PrintColumns\bin\Debug\_04.PrintColumns.pdb
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\04. PrintColumns\obj\Debug\04. PrintColumns.csprojResolveAssemblyReference.cache
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\04. PrintColumns\obj\Debug\_04.PrintColumns.exe
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\04. PrintColumns\obj\Debug\_04.PrintColumns.pdb

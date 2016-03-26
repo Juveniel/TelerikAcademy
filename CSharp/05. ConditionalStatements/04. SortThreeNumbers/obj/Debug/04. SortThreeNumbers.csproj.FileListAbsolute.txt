@@ -1,6 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\04. SortThreeNumbers\bin\Debug\_04.SortThreeNumbers.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\04. SortThreeNumbers\obj\Debug\04. SortThreeNumbers.csprojResolveAssemblyReference.cache
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\04. SortThreeNumbers\bin\Debug\_04.SortThreeNumbers.exe
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\04. SortThreeNumbers\bin\Debug\_04.SortThreeNumbers.pdb
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\04. SortThreeNumbers\obj\Debug\_04.SortThreeNumbers.exe
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\04. SortThreeNumbers\obj\Debug\_04.SortThreeNumbers.pdb

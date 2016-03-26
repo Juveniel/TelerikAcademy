@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\03. CheckThirdDigit\bin\Debug\_03.CheckThirdDigit.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\03. CheckThirdDigit\bin\Debug\_03.CheckThirdDigit.exe
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\03. CheckThirdDigit\bin\Debug\_03.CheckThirdDigit.pdb
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\03. CheckThirdDigit\obj\Debug\_03.CheckThirdDigit.exe
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\03. CheckThirdDigit\obj\Debug\_03.CheckThirdDigit.pdb

@@ -1,6 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\13. ChangeBitValueAtPosition\bin\Debug\_13.ChangeBitValueAtPosition.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\13. ChangeBitValueAtPosition\bin\Debug\_13.ChangeBitValueAtPosition.exe
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\13. ChangeBitValueAtPosition\bin\Debug\_13.ChangeBitValueAtPosition.pdb
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\13. ChangeBitValueAtPosition\obj\Debug\_13.ChangeBitValueAtPosition.exe
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\13. ChangeBitValueAtPosition\obj\Debug\_13.ChangeBitValueAtPosition.pdb
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\13. ChangeBitValueAtPosition\obj\Debug\13. ChangeBitValueAtPosition.csprojResolveAssemblyReference.cache

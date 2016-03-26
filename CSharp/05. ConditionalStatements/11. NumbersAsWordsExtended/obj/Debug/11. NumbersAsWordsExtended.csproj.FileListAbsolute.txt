@@ -1,1 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\11. NumbersAsWordsExtended\bin\Debug\_11.NumbersAsWordsExtended.exe.config

@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\03. CompareNumbers\bin\Debug\_03.CompareNumbers.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\03. CompareNumbers\bin\Debug\_03.CompareNumbers.exe
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\03. CompareNumbers\bin\Debug\_03.CompareNumbers.pdb
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\03. CompareNumbers\obj\Debug\_03.CompareNumbers.exe
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\03. CompareNumbers\obj\Debug\_03.CompareNumbers.pdb

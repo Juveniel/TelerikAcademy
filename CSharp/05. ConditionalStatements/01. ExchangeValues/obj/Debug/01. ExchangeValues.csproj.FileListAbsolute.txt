@@ -1,9 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\01. ExchangeValues\bin\Debug\_01.ExchangeValues.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\01. ExchangeValues\bin\Debug\_01.ExchangeValues.exe
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\01. ExchangeValues\bin\Debug\_01.ExchangeValues.pdb
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\01. ExchangeValues\obj\Debug\01. ExchangeValues.csprojResolveAssemblyReference.cache
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\01. ExchangeValues\obj\Debug\_01.ExchangeValues.exe
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\01. ExchangeValues\obj\Debug\_01.ExchangeValues.pdb
-C:\Users\Mitko\Source\Repos\TelerikAcademy\CSharp\05. ConditionalStatements\01. ExchangeValues\bin\Debug\_01.ExchangeValues.exe.config
-C:\Users\Mitko\Source\Repos\TelerikAcademy\CSharp\05. ConditionalStatements\01. ExchangeValues\obj\Debug\_01.ExchangeValues.exe
-C:\Users\Mitko\Source\Repos\TelerikAcademy\CSharp\05. ConditionalStatements\01. ExchangeValues\obj\Debug\_01.ExchangeValues.pdb

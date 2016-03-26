@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\10. BonusPoints\bin\Debug\_10.BonusPoints.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\10. BonusPoints\bin\Debug\_10.BonusPoints.exe
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\10. BonusPoints\bin\Debug\_10.BonusPoints.pdb
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\10. BonusPoints\obj\Debug\_10.BonusPoints.exe
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\10. BonusPoints\obj\Debug\_10.BonusPoints.pdb

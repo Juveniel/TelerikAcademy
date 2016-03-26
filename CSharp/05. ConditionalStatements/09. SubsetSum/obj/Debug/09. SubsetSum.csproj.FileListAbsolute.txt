@@ -1,6 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\09. SubsetSum\bin\Debug\_09.SubsetSum.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\09. SubsetSum\bin\Debug\_09.SubsetSum.exe
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\09. SubsetSum\bin\Debug\_09.SubsetSum.pdb
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\09. SubsetSum\obj\Debug\09. SubsetSum.csprojResolveAssemblyReference.cache
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\09. SubsetSum\obj\Debug\_09.SubsetSum.exe
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\09. SubsetSum\obj\Debug\_09.SubsetSum.pdb

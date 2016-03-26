@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\06. CalcRectanglePerimeterAndArea\bin\Debug\_06.CalcRectanglePerimeterAndArea.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\06. CalcRectanglePerimeterAndArea\bin\Debug\_06.CalcRectanglePerimeterAndArea.exe
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\06. CalcRectanglePerimeterAndArea\bin\Debug\_06.CalcRectanglePerimeterAndArea.pdb
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\06. CalcRectanglePerimeterAndArea\obj\Debug\_06.CalcRectanglePerimeterAndArea.exe
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\06. CalcRectanglePerimeterAndArea\obj\Debug\_06.CalcRectanglePerimeterAndArea.pdb

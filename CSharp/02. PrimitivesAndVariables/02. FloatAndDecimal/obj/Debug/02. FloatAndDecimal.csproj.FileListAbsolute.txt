@@ -1,6 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\02. FloatAndDecimal\bin\Debug\_02.FloatAndDecimal.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\02. FloatAndDecimal\bin\Debug\_02.FloatAndDecimal.exe
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\02. FloatAndDecimal\bin\Debug\_02.FloatAndDecimal.pdb
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\02. FloatAndDecimal\obj\Debug\_02.FloatAndDecimal.exe
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\02. FloatAndDecimal\obj\Debug\_02.FloatAndDecimal.pdb
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\02. FloatAndDecimal\obj\Debug\02. FloatAndDecimal.csprojResolveAssemblyReference.cache

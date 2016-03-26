@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\08. IsPointInCircle\bin\Debug\_08.IsPointInCircle.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\08. IsPointInCircle\bin\Debug\_08.IsPointInCircle.exe
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\08. IsPointInCircle\bin\Debug\_08.IsPointInCircle.pdb
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\08. IsPointInCircle\obj\Debug\_08.IsPointInCircle.exe
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\08. IsPointInCircle\obj\Debug\_08.IsPointInCircle.pdb

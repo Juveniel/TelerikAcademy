@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\01. SumThreeNumbers\bin\Debug\_01.SumThreeNumbers.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\01. SumThreeNumbers\bin\Debug\_01.SumThreeNumbers.exe
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\01. SumThreeNumbers\bin\Debug\_01.SumThreeNumbers.pdb
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\01. SumThreeNumbers\obj\Debug\_01.SumThreeNumbers.exe
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\01. SumThreeNumbers\obj\Debug\_01.SumThreeNumbers.pdb

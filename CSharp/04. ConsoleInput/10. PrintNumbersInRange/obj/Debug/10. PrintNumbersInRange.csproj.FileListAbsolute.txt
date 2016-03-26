@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\10. PrintNumbersInRange\bin\Debug\_10.PrintNumbersInRange.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\10. PrintNumbersInRange\bin\Debug\_10.PrintNumbersInRange.exe
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\10. PrintNumbersInRange\bin\Debug\_10.PrintNumbersInRange.pdb
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\10. PrintNumbersInRange\obj\Debug\_10.PrintNumbersInRange.exe
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\10. PrintNumbersInRange\obj\Debug\_10.PrintNumbersInRange.pdb

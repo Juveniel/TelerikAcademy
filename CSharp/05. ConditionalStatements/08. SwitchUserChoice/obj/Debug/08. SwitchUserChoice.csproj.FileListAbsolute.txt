@@ -1,6 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\08. SwitchUserChoice\bin\Debug\_08.SwitchUserChoice.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\08. SwitchUserChoice\bin\Debug\_08.SwitchUserChoice.exe
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\08. SwitchUserChoice\bin\Debug\_08.SwitchUserChoice.pdb
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\08. SwitchUserChoice\obj\Debug\08. SwitchUserChoice.csprojResolveAssemblyReference.cache
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\08. SwitchUserChoice\obj\Debug\_08.SwitchUserChoice.exe
-C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\08. SwitchUserChoice\obj\Debug\_08.SwitchUserChoice.pdb

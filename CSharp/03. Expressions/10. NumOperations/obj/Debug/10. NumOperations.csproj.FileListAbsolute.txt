@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\10. NumOperations\bin\Debug\_10.NumOperations.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\10. NumOperations\bin\Debug\_10.NumOperations.exe
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\10. NumOperations\bin\Debug\_10.NumOperations.pdb
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\10. NumOperations\obj\Debug\_10.NumOperations.exe
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\10. NumOperations\obj\Debug\_10.NumOperations.pdb

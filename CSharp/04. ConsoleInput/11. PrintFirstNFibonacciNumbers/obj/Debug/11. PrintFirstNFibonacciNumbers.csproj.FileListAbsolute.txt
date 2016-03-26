@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\11. PrintFirstNFibonacciNumbers\bin\Debug\_11.PrintFirstNFibonacciNumbers.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\11. PrintFirstNFibonacciNumbers\bin\Debug\_11.PrintFirstNFibonacciNumbers.exe
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\11. PrintFirstNFibonacciNumbers\bin\Debug\_11.PrintFirstNFibonacciNumbers.pdb
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\11. PrintFirstNFibonacciNumbers\obj\Debug\_11.PrintFirstNFibonacciNumbers.exe
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\11. PrintFirstNFibonacciNumbers\obj\Debug\_11.PrintFirstNFibonacciNumbers.pdb

@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\09. QuotationsExample\bin\Debug\_09.QuotationsExample.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\09. QuotationsExample\bin\Debug\_09.QuotationsExample.exe
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\09. QuotationsExample\bin\Debug\_09.QuotationsExample.pdb
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\09. QuotationsExample\obj\Debug\_09.QuotationsExample.exe
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\09. QuotationsExample\obj\Debug\_09.QuotationsExample.pdb

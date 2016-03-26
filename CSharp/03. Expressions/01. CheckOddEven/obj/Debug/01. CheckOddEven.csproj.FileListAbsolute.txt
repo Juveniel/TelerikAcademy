@@ -1,6 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\01. CheckOddEven\bin\Debug\_01.CheckOddEven.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\01. CheckOddEven\bin\Debug\_01.CheckOddEven.exe
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\01. CheckOddEven\bin\Debug\_01.CheckOddEven.pdb
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\01. CheckOddEven\obj\Debug\01. CheckOddEven.csprojResolveAssemblyReference.cache
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\01. CheckOddEven\obj\Debug\_01.CheckOddEven.exe
-C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\01. CheckOddEven\obj\Debug\_01.CheckOddEven.pdb

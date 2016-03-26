@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\08. ObjectToString\bin\Debug\_08.ObjectToString.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\08. ObjectToString\bin\Debug\_08.ObjectToString.exe
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\08. ObjectToString\bin\Debug\_08.ObjectToString.pdb
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\08. ObjectToString\obj\Debug\_08.ObjectToString.exe
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\08. ObjectToString\obj\Debug\_08.ObjectToString.pdb

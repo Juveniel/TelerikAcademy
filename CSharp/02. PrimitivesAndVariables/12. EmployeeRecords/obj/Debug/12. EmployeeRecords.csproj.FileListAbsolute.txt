@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\12. EmployeeRecords\bin\Debug\_12.EmployeeRecords.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\12. EmployeeRecords\bin\Debug\_12.EmployeeRecords.exe
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\12. EmployeeRecords\bin\Debug\_12.EmployeeRecords.pdb
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\12. EmployeeRecords\obj\Debug\_12.EmployeeRecords.exe
-C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\12. EmployeeRecords\obj\Debug\_12.EmployeeRecords.pdb

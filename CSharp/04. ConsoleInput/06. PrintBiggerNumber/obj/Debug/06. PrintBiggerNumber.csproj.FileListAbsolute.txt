@@ -1,5 +1,0 @@
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\06. PrintBiggerNumber\bin\Debug\_06.PrintBiggerNumber.exe.config
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\06. PrintBiggerNumber\bin\Debug\_06.PrintBiggerNumber.exe
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\06. PrintBiggerNumber\bin\Debug\_06.PrintBiggerNumber.pdb
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\06. PrintBiggerNumber\obj\Debug\_06.PrintBiggerNumber.exe
-C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\06. PrintBiggerNumber\obj\Debug\_06.PrintBiggerNumber.pdb
