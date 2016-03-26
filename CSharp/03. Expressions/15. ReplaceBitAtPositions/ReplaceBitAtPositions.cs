@@ -17,6 +17,7 @@ namespace _15.ReplaceBitAtPositions
                 int bitToReplace = entry.Key;
                 int replacingBitPos = entry.Value;
 
+            
                 //Find replace bit value       
                 int replacingBitVal = 1 & (inputNum >> replacingBitPos);
 
@@ -50,8 +51,6 @@ namespace _15.ReplaceBitAtPositions
            
                 Console.WriteLine("=====================================================================");
             }
-
-
         }
     }
 }
