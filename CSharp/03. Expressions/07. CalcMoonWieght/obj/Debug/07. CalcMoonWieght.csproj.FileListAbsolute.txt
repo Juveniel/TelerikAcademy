@@ -1,0 +1,6 @@
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\07. CalcMoonWieght\bin\Debug\_07.CalcMoonWieght.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\07. CalcMoonWieght\bin\Debug\_07.CalcMoonWieght.exe
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\07. CalcMoonWieght\bin\Debug\_07.CalcMoonWieght.pdb
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\07. CalcMoonWieght\obj\Debug\07. CalcMoonWieght.csprojResolveAssemblyReference.cache
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\07. CalcMoonWieght\obj\Debug\_07.CalcMoonWieght.exe
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\07. CalcMoonWieght\obj\Debug\_07.CalcMoonWieght.pdb

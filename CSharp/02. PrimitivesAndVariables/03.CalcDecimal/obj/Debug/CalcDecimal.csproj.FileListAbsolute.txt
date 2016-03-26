@@ -1,0 +1,6 @@
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\CalcDecimal\bin\Debug\CalcDecimal.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\CalcDecimal\bin\Debug\CalcDecimal.exe
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\CalcDecimal\bin\Debug\CalcDecimal.pdb
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\CalcDecimal\obj\Debug\CalcDecimal.csprojResolveAssemblyReference.cache
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\CalcDecimal\obj\Debug\CalcDecimal.exe
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\CalcDecimal\obj\Debug\CalcDecimal.pdb

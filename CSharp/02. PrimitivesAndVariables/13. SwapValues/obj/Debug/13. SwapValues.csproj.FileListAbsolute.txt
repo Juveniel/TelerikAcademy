@@ -1,0 +1,8 @@
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\13. SwapValues\bin\Debug\_13.SwapValues.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\13. SwapValues\bin\Debug\_13.SwapValues.exe
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\13. SwapValues\bin\Debug\_13.SwapValues.pdb
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\13. SwapValues\obj\Debug\_13.SwapValues.exe
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\13. SwapValues\obj\Debug\_13.SwapValues.pdb
+C:\Users\Mitko\Source\Repos\TelerikAcademy\CSharp\02. PrimitivesAndVariables\13. SwapValues\bin\Debug\_13.SwapValues.exe.config
+C:\Users\Mitko\Source\Repos\TelerikAcademy\CSharp\02. PrimitivesAndVariables\13. SwapValues\obj\Debug\_13.SwapValues.exe
+C:\Users\Mitko\Source\Repos\TelerikAcademy\CSharp\02. PrimitivesAndVariables\13. SwapValues\obj\Debug\_13.SwapValues.pdb

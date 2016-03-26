@@ -1,0 +1,5 @@
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\11. PrintTriangle\bin\Debug\_11.PrintTriangle.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\11. PrintTriangle\bin\Debug\_11.PrintTriangle.exe
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\11. PrintTriangle\bin\Debug\_11.PrintTriangle.pdb
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\11. PrintTriangle\obj\Debug\_11.PrintTriangle.exe
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\11. PrintTriangle\obj\Debug\_11.PrintTriangle.pdb

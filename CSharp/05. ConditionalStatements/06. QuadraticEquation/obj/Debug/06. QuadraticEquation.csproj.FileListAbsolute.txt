@@ -1,0 +1,6 @@
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\06. QuadraticEquation\bin\Debug\_06.QuadraticEquation.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\06. QuadraticEquation\bin\Debug\_06.QuadraticEquation.exe
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\06. QuadraticEquation\bin\Debug\_06.QuadraticEquation.pdb
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\06. QuadraticEquation\obj\Debug\_06.QuadraticEquation.exe
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\06. QuadraticEquation\obj\Debug\_06.QuadraticEquation.pdb
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\06. QuadraticEquation\obj\Debug\06. QuadraticEquation.csprojResolveAssemblyReference.cache

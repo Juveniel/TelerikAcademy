@@ -1,0 +1,8 @@
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\15. ReplaceBitAtPositions\bin\Debug\_15.ReplaceBitAtPositions.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\15. ReplaceBitAtPositions\bin\Debug\_15.ReplaceBitAtPositions.exe
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\15. ReplaceBitAtPositions\bin\Debug\_15.ReplaceBitAtPositions.pdb
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\15. ReplaceBitAtPositions\obj\Debug\_15.ReplaceBitAtPositions.exe
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\15. ReplaceBitAtPositions\obj\Debug\_15.ReplaceBitAtPositions.pdb
+C:\Users\Mitko\Source\Repos\TelerikAcademy\CSharp\03. Expressions\15. ReplaceBitAtPositions\bin\Debug\_15.ReplaceBitAtPositions.exe.config
+C:\Users\Mitko\Source\Repos\TelerikAcademy\CSharp\03. Expressions\15. ReplaceBitAtPositions\obj\Debug\_15.ReplaceBitAtPositions.exe
+C:\Users\Mitko\Source\Repos\TelerikAcademy\CSharp\03. Expressions\15. ReplaceBitAtPositions\obj\Debug\_15.ReplaceBitAtPositions.pdb

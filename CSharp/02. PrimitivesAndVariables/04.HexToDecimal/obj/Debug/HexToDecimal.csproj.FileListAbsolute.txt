@@ -1,0 +1,5 @@
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\HexToDecimal\bin\Debug\HexToDecimal.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\HexToDecimal\bin\Debug\HexToDecimal.exe
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\HexToDecimal\bin\Debug\HexToDecimal.pdb
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\HexToDecimal\obj\Debug\HexToDecimal.exe
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\HexToDecimal\obj\Debug\HexToDecimal.pdb

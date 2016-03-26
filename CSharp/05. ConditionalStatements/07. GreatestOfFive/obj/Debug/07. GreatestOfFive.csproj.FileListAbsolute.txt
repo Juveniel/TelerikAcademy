@@ -1,0 +1,6 @@
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\07. GreatestOfFive\bin\Debug\_07.GreatestOfFive.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\07. GreatestOfFive\bin\Debug\_07.GreatestOfFive.exe
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\07. GreatestOfFive\bin\Debug\_07.GreatestOfFive.pdb
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\07. GreatestOfFive\obj\Debug\07. GreatestOfFive.csprojResolveAssemblyReference.cache
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\07. GreatestOfFive\obj\Debug\_07.GreatestOfFive.exe
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\07. GreatestOfFive\obj\Debug\_07.GreatestOfFive.pdb

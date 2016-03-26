@@ -1,0 +1,5 @@
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\CharToUnicode\bin\Debug\CharToUnicode.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\CharToUnicode\bin\Debug\CharToUnicode.exe
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\CharToUnicode\bin\Debug\CharToUnicode.pdb
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\CharToUnicode\obj\Debug\CharToUnicode.exe
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\CharToUnicode\obj\Debug\CharToUnicode.pdb

@@ -1,0 +1,5 @@
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\02. PrintNumberProductSign\bin\Debug\_02.PrintNumberProductSign.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\02. PrintNumberProductSign\bin\Debug\_02.PrintNumberProductSign.exe
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\02. PrintNumberProductSign\bin\Debug\_02.PrintNumberProductSign.pdb
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\02. PrintNumberProductSign\obj\Debug\_02.PrintNumberProductSign.exe
+C:\Users\Mitko\Source\Repos\CSharp\05. ConditionalStatements\02. PrintNumberProductSign\obj\Debug\_02.PrintNumberProductSign.pdb

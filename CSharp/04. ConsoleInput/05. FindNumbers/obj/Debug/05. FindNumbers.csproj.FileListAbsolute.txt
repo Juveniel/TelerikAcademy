@@ -1,0 +1,6 @@
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\05. FindNumbers\bin\Debug\_05.FindNumbers.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\05. FindNumbers\bin\Debug\_05.FindNumbers.exe
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\05. FindNumbers\bin\Debug\_05.FindNumbers.pdb
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\05. FindNumbers\obj\Debug\_05.FindNumbers.exe
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\05. FindNumbers\obj\Debug\_05.FindNumbers.pdb
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\05. FindNumbers\obj\Debug\05. FindNumbers.csprojResolveAssemblyReference.cache

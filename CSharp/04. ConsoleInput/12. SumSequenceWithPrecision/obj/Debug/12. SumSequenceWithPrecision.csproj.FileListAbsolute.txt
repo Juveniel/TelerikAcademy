@@ -1,0 +1,9 @@
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\12. SumSequenceWithPrecision\bin\Debug\_12.SumSequenceWithPrecision.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\12. SumSequenceWithPrecision\bin\Debug\_12.SumSequenceWithPrecision.exe
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\12. SumSequenceWithPrecision\bin\Debug\_12.SumSequenceWithPrecision.pdb
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\12. SumSequenceWithPrecision\obj\Debug\12. SumSequenceWithPrecision.csprojResolveAssemblyReference.cache
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\12. SumSequenceWithPrecision\obj\Debug\_12.SumSequenceWithPrecision.exe
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\12. SumSequenceWithPrecision\obj\Debug\_12.SumSequenceWithPrecision.pdb
+C:\Users\Mitko\Source\Repos\TelerikAcademy\CSharp\04. ConsoleInput\12. SumSequenceWithPrecision\bin\Debug\_12.SumSequenceWithPrecision.exe.config
+C:\Users\Mitko\Source\Repos\TelerikAcademy\CSharp\04. ConsoleInput\12. SumSequenceWithPrecision\obj\Debug\_12.SumSequenceWithPrecision.exe
+C:\Users\Mitko\Source\Repos\TelerikAcademy\CSharp\04. ConsoleInput\12. SumSequenceWithPrecision\obj\Debug\_12.SumSequenceWithPrecision.pdb

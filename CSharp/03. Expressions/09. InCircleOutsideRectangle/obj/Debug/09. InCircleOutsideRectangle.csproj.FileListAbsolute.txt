@@ -1,0 +1,6 @@
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\09. InCircleOutsideRectangle\bin\Debug\_09.InCircleOutsideRectangle.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\09. InCircleOutsideRectangle\obj\Debug\09. InCircleOutsideRectangle.csprojResolveAssemblyReference.cache
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\09. InCircleOutsideRectangle\bin\Debug\_09.InCircleOutsideRectangle.exe
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\09. InCircleOutsideRectangle\bin\Debug\_09.InCircleOutsideRectangle.pdb
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\09. InCircleOutsideRectangle\obj\Debug\_09.InCircleOutsideRectangle.exe
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\09. InCircleOutsideRectangle\obj\Debug\_09.InCircleOutsideRectangle.pdb

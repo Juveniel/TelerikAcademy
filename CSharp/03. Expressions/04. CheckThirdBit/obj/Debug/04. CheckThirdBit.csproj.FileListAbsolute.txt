@@ -1,0 +1,5 @@
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\04. CheckThirdBit\bin\Debug\_04.CheckThirdBit.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\04. CheckThirdBit\bin\Debug\_04.CheckThirdBit.exe
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\04. CheckThirdBit\bin\Debug\_04.CheckThirdBit.pdb
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\04. CheckThirdBit\obj\Debug\_04.CheckThirdBit.exe
+C:\Users\Mitko\Source\Repos\CSharp\03. Expressions\04. CheckThirdBit\obj\Debug\_04.CheckThirdBit.pdb

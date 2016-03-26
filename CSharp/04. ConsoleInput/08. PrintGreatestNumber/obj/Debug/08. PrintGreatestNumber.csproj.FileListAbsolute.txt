@@ -1,0 +1,5 @@
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\08. PrintGreatestNumber\bin\Debug\_08.PrintGreatestNumber.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\08. PrintGreatestNumber\bin\Debug\_08.PrintGreatestNumber.exe
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\08. PrintGreatestNumber\bin\Debug\_08.PrintGreatestNumber.pdb
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\08. PrintGreatestNumber\obj\Debug\_08.PrintGreatestNumber.exe
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\08. PrintGreatestNumber\obj\Debug\_08.PrintGreatestNumber.pdb

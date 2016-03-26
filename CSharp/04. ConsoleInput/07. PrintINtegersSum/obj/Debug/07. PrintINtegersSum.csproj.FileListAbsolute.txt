@@ -1,0 +1,6 @@
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\07. PrintINtegersSum\bin\Debug\_07.PrintINtegersSum.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\07. PrintINtegersSum\bin\Debug\_07.PrintINtegersSum.exe
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\07. PrintINtegersSum\bin\Debug\_07.PrintINtegersSum.pdb
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\07. PrintINtegersSum\obj\Debug\07. PrintINtegersSum.csprojResolveAssemblyReference.cache
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\07. PrintINtegersSum\obj\Debug\_07.PrintINtegersSum.exe
+C:\Users\Mitko\Source\Repos\CSharp\04. ConsoleInput\07. PrintINtegersSum\obj\Debug\_07.PrintINtegersSum.pdb

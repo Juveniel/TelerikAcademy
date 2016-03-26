@@ -1,0 +1,5 @@
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\Gender\bin\Debug\Gender.exe.config
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\Gender\bin\Debug\Gender.exe
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\Gender\bin\Debug\Gender.pdb
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\Gender\obj\Debug\Gender.exe
+C:\Users\Mitko\Source\Repos\CSharp\02. PrimitivesAndVariables\Gender\obj\Debug\Gender.pdb
