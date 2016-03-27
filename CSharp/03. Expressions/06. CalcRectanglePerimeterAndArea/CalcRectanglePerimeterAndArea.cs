@@ -2,6 +2,10 @@
 
 namespace _06.CalcRectanglePerimeterAndArea
 {
+    /// <summary>
+    /// Write a program that prints on the console the perimeter
+    /// and the area of a rectangle by given side and height entered by the user.
+    /// </summary>
     class CalcRectanglePerimeterAndArea
     {
         static void Main(string[] args)

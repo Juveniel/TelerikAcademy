@@ -2,6 +2,10 @@
 
 namespace _03.CheckThirdDigit
 {
+    /// <summary>
+    /// Write an expression that checks for a given integer
+    /// if its third digit (right to left) is 7.
+    /// </summary>
     class CheckThirdDigit
     {
         static void Main(string[] args)

@@ -2,6 +2,11 @@
 
 namespace _11.FindBitValue
 {
+    /// <summary>
+    /// We are given number n and position p. Write a sequence of operations
+    /// that prints the value of the bit on the position p in the number (0 or 1). 
+    /// Example: n=35, p=5 -> 1. Another example: n=35, p=6 -> 0.
+    /// </summary>
     class FindBitValue
     {
         static void Main(string[] args)

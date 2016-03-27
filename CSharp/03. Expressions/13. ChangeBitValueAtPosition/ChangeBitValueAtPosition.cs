@@ -2,6 +2,11 @@
 
 namespace _13.ChangeBitValueAtPosition
 {
+    /// <summary>
+    /// We are given the number n, the value v (v = 0 or 1) and the position p.
+    /// write a sequence of operations that changes the value of n, so the bit
+    /// on the position p has the value of v. Example: n=35, p=5, v=0 -> n=3. 
+    /// </summary>
     class ChangeBitValueAtPosition
     {
         static void Main(string[] args)

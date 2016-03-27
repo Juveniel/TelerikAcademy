@@ -2,6 +2,10 @@
 
 namespace _05.CalcTrapezoidArea
 {
+    /// <summary>
+    ///  Write an expression that calculates the area 
+    ///  of a trapezoid by given sides a, b and height h.
+    /// </summary>
     class CalcTrapezoidArea
     {
         static void Main(string[] args)

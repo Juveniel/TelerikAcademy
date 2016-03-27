@@ -2,6 +2,10 @@
 
 namespace _02.DivisionWithoutRemainder
 {
+    /// <summary>
+    /// Write a Boolean expression that checks whether a given 
+    /// integer is divisible by both 5 and 7, without a remainder.
+    /// </summary>
     class DivisionWithoutRemainder
     {
         static void Main(string[] args)

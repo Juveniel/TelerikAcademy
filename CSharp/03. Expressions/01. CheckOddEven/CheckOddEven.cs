@@ -2,6 +2,9 @@
 
 namespace _01.CheckOddEven
 {
+    /// <summary>
+    /// Write an expression that checks whether an integer is odd or even.
+    /// </summary>
     class CheckOddEven
     {
         static void Main(string[] args)

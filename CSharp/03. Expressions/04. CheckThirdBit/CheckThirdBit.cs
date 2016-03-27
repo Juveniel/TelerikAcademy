@@ -2,6 +2,10 @@
 
 namespace _04.CheckThirdBit
 {
+    /// <summary>
+    /// Write an expression that checks whether the 
+    /// third bit in a given integer is 1 or 0.
+    /// </summary>
     class CheckThirdBit
     {
         static void Main(string[] args)

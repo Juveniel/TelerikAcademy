@@ -2,6 +2,9 @@
 
 namespace _14.PrimeNumbers
 {
+    /// <summary>
+    /// Write a program that checks if a given number n  is a prime number.
+    /// </summary>
     class PrimeNumbers
     {
         static void Main(string[] args)

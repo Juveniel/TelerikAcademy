@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _09.InCircleOutsideRectangle
 {
+    /// <summary>
+    /// Write an expression that checks for given point {x, y} if it is 
+    /// within the circle K[{0, 0}, R=5] and out of the rectangle [{-1, 1}, {5, 5}]. 
+    /// </summary>
     class InCircleOutsideRectangle
     {
         static void Main(string[] args)
