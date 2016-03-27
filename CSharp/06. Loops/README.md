@@ -26,6 +26,7 @@ Write a program that reads from the console a positive integer number N (N < 20)
 Write a program that calculates with how many zeroes the factorial of a given number ends.
 * N = 10 -> N! = 3628800 -> 2
 * N = 20 -> N! = 2432902008176640000 -> 4
+
 ### Task 16:
 Write a program that by a given integer N prints the numbers from 1 to N in random order.
 ### Task 17:
