@@ -2,6 +2,10 @@
 
 namespace _07.PrintINtegersSum
 {
+    /// <summary>
+    /// Write a program that reads five integer numbers and prints their sum.
+    /// If an invalid number is entered the program should prompt the user to enter another number.
+    /// </summary>
     class PrintINtegersSum
     {
         static void Main(string[] args)

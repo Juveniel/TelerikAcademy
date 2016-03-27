@@ -4,6 +4,10 @@ using System.Linq;
 
 namespace _08.PrintGreatestNumber
 {
+    /// <summary>
+    ///  Write a program that reads five numbers from 
+    ///  the console and prints the greatest of them.
+    /// </summary>
     class PrintGreatestNumber
     {
         static void Main(string[] args)

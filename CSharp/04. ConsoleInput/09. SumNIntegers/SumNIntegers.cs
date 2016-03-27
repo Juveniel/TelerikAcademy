@@ -2,6 +2,11 @@
 
 namespace _09.SumNIntegers
 {
+    /// <summary>
+    /// Write a program that reads an integer number n from 
+    /// the console. After that reads n numbers from the console
+    /// and prints their sum.
+    /// </summary>
     class SumNIntegers
     {
         static void Main(string[] args)

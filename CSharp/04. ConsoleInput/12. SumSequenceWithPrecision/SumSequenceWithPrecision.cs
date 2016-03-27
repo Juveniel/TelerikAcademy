@@ -2,6 +2,10 @@
 
 namespace _12.SumSequenceWithPrecision
 {
+    /// <summary>
+    /// Write a program that calculates the sum (with precision of 0.001) 
+    /// of the following sequence: 1 + 1/2 - 1/3 + 1/4 - 1/5 + …
+    /// </summary>
     class SumSequenceWithPrecision
     {
         static void Main(string[] args)

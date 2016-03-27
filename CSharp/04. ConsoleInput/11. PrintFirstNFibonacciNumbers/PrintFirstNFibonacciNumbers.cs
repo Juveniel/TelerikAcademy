@@ -2,6 +2,10 @@
 
 namespace _11.PrintFirstNFibonacciNumbers
 {
+    /// <summary>
+    /// Write a program that prints on the console the first 100 numbers 
+    /// in the Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, …
+    /// </summary>
     class PrintFirstNFibonacciNumbers
     {
         static void Main(string[] args)

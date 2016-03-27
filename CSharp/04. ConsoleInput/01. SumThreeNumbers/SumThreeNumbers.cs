@@ -2,6 +2,10 @@
 
 namespace _01.SumThreeNumbers
 {
+    /// <summary>
+    ///  Write a program that reads from the console 
+    ///  three numbers of type int and prints their sum.
+    /// </summary>
     class SumThreeNumbers
     {
         static void Main(string[] args)

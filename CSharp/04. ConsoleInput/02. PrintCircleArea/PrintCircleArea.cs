@@ -2,6 +2,10 @@
 
 namespace _02.PrintCircleArea
 {
+    /// <summary>
+    /// Write a program that reads from the console the radius
+    /// "r" of a circle and prints its perimeter and area.
+    /// </summary>
     class PrintCircleArea
     {
         static void Main(string[] args)
