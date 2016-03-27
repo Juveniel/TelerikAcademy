@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _04.SortThreeNumbers
 {
+    /// <summary>
+    /// Sort 3 real numbers in descending order. Use nested if statements.
+    /// </summary>
     class SortThreeNumbers
     {      
 

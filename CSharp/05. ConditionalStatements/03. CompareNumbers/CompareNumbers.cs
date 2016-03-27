@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _03.CompareNumbers
 {
+    /// <summary>
+    /// Write a program that finds the biggest of three integers, using nested if statements.
+    /// </summary>
     class CompareNumbers
     {
         static void Main(string[] args)

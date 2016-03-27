@@ -2,6 +2,10 @@
 
 namespace _11.NumbersAsWordsExtended
 {
+    /// <summary>
+    /// Write a program that converts a number in the range [0…999] to words, 
+    /// corresponding to the English pronunciation. Examples:
+    /// </summary>
     class NumbersAsWordsExtended
     {
         static void Main(string[] args)

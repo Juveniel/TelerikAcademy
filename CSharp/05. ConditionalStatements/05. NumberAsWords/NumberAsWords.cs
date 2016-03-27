@@ -4,6 +4,10 @@ using System.Text.RegularExpressions;
 
 namespace _05.NumberAsWords
 {
+    /// <summary>
+    ///  Write a program that asks for a digit (0-9), and depending on the input,
+    ///  shows the digit as a word (in English). Use a switch statement.
+    /// </summary>
     class NumberAsWords
     {
         static void Main(string[] args)

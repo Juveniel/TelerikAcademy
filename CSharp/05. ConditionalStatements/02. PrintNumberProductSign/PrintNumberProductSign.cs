@@ -3,6 +3,10 @@ using System.Collections.Generic;
 
 namespace _02.PrintNumberProductSign
 {
+    /// <summary>
+    /// Write a program that shows the sign (+ or -) of the product
+    /// of three real numbers, without calculating it. Use a sequence of if operators.
+    /// </summary>
     class PrintNumberProductSign
     {
         static void Main(string[] args)

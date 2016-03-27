@@ -2,6 +2,9 @@
 
 namespace _07.GreatestOfFive
 {
+    /// <summary>
+    /// Write a program that finds the greatest of given 5 numbers.
+    /// </summary>
     class GreatestOfFive
     {
         static void Main(string[] args)
