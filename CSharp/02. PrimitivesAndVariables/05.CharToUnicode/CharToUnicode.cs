@@ -3,7 +3,7 @@
 namespace CharToUnicode
 {
     /// <summary>
-    /// Declare a variable of type char and assign a symbol.
+    /// Declare a variable of type char and assign a symbol
     /// </summary>
     class CharToUnicode
     {

@@ -3,7 +3,7 @@
 namespace _12.EmployeeRecords
 {
     /// <summary>
-    /// Print company information.
+    /// Print company information
     /// </summary>
     class EmployeeRecords
     {

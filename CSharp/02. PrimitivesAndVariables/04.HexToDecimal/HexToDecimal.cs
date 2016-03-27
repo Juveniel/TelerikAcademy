@@ -4,7 +4,7 @@ namespace HexToDecimal
 {
     /// <summary>
     /// Initialize a variable of type int with a value of 256 
-    /// in a hexadecimal format.
+    /// in a hexadecimal format
     /// </summary>
     class HexToDecimal
     {

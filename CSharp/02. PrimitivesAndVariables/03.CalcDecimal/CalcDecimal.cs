@@ -3,7 +3,7 @@
 namespace _03.CalcDecimal
 {
     /// <summary>
-    /// Write a program that sums two real numbers.
+    /// Write a program that sums two real numbers
     /// </summary>
     class CalcDecimal
     {

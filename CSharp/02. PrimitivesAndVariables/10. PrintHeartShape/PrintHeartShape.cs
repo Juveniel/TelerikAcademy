@@ -3,7 +3,7 @@
 namespace _10.PrintHeartShape
 {
     /// <summary>
-    /// Write a program that prints a figure in the shape of heart
+    /// Write a program that prints a figure in the shape of heart 
     /// </summary>
     class PrintHeartShape
     {

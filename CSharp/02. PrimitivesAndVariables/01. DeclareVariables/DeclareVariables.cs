@@ -3,7 +3,7 @@
 namespace _01.DeclareVariables
 {
     /// <summary>
-    /// Declare several variables by selecting the most appropriate type.
+    /// Declare several variables by selecting the most appropriate type
     /// </summary>
     class DeclareVariables
     {

@@ -5,7 +5,7 @@ namespace _11.PrintTriangle
 {
     /// <summary>
     /// Write a program that prints isosceles triangle
-    /// which sided consist of the copyright character.
+    /// which sided consist of the copyright character
     /// </summary>
     class PrintTriangle
     {

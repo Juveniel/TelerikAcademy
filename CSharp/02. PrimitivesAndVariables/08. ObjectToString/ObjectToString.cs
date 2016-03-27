@@ -3,7 +3,7 @@
 namespace _08.ObjectToString
 {
     /// <summary>
-    /// Assign string value to an object and cast it to a string.
+    /// Assign string value to an object and cast it to a string
     /// </summary>
     class ObjectToString
     {

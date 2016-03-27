@@ -4,7 +4,7 @@ namespace _09.QuotationsExample
 {
     /// <summary>
     /// Declare 2 string variables with value: 
-    /// "The "user" of quotations causes difficulties."
+    /// "The "user" of quotations causes difficulties"
     /// </summary>
     class QuotationsExample
     {
