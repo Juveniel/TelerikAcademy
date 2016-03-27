@@ -2,6 +2,9 @@
 
 namespace _02.FloatAndDecimal
 {
+    /// <summary>
+    /// Assing float and double variables.
+    /// </summary>
     class FloatAndDecimal
     {
         static void Main(string[] args)

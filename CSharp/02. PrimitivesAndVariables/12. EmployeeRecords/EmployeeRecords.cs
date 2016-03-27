@@ -2,6 +2,9 @@
 
 namespace _12.EmployeeRecords
 {
+    /// <summary>
+    /// Print company information.
+    /// </summary>
     class EmployeeRecords
     {
         static void Main(string[] args)

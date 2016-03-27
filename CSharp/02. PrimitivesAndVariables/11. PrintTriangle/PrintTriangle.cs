@@ -1,11 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace _11.PrintTriangle
 {
+    /// <summary>
+    /// Write a program that prints isosceles triangle
+    /// which sided consist of the copyright character.
+    /// </summary>
     class PrintTriangle
     {
         static void Main(string[] args)
