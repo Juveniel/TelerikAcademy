@@ -19,14 +19,16 @@ Write a program that finds the greatest of given 5 numbers.
 ### Task 8:
 Write a program that, depending on the user’s choice, inputs int, double or string variable. If the variable is int or double, the program increases it by 1. If the variable is a string, the program appends "*" at the end. Print the result at the console. Use switch statement.
 ### Task 9:
-We are given 5 integer numbers. Write a program that finds those subsets whose sum is 0. Examples:
+We are given 5 integer numbers. Write a program that finds those subsets whose sum is 0.
 *  If we are given the numbers {3, -2, 1, 1, 8}, the sum of -2, 1 and 1 is 0.
 *  If we are given the numbers {3, 1, -7, 35, 22}, there are no subsets with sum 0.
+
 ### Task 10:
 Write a program that applies bonus points to given scores in the range [1…9] by the following rules:
 *  If the score is between 1 and 3, the program multiplies it by 10.
 *  If the score is between 4 and 6, the program multiplies it by 100.
 *  If the score is between 7 and 9, the program multiplies it by 1000.
 *  If the score is 0 or more than 9, the program prints an error message.
+
 ### Task 11*:
 Write a program that converts a number in the range [0…999] to words, corresponding to the English pronunciation. 
