@@ -15,7 +15,7 @@ namespace _13.ComparingFloats
 
             var areEqual = CheckEqual(firstNum, secondNum);
 
-            Console.WriteLine(areEqual);
+            Console.WriteLine(areEqual.ToString().ToLower());
         }
 
         static bool CheckEqual(double firstNum, double secondNum)

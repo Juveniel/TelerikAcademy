@@ -12,10 +12,9 @@ namespace _14.PrintASCII
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8; //also change console font to TrueType(Consolas)
-
-            for (char c = (char)033; c <= (char)255; c++)
+            for (int i = 33; i <= 126; i++)
             {
-                Console.WriteLine(c);
+                Console.Write((char)i);
             }
         }
     }

@@ -9,8 +9,8 @@ namespace _07.QuotedString
     {
         static void Main(string[] args)
         {
-            string quotedStr = @"The ""use"" of quotations causes difficulties!";
-            Console.WriteLine("Quoted string: " + quotedStr);
+            string quotedStr = @"The ""use"" of quotations causes difficulties.";
+            Console.WriteLine(quotedStr);
         }
     }
 }
