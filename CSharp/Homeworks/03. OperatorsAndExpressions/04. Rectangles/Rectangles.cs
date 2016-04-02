@@ -10,13 +10,13 @@ namespace _04.Rectangles
     {
         static void Main(string[] args)
         {
-            float sideLenght = float.Parse(Console.ReadLine());
-            float height = float.Parse(Console.ReadLine());
+            double sideLenght = double.Parse(Console.ReadLine());
+            double height = double.Parse(Console.ReadLine());
 
-            float rectanglePerimeter = (2 * sideLenght) + (2 * height);
-            float rectangleArea = sideLenght * height;
+            double rectanglePerimeter = (2 * sideLenght) + (2 * height);
+            double rectangleArea = sideLenght * height;
 
-            Console.WriteLine("{0:F2} {1:F2}", rectanglePerimeter, rectangleArea);
+            Console.WriteLine("{0:F2} {1:F2}", rectangleArea, rectanglePerimeter);
         }
     }
 }

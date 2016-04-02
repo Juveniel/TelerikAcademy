@@ -16,7 +16,7 @@ namespace _05.ThirdDigit
 
             if (thirdDigit == 7)
             {
-                Console.WriteLine(true);
+                Console.WriteLine("true");
             }
             else
             {

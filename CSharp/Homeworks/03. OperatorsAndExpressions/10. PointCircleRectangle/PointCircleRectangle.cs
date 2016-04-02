@@ -17,13 +17,27 @@ namespace _10.PointCircleRectangle
             double radius = 1.5;
 
             bool isInCircle = (pointX - 1) * (pointX - 1) + (pointY - 1) * (pointY - 1) <= radius * radius;
-            if (isInCircle && pointY > 1)
+            bool isInRectangle = false;
+            if (pointX >= -1 && pointX <= 5 && pointY <= 1 && pointY >= -1)
             {
-                Console.WriteLine("The point is in the circle and outside the rectangle: {0}", isInCircle);
+                isInRectangle = true;
+            }
+
+            if(isInCircle && isInRectangle)
+            {
+                Console.WriteLine("inside circle inside rectangle");
+            }
+            else if (!isInCircle && isInRectangle)
+            {
+                Console.WriteLine("outside circle inside rectangle");
+            }
+            else if (isInCircle && !isInRectangle)
+            {
+                Console.WriteLine("inside circle outside rectangle");
             }
             else
             {
-                Console.WriteLine("The point is in the circle and outside the rectangle: {0}", isInCircle);
+                Console.WriteLine("outside circle outside rectangle");
             }
         }
     }

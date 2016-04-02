@@ -14,7 +14,7 @@ namespace _08.PrimeCheck
             int inputNumber = int.Parse(Console.ReadLine());
             bool isPrime = IsPrime(inputNumber);
 
-            Console.WriteLine(isPrime);
+            Console.WriteLine(isPrime.ToString().ToLower());
         }
 
         static bool IsPrime(int number)

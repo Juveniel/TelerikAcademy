@@ -11,19 +11,19 @@ namespace _07.PointInCircle
     {
         static void Main(string[] args)
         {
-            int pointX = int.Parse(Console.ReadLine());
-            int pointY = int.Parse(Console.ReadLine());
+            double pointX = double.Parse(Console.ReadLine());
+            double pointY = double.Parse(Console.ReadLine());
 
-            int circleRadius = 2;
+            double circleRadius = 2;
             double pointCoord = Math.Sqrt((pointX * pointX) + (pointY * pointY));
 
             if (circleRadius >= pointCoord)
             {
-                Console.WriteLine(true);
+                Console.WriteLine("yes {0:F2}", Math.Round(pointCoord, 2));
             }
             else
             {
-                Console.WriteLine(false);
+                Console.WriteLine("no {0:F2}", Math.Round(pointCoord, 2));
             }
         }
     }

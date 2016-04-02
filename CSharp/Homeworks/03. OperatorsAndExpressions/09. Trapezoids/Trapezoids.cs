@@ -11,11 +11,11 @@ namespace _09.Trapezoids
     {
         static void Main(string[] args)
         {
-            float sideA = float.Parse(Console.ReadLine());
-            float sideB = float.Parse(Console.ReadLine());
-            float height = float.Parse(Console.ReadLine());
+            double sideA = double.Parse(Console.ReadLine());
+            double sideB = double.Parse(Console.ReadLine());
+            double height = double.Parse(Console.ReadLine());
 
-            float trapezoidArea = ((sideA + sideB) / 2) * height;
+            double trapezoidArea = ((sideA + sideB) / 2) * height;
 
             Console.WriteLine("{0:F7}", trapezoidArea);
         }
