@@ -6,7 +6,7 @@ class FallingRocks
 {
     private static Random randomGenerator = new Random();
     static char[] rockSymbols = { '^', '@', '*', '&', '$', '+', '!', '#', '%', '.', ';' };
-    static int playField = 18;
+    static int playField = 40;
 
     struct Object
     {
@@ -136,8 +136,8 @@ class FallingRocks
             {
                 Printer(rock.x, rock.y, rock.c, rock.color);
             }
-            Printer(24, 2, "LIVES: " + livesCount, ConsoleColor.White);
-            Printer(24, 4, "SCORE: " + score, ConsoleColor.White);
+            Printer(30, 1, "LIVES: " + livesCount, ConsoleColor.White);
+            Printer(30, 2, "SCORE: " + score, ConsoleColor.White);
 
             score++;
             Thread.Sleep(250);
