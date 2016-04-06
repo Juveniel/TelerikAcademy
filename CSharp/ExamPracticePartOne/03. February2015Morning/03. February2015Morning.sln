@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Printing", "01. Printing\01. Printing.csproj", "{33E4B059-D634-405B-8E1A-9C7F0C77363F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. TextToNumber", "02. TextToNumber\02. TextToNumber.csproj", "{56D9D8C5-C341-426B-93CE-50A8C52CD9D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33E4B059-D634-405B-8E1A-9C7F0C77363F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E4B059-D634-405B-8E1A-9C7F0C77363F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E4B059-D634-405B-8E1A-9C7F0C77363F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E4B059-D634-405B-8E1A-9C7F0C77363F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D9D8C5-C341-426B-93CE-50A8C52CD9D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D9D8C5-C341-426B-93CE-50A8C52CD9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D9D8C5-C341-426B-93CE-50A8C52CD9D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D9D8C5-C341-426B-93CE-50A8C52CD9D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
