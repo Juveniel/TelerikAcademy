@@ -1,0 +1,9 @@
+.row{
+    float: left;
+    position: relative;
+    width:100%;
+    margin-bottom: 2px;
+}
+.req{
+    font-weight: bold;
+}
