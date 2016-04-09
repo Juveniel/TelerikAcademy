@@ -1,0 +1,10 @@
+html{
+    background: rgb(173, 216, 230);
+    height:100%;
+}
+ul.no-padding{
+    padding:0;
+}
+span.bold{
+    font-weight:bold;
+}
