@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 
 namespace _10.FibonacciSequence
 {
@@ -10,15 +11,15 @@ namespace _10.FibonacciSequence
     {
         static void Main(string[] args)
         {
-            int upperBoundary = int.Parse(Console.ReadLine());
+            BigInteger upperBoundary = BigInteger.Parse(Console.ReadLine());
 
             PrintFibonacciSequence(upperBoundary);
         }      
 
-        public static void PrintFibonacciSequence(int n)
-        {        
-            int a = 0;
-            int b = 1;   
+        public static void PrintFibonacciSequence(BigInteger n)
+        {
+            BigInteger a = 0;
+            BigInteger b = 1;   
 
             if(n == 1)
             {
@@ -26,14 +27,29 @@ namespace _10.FibonacciSequence
                 return;
             }
 
-            Console.Write(a + " " + b + " ");
-
-            for (int i = 2; i < n; i++)
+            if(n == 2 || n == 0)
             {
-                int temp = a;
+                Console.Write(a + ", " + b);
+            }
+            else
+            {
+                Console.Write(a + ", " + b + ", ");
+            }
+          
+            for (BigInteger i = 2; i < n; i++)
+            {
+                BigInteger temp = a;
                 a = b;
                 b = temp + a;
-                Console.Write(b + " ");
+
+                if(i == (n - 1))
+                {
+                    Console.WriteLine(b);
+                }
+                else
+                {
+                    Console.Write(b + ", ");
+                }                
             }
 
             Console.WriteLine();         

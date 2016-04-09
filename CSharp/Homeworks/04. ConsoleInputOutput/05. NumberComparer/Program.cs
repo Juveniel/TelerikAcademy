@@ -10,8 +10,8 @@ namespace _05.NumberComparer
     {
         static void Main(string[] args)
         {
-            int firstNum = int.Parse(Console.ReadLine());
-            int secondNum = int.Parse(Console.ReadLine());
+            double firstNum = double.Parse(Console.ReadLine());
+            double secondNum = double.Parse(Console.ReadLine());
 
             Console.WriteLine("{0}", Math.Max(firstNum, secondNum));
         }

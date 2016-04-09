@@ -31,7 +31,7 @@ namespace _11.Interval
         static List<int> GetNumsWithoutRemainder(int start, int finish)
         {
             List<int> resList = new List<int>();
-            for (int i = start ; i <= finish; i++)
+            for (int i = start + 1 ; i < finish; i++)
             {
                 if (i % 5 == 0)
                 {

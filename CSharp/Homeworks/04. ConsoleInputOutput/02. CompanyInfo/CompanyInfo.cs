@@ -29,7 +29,7 @@ namespace _02.CompanyInfo
             Console.WriteLine("Tel. {0}", mobile);
             Console.WriteLine("Fax: {0}", faxFormatted);
             Console.WriteLine("Web site: {0}", site);
-            Console.WriteLine("Manager: {0}({1})", managerFullName, managerContacts);
+            Console.WriteLine("Manager: {0} ({1})", managerFullName, managerContacts);
         }
     }
 }

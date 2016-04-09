@@ -21,9 +21,9 @@ namespace _07.SumOfFiveNumbers
                 inputList.Add(number);
             }
 
-            int maxInput = inputList.Max();
+            int sum = inputList.Sum();
 
-            Console.WriteLine("{0}", maxInput);
+            Console.WriteLine("{0}", sum);
         }
     }
 }
