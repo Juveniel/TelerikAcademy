@@ -36,7 +36,6 @@ namespace _03.BullsAndCows
                     }
                     else
                     {
-
                         int index = Array.IndexOf(guessNumber, secret[k]);
 
                         while (index != -1 && secret[index] == guessNumber[index])
@@ -46,8 +45,7 @@ namespace _03.BullsAndCows
                         {
                             currentCowsCount++;
                             guessNumber[index] = secret[k] = '-';
-                        }
-                       
+                        }                       
                     }
                 }
 
@@ -57,11 +55,7 @@ namespace _03.BullsAndCows
                     Console.Write(i + " ");
                 }
             }
-           
-
-               
-      
-
+                                
             if (!foundNum)
             {
                 Console.WriteLine("No");
