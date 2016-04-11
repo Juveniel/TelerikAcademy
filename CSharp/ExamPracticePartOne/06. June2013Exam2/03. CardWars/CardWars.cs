@@ -94,7 +94,6 @@ namespace _03.CardWars
                 }              
             }
 
-
             // Case X drawn
             if (firstX && !secondX)
             {
