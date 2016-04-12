@@ -22,7 +22,7 @@ namespace _04.MultiplicationSIgn
 
             int negativeNumbersCount = 0;
             bool isZero = false;
-            foreach (int number in inputList)
+            foreach (double number in inputList)
             {
                 if (number < 0)
                 {
@@ -43,7 +43,7 @@ namespace _04.MultiplicationSIgn
             {
                 Console.WriteLine("+");
             }
-            else
+            else if (negativeNumbersCount % 2 != 0)
             {
                 Console.WriteLine("-");
             }

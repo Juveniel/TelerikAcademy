@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace _06.BiggestOfFive
 {
@@ -15,18 +16,8 @@ namespace _06.BiggestOfFive
             {
                 numberArr[i] = double.Parse(Console.ReadLine());
             }        
-
-            double maxValue = 0;
-            for (int i = 0; i < numberArr.Length; i++)
-            {
-                double currentNum = numberArr[i];
-                if (currentNum > maxValue)
-                {
-                    maxValue = currentNum;
-                }
-            }
-
-            Console.WriteLine("{0}", maxValue);
+            
+            Console.WriteLine("{0}", numberArr.Max());
         }
     }
 }
