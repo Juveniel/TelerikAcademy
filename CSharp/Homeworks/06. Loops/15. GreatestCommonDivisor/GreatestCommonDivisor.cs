@@ -9,17 +9,20 @@ namespace _15.GreatestCommonDivisor
     class GreatestCommonDivisor
     {
         static void Main(string[] args)
-        {
-            int firstNum = int.Parse(Console.ReadLine());
-            int secondNum = int.Parse(Console.ReadLine());
+        {          
+            string input = Console.ReadLine();
+            var numbersArr = input.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            long firstNum = Math.Abs(long.Parse(numbersArr[0]));
+            long secondNum = Math.Abs(long.Parse(numbersArr[1]));
 
             var gcd = FindGCD(firstNum, secondNum);
             Console.WriteLine(gcd);
         }
 
-        static int FindGCD(int a, int b)
+        static long FindGCD(long a, long b)
         {
-            int Remainder;
+            long Remainder;
 
             while (b != 0)
             {

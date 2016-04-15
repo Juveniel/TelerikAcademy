@@ -21,8 +21,8 @@ namespace _03.MMSA
                 numbersList.Add(double.Parse(Console.ReadLine()));
             }
 
-            Console.WriteLine("min={0}", numbersList.Min());
-            Console.WriteLine("max={0}", numbersList.Max());
+            Console.WriteLine("min={0:F2}", numbersList.Min());
+            Console.WriteLine("max={0:F2}", numbersList.Max());
             Console.WriteLine("sum={0:F2}", numbersList.Sum());
             Console.WriteLine("avg={0:F2}", numbersList.Average());
         }

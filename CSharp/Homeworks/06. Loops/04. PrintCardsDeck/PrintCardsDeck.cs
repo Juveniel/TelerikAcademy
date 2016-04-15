@@ -11,17 +11,17 @@ namespace _04.PrintCardsDeck
     {
         static void Main(string[] args)
         {
-            int boundary = int.Parse(Console.ReadLine());
+            string boundary = Console.ReadLine();
 
             string[] cards = { "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A" };
-            string[] suits = { "clubs", "diamonds", "hearts", "spades" };
+            string[] suits = { "spades,", "clubs,", "hearts,", "diamonds" };
 
-            int iterationsCount = 0;
-
-            for(int i = 0; i < boundary - 1; i++)
+            int idx = Array.IndexOf(cards, boundary);
+     
+            for (int i = 0; i < idx + 1; i++)
             {
                 foreach(string suit in suits)
-                {
+                {                                                
                     Console.Write("{0} of {1} ", cards[i], suit);
                 }
 

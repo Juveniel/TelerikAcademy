@@ -13,12 +13,12 @@ namespace _10.OddAndEvenProduct
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());         
+            long n = long.Parse(Console.ReadLine());         
             var input = Console.ReadLine();
 
-            List<int> userInput = ReceiveUserInput(input);
-            int evenProduct = GetEvenProduct(userInput);
-            int oddProduct = GetOddProduct(userInput);
+            List<long> userInput = ReceiveUserInput(input);
+            long evenProduct = GetEvenProduct(userInput);
+            long oddProduct = GetOddProduct(userInput);
 
             if(evenProduct == oddProduct)
             {
@@ -26,15 +26,15 @@ namespace _10.OddAndEvenProduct
             }
             else
             {
-                Console.WriteLine("no {0} {1}", oddProduct, evenProduct);
+                Console.WriteLine("no {0} {1}", evenProduct, oddProduct );
             }
         }
 
-        static List<int> ReceiveUserInput(string input)
+        static List<long> ReceiveUserInput(string input)
         {
             var numbersArr = input.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            var numbers = new List<int>();
+            var numbers = new List<long>();
             foreach (var num in numbersArr)
             {
                 int result;
@@ -49,12 +49,12 @@ namespace _10.OddAndEvenProduct
             return numbers;
         }
 
-        static int GetEvenProduct(List<int> numList)
+        static long GetEvenProduct(List<long> numList)
         {
             return numList.Where((number, index) => index % 2 == 0).Aggregate((a, x) => a * x);
         }
 
-        static int GetOddProduct(List<int> numList)
+        static long GetOddProduct(List<long> numList)
         {
             return numList.Where((number, index) => index % 2 != 0).Aggregate((a, x) => a * x);
         }
