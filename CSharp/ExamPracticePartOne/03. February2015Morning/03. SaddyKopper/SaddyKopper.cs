@@ -1,32 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Numerics;
 
 namespace _03.SaddyKopper
 {
     class SaddyKopper
-    {     
+    {
         static int iterationsCount = 0;
 
         static void Main(string[] args)
-        {       
-            long input = long.Parse(Console.ReadLine());
+        {
+            BigInteger input = BigInteger.Parse(Console.ReadLine());
             TransformNumber(input);
         }
 
-        static long TransformNumber(long num)
+        static BigInteger TransformNumber(BigInteger num)
         {
             List<long> productSums = new List<long>();
 
             while (num.ToString().Length > 1)
             {
                 num /= 10;
-                productSums.Add(FindEvenPositionsSum(long.Parse(num.ToString())));     
+                productSums.Add(FindEvenPositionsSum(long.Parse(num.ToString())));
             }
             iterationsCount++;
 
-            long product = GetProductOfSums(productSums);            
-            int productDigits = GetDigitsCount(product);        
+            BigInteger product = GetProductOfSums(productSums);
+            var productDigits = GetDigitsCount(product);
 
             if (productDigits == 1 && iterationsCount < 10)
             {
@@ -35,12 +35,12 @@ namespace _03.SaddyKopper
             }
             else if (productDigits > 1 && iterationsCount < 10)
             {
-                long newNum = product;
-                product = TransformNumber(newNum);              
+                BigInteger newNum = product;
+                product = TransformNumber(newNum);
             }
             else
             {
-                Console.WriteLine(product);                
+                Console.WriteLine(product);
             }
 
             return product;
@@ -48,34 +48,35 @@ namespace _03.SaddyKopper
 
         static long FindEvenPositionsSum(long input)
         {
+            int counter = 0;
             long sum = 0;
-            /*  char[] inputPositions = input.ToString().ToCharArray();
+            long x = 0;
 
-               for (int i = 0; i < inputPositions.Length; i++)
-               {
-                   if(i % 2 == 0)
-                   {
-                       sum += int.Parse(inputPositions[i].ToString());
-                   }
-               }     */
-         
-
-            while(input != 0)
+            long[] digitsArr = new long[input.ToString().Length];
+            while (input > 0)
             {
-                if(input % 2 == 0)
-                {
-                    sum += input;
-                }
+                x = input % 10;
+                digitsArr[counter] = x;
 
-                input /= 10;
+                input = input / 10;
+                counter++;
+            }
+
+            Array.Reverse(digitsArr);
+            for (int i = 0; i < digitsArr.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    sum += digitsArr[i];
+                }
             }
 
             return sum;
         }
 
-        static long GetProductOfSums(List<long> numbers)
+        static BigInteger GetProductOfSums(List<long> numbers)
         {
-            long prod = 1;
+            BigInteger prod = 1;
             foreach (int value in numbers)
             {
                 prod *= value;
@@ -84,11 +85,9 @@ namespace _03.SaddyKopper
             return prod;
         }
 
-        static int GetDigitsCount(long num)
+        static int GetDigitsCount(BigInteger num)
         {
-            int length = num.ToString().Length;
-
-            return length;
+            return num.ToString().Length;
         }
     }
 }
