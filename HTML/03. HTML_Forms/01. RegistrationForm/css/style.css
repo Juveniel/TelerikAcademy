@@ -1,0 +1,180 @@
+/* Base */
+.row{
+    float: left;
+    position: relative;
+    width:100%;
+    height:35px;
+    border-bottom: 1px solid #adadad;
+}
+.left{
+    float: left;
+    position: relative;
+    width:164px;
+    padding: 5px;
+    height:25px;
+    line-height: 25px;
+    border-right: 1px solid #adadad;
+}
+.right{
+    float: right;
+    position: relative;
+    width:310px;
+    padding: 5px;
+    height:25px;
+    line-height: 25px;
+}
+.form-group{
+    float: left;
+    position: relative;
+}
+
+/* Form styles */
+#registration{
+    float: left;
+    position: relative;
+    width:100%;
+    padding: 20px;
+}
+#registration-form{
+    float: left;
+    position: relative;
+    width:495px;
+    font-size: 14px;
+    border: 1px solid #adadad;
+}
+#registration-form form{
+    float: left;
+    position:relative;
+    width:100%;
+}
+#registration-form label{
+    float: left;
+    position: relative;
+    width:100%;
+    text-align:right;
+    font-size: 16px;
+    font-weight: bold;
+}
+#registration-form input{
+    float: left;
+    position: relative;
+    height: 19px;
+    width: 92.5%;
+}
+#registration-form textarea{
+    float: left;
+    position: relative;
+    width:277px;
+    height:58px;
+    resize:none;
+}
+
+
+/* Specific rows */
+.row.area{
+    height:74px;
+}
+.row.area .left,
+.row.area .right{
+    height:64px;
+    line-height: 64px;
+}
+.row.city .right{
+    padding:0;
+    width:320px;
+}
+.row.city .form-group:first-child{
+    width:210px;
+    border-right: 1px solid #adadad;
+}
+.row.city .form-group:last-child{
+    width: 109px;
+}
+.row.city .form-group label{
+    width:50px !important;
+    border-right: 1px solid #adadad;
+    padding-right: 5px;
+    padding:5px;
+    text-align:center !important;
+}
+.row.city .form-group input{
+    margin:5px;
+}
+.row.city .form-group:last-child input{
+    width:35px !important;
+    padding:0;
+    margin:5px;
+    height:23px !important;
+}
+.row.post-code input{
+    width:78px !important;
+}
+.row.country select{
+    width:210px;
+}
+.row.phone-number{
+    height:auto;
+}
+.row.phone-number .left,
+.row.phone-number .right{
+    height:auto;
+    line-height: auto;
+}
+.row.phone-number .right{
+    padding:20px 5px;
+}
+.row.phone-number .country-code,
+.row.phone-number .area-code,
+.row.phone-number .phone{
+    float: left;
+    position: relative;
+}
+.row.phone-number span{
+    float: left;
+    position: relative;
+}
+.row.phone-number span:last-child,
+.row.phone-number .phone span{
+    margin:0 5px;
+}
+.row.phone-number .country-code input,
+.row.phone-number .area-code input{
+    width:53px !important;
+}
+.row.phone-number .phone input{
+    width:115px !important;
+}
+.row.start-date .form-group{
+    line-height: 20px;
+    margin: 3px 0;
+}
+.row.start-date .form-group:first-child{
+    margin-right: 5px;
+}
+.row.start-date .right label{
+    width:auto !important;
+    font-weight: normal !important;
+    text-align:left !important;
+}
+.row.start-date input{
+    width: 20px !important;
+}
+.row.comments{
+    height:auto;
+    line-height: auto;
+}
+.row.comments .left,
+.row.comments .right{
+    height:105px;
+    line-height: 105px;
+}
+.row.comments textarea{
+    height:99px !important;
+}
+.row.buttons{
+    background: #d1ede1;
+}
+.row.buttons button{
+    margin: 6px 0;
+}
+

@@ -1,0 +1,152 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <section id="registration">
+        <div id="registration-form">
+            <form method="POST">
+                <div class="row first-name">
+                    <div class="left">
+                        <label>Last Name</label>
+                    </div>
+                    <div class="right">
+                        <input type="text" name="f_last_name" class="form-input" value="Nakov" />
+                    </div>                   
+                </div>
+                <div class="row last-name">
+                    <div class="left">
+                           <label>First Name</label>    
+                    </div>
+                    <div class="right">
+                        <input type="text" name="f_first_name" class="form-input" value="Svetlin" />
+                    </div>                   
+                </div>
+                <div class="row area address">
+                    <div class="left">
+                        <label>Address</label>
+                    </div>
+                    <div class="right">
+                        <textarea name="f_address">17 Hristo Botev Str. floor 3, apt. 12</textarea>
+                    </div>                 
+                </div>
+                <div class="row city">
+                    <div class="left">
+                         <label>City</label>
+                    </div>
+                    <div class="right">
+                        <div class="form-group">                       
+                            <input type="text" name="f_city" class="form-input" value="Kaspichan" />
+                        </div>
+                        <div class="form-group">
+                            <label>State</label>
+                            <input type="text" name="f_state" class="form-input" value="" />
+                        </div>
+                    </div>                   
+                </div>
+                <div class="row post-code">
+                    <div class="left">
+                       <label>Zip/Postal Code</label> 
+                    </div>
+                    <div class="right">
+                        <input type="text" name="f_postal_code" class="form-input" value="9325" />
+                    </div>    
+                </div>
+                <div class="row country">
+                    <div class="left">
+                        <label>Country</label>
+                    </div>
+                    <div class="right">
+                         <select class="form-select" name="f_country">
+                            <option>Bulgaria</option>
+                            <option>Germany</option>
+                            <option>France</option>
+                            <option>Japan</option>
+                        </select>
+                    </div>                   
+                </div>
+                <div class="row phone-number">
+                    <div class="left">
+                        <label>Phone (country code, area code, number)</label>
+                    </div>
+                    <div class="right">
+                        <div class="form-group-phone">                        
+                            <div class="country-code">
+                                <span>(+</span>
+                                <input type="text" name="f_country_code" class="form-input" value="359" />
+                                <span>)</span>
+                            </div>
+                            <div class="area-code">
+                                <input type="text" name="f_area_code" class="form-input" value="88" />
+                            </div>
+                            <div class="phone">
+                                <span>-</span>
+                                <input type="text" name="f_phone_number" class="form-input" value="8334343" />
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="row email">
+                    <div class="left">
+                        <label>E-mail</label>   
+                    </div>
+                    <div class="right">
+                        <input type="text" name="f_email" class="form-input" value="asdds@kaspichan.bg" />
+                    </div>                    
+                </div>
+                <div class="row gender" >
+                    <div class="left">
+                        <label>Gender</label>
+                    </div>
+                    <div class="right">
+                        <select name="f_ender">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>  
+                    </div>                                    
+                </div>
+                <div class="row start-date">
+                    <div class="left">
+                        <label>Starting Date</label>
+                    </div>
+                    <div class="right">
+                        <div class="form-group">
+                            <input type="radio" name="f_spring" />
+                            <label for="f_spring">Sring 2016</label>
+                        
+                        </div>
+                        <div class="form-group">                            
+                            <input type="radio" name="f_summer" />
+                            <label for="f_summer">Summer 2016</label>
+                        </div>
+                    </div>                   
+                </div>
+                <div class="row comments">
+                    <div class="left">
+                        <label>Comments/Questions</label>
+                    </div>
+                    <div class="right">
+                        <textarea type="text" name="f_comments" class="form-input">Please send me more information about the loading.</textarea>
+                    </div>                    
+                </div>
+                
+                <div class="row buttons">
+                    <div class="inner-wrapper">
+                        <button type="submit">Submit</button>
+                        <button>Clear This Form</button> 
+                    </div>                  
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
