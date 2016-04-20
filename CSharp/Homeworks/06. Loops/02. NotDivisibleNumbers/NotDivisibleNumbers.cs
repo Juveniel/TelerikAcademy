@@ -17,7 +17,7 @@ namespace _02.NotDivisibleNumbers
             {
                 if ((i % 3 != 0) && (i % 7 != 0))
                 {
-                    Console.WriteLine(i + " ");
+                    Console.Write(i + " ");
                 }
             }
         }

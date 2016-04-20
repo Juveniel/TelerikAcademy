@@ -11,21 +11,21 @@ namespace _05.Calculation
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            int x = int.Parse(Console.ReadLine());
+            double x = double.Parse(Console.ReadLine());
 
             double expressionSum = 1;
-            for (uint i = 1; i <= n; i++)
+            for (int i = 1; i <= n; i++)
             {
                 expressionSum += CalcFactorial(i) / Math.Pow(x, i);
             }
 
-            Console.WriteLine("{0:F7}", expressionSum);
+            Console.WriteLine("{0:F5}", expressionSum);
         }
 
-        static uint CalcFactorial(uint n)
+        static int CalcFactorial(int n)
         {
-            uint nFactorial = 1;
-            for (uint i = 1; i <= n; i++)
+            int nFactorial = 1;
+            for (int i = 1; i <= n; i++)
             {
                 nFactorial *= i;
             }

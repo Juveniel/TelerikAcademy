@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 
 namespace _07.FactorialExpression
 {
@@ -9,20 +10,20 @@ namespace _07.FactorialExpression
     {
         static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            int k = int.Parse(Console.ReadLine());
+            BigInteger n = BigInteger.Parse(Console.ReadLine());
+            BigInteger k = BigInteger.Parse(Console.ReadLine());
 
-            int nFactorial = CalcFactorial(n);
-            int kFactorial = CalcFactorial(k);
-            int nkFactiral = CalcFactorial(n - k);
+            BigInteger nFactorial = CalcFactorial(n);
+            BigInteger kFactorial = CalcFactorial(k);
+            BigInteger nkFactiral = CalcFactorial(n - k);
 
-            int expression = (nFactorial * kFactorial) / nkFactiral;
+            BigInteger expression = nFactorial / (kFactorial * (nkFactiral));
             Console.WriteLine("{0}", expression);
         }
 
-        static int CalcFactorial(int n)
+        static BigInteger CalcFactorial(BigInteger n)
         {
-            int nFactorial = 1;
+            BigInteger nFactorial = 1;
             for (int i = 1; i <= n; i++)
             {
                 nFactorial *= i;

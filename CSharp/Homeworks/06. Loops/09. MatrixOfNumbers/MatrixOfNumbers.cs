@@ -16,7 +16,7 @@ namespace _09.MatrixOfNumbers
             {
                 for (int col = row; col <= row + n - 1; col++)
                 {
-                    Console.Write(col);
+                    Console.Write(col + " ");
                 }
                 Console.WriteLine();
             }
