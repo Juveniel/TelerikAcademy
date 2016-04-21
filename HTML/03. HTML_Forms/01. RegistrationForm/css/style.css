@@ -27,6 +27,9 @@
     float: left;
     position: relative;
 }
+textarea{
+    line-height: 20px;
+}
 
 /* Form styles */
 #registration{
@@ -101,7 +104,7 @@
     margin:5px;
 }
 .row.city .form-group:last-child input{
-    width:35px !important;
+    width:34px !important;
     padding:0;
     margin:5px;
     height:23px !important;
@@ -118,7 +121,6 @@
 .row.phone-number .left,
 .row.phone-number .right{
     height:auto;
-    line-height: auto;
 }
 .row.phone-number .right{
     padding:20px 5px;
@@ -144,6 +146,29 @@
 .row.phone-number .phone input{
     width:115px !important;
 }
+.row.birth-date .right label{
+    font-weight:normal !important;
+}
+.row.birth-date .right .month label,
+.row.birth-date .right .day label,
+.row.birth-date .right .year label{
+    width:auto !important;
+}
+.row.birth-date .right .month input,
+.row.birth-date .right .day input{
+    width: 30px !important;
+    margin-left: 5px;
+}
+.row.birth-date .right .year input{
+    width: 43px !important;
+    margin-left: 5px;
+}
+.row.birth-date .right .month{
+    margin-left: 0;
+}
+.row.birth-date .right .day{
+    margin: 0 5px;
+}
 .row.start-date .form-group{
     line-height: 20px;
     margin: 3px 0;
@@ -161,7 +186,6 @@
 }
 .row.comments{
     height:auto;
-    line-height: auto;
 }
 .row.comments .left,
 .row.comments .right{
@@ -177,4 +201,10 @@
 .row.buttons button{
     margin: 6px 0;
 }
-
+.row.buttons .inner-wrapper{
+    float: none;
+    position: relative;
+    width: 185px;
+    margin: 0px auto;
+    display: block;
+}

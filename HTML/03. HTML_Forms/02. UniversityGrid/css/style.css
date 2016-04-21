@@ -1,0 +1,35 @@
+#university-grid{
+    float: left;
+    position: relative;
+    width:100%;
+    padding: 20px;
+}
+#university-grid table{
+    border:2px;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+}
+#university-grid table th{
+    font-size: 16px;
+}
+#university-grid table .total{
+    font-weight: bold;
+    text-align: center;
+}
+#university-grid tfoot .pg-prev,
+#university-grid tfoot .pg-next,
+#university-grid tfoot .pages{
+    float: left;
+    position: relative;
+    width:auto;
+}
+#university-grid tfoot .pages{
+    height: 27px;
+    line-height: 27px;
+    margin: 0px 5px;
+}
+#university-grid tfoot .pages .pg{
+    float: left;
+    position: releative;
+    width:20px;
+}
