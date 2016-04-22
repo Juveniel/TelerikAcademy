@@ -1,0 +1,119 @@
+/* Base */
+
+.row{
+    float: left;
+    position: relative;
+    width:100%;
+}
+fieldset{
+    margin:0;
+    border:2px solid #353535;
+}
+fieldset legend{
+    text-align: center !important;
+    padding: 0 10px;
+    margin-left: 11%;
+}
+
+/* Wrapper */
+#notebook-store{
+    float: left;
+    position: relative;
+    width:100%;
+    padding: 20px;
+}
+.products-wrapper{
+    float: left;
+    position: relative;
+    width:710px;
+    border-radius: 10px;
+    border:2px solid #646464;
+}
+
+/* Navigation */
+nav.top{
+    float: left;
+    position: relative;
+    width:100%;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 2px solid #353535;
+}
+nav.top ul{
+    list-style: none;
+    margin:0;
+    width:385px;
+    float: none;
+    margin:0 auto;
+    display: block;
+}
+nav.top ul li{
+    float: left;
+    position: relative;
+    width:auto;
+    font-size: 20px;
+}
+nav.top ul li a{
+    color:#00acf0;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+/* Products grid */
+.products{
+    float: left;
+    position: relative;
+    width:690px;
+    padding:10px;
+}
+.products-grid{
+    float: left;
+    position: relative;
+    width: 445px;
+    padding:5px;
+    border-radius:3px;
+    border: 2px solid #353535;
+}
+.products-grid .box{
+    float: left;
+    position: relative;
+    width: 220px;
+    margin-right: 5px;
+}
+.products-grid .box:nth-child(2n){
+    margin-right: 0;
+}
+.products-grid .image{
+    float: left;
+    position: relative;
+    width: auto;
+}
+.products-grid  .row{
+    width:auto !important;
+    top: 30px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.products-grid .row.full-width{
+    top: 5px;
+    float: right
+}
+
+/* Filter */
+.products .filter{
+    float: left;
+    position: relative;
+    width:215px;
+    margin-top:55px;
+    padding-left:15px;
+}
+.products .filter .row{
+    margin-bottom: 20px;
+}
+.products .filter label{
+    float: left;
+    position: relative;
+    width:100%;    
+    margin-bottom: 10px;
+}

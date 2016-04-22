@@ -1,0 +1,79 @@
+/* Base */
+#grid-component{
+    float: left;
+    position:relative;
+    width:100%;
+    padding:20px;
+}
+
+/* Table */
+table td{
+    border: 1px solid #a4abb2;
+}
+table th{
+    border: 1px solid #a4abb2;
+    font-weight: normal;
+    font-size: 16px;
+}
+table th input{
+    border:1px soldi #9aa0a6 !important;
+    height: 18px;
+}
+table thead tr:first th{
+    text-align: left;
+}
+table{
+    border-collapse:collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+table thead{
+    background: #e7e9eb;
+}
+table th{
+    text-align: left;
+}
+table i{
+    color:#b9babc;
+}
+table thead button{
+    background: #f0f1f3;
+    border:1px solid #a4abb2;
+    border-radius:2px;    
+}
+tfoot{
+    background: #f0f1f3;
+}
+
+/* pagiantion */
+.pagination *{
+    float: left;
+    position: relative;
+    
+}
+.pagination .pages{
+   margin: 3px 10px;
+}
+.pagination .pages .pg{
+    float: left;
+    position: relative;
+    width:30px;
+    
+}
+.pagination .pg-size{
+    margin-left: 20px;
+}
+.pagination .pg-size label{
+    margin-right: 5px;
+}
+tfoot .items-count{
+    width: 215px;
+    float: right;
+}
+tfoot button{
+    height: 30px;
+    text-align: center;
+    background:#e4e6e8;
+}
+tfoot i{
+    color:#5b5c5e;
+}

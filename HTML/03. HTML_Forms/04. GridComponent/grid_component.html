@@ -1,0 +1,219 @@
+<!DOCTYPE Html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Grid Component</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <section id="grid-component">
+        <h1>Proble 4: "Grid Component"</h1>
+        
+        <div class="grid-wrapper">
+            <form method="POST" action="/">
+                <table  cellpadding="4">
+                    <thead>
+                        <tr class="draggable">
+                            <th colspan="6">Drag a column header and drop it here to group by that column.</th>
+                        </tr>
+                        <tr>
+                            <th>ProductID</th>
+                            <th>Product name</th>
+                            <th>Unit price</th>
+                            <th>Quantity per unit</th>
+                            <th>Units in stock</th>
+                            <th>Discontinued</th>
+                        </tr>
+                         <tr class="filter">
+                            <th>
+                                <input type="text" name="f_prod_id" />
+                            </th>
+                            <th>
+                                <input type="text" name="f_prod_name" />
+                            </th>
+                             <th>
+                                <input type="text" name="f_unit_price" />
+                                <button>
+                                    <i class="fa fa-filter fa-fw"></i>
+                                </button>
+                            </th>
+                             <th>
+                                <input type="text" name="f_qty_per_unit" />
+                                <button>
+                                    <i class="fa fa-filter fa-fw"></i>
+                                </button>
+                            </th>
+                            <th>
+                                <input type="text" name="f_units_stock" />
+                                <button>
+                                    <i class="fa fa-filter fa-fw"></i>
+                                </button>
+                            </th>
+                            <th>
+                                <input type="checkbox" name="f_discontinued" />
+                                <button>
+                                    <i class="fa fa-filter fa-fw"></i>
+                                </button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>                       
+                        <tr>
+                            <td>1</td>
+                            <td>Chai</td>
+                            <td>$18.00</td>
+                            <td>10 boxes x20 bags</td>
+                            <td>39</td>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Chai</td>
+                            <td>$18.00</td>
+                            <td>10 boxes x20 bags</td>
+                            <td>39</td>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Chai</td>
+                            <td>$18.00</td>
+                            <td>10 boxes x20 bags</td>
+                            <td>39</td>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Chai</td>
+                            <td>$18.00</td>
+                            <td>10 boxes x20 bags</td>
+                            <td>39</td>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Chai</td>
+                            <td>$18.00</td>
+                            <td>10 boxes x20 bags</td>
+                            <td>39</td>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Chai</td>
+                            <td>$18.00</td>
+                            <td>10 boxes x20 bags</td>
+                            <td>39</td>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Chai</td>
+                            <td>$18.00</td>
+                            <td>10 boxes x20 bags</td>
+                            <td>39</td>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Chai</td>
+                            <td>$18.00</td>
+                            <td>10 boxes x20 bags</td>
+                            <td>39</td>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Chai</td>
+                            <td>$18.00</td>
+                            <td>10 boxes x20 bags</td>
+                            <td>39</td>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Chai</td>
+                            <td>$18.00</td>
+                            <td>10 boxes x20 bags</td>
+                            <td>39</td>
+                            <td>
+                                <input type="checkbox" />
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">
+                                <div class="pagination">
+                                    <button class="go-backwards">
+                                        <i class="fa fa-step-backward fa-fw"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fa fa-caret-left fa-fw"></i>
+                                    </button>
+                                    <div class="pages">
+                                        <div class="pg">1</div>
+                                        <div class="pg">2</div>
+                                        <div class="pg">3</div>
+                                        <div class="pg">4</div>
+                                        <div class="pg">5</div>
+                                        <div class="pg">6</div>
+                                        <div class="pg">7</div>
+                                        <div class="pg">8</div>
+                                        <div class="pg">9</div>
+                                        <div class="pg">10</div>
+                                        <div class="pg">...</div>
+                                    </div>
+                                    <button class="go-backwards">
+                                        <i class="fa fa-step-forward fa-fw"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fa fa-caret-right fa-fw"></i>
+                                    </button>
+                                    
+                                    <div class="pg-size">
+                                        <label>Page size:</label>
+                                        <select name="f_pg_size">
+                                            <option>10</option>
+                                            <option>20</option>
+                                            <option>30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="items-count">
+                                    335104 items in 335111 pages
+                                </div>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </form>
+            
+        </div>
+    </section>
+</body>
+</html>
