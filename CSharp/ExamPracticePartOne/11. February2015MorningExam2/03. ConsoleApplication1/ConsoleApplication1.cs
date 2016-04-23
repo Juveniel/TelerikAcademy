@@ -1,52 +1,51 @@
 ﻿using System;
 using System.Numerics;
 
-namespace _03.ConsoleApplication1
+namespace _04.ConsoleApplication1Variant2
 {
-    class ConsoleApplication1
+    class ConsoleApplication1Variant2
     {
         static void Main(string[] args)
         {
-            string line = Console.ReadLine();
+            int index = 0;
+            BigInteger globalProduct = 1;
 
-            BigInteger productFirsTen = 1;
-            BigInteger productSecondTen = 1;
-            BigInteger current;
-
-            int lineCounter = 0;
-            while (line != "END")
+            while (true)
             {
-                if(lineCounter % 2 != 0)
+                string line = Console.ReadLine();
+
+                if (line == "END")
                 {
-                    current = BigInteger.Parse(line);
-                    while (current > 0)
-                    {
-                        if (current % 10 > 0 && lineCounter <= 9)
-                        {
-                            productFirsTen *= current % 10;
-                        }
-                        else if(current % 10 > 0 && lineCounter > 9)
-                        {
-                            productSecondTen *= current % 10;
-                        }
-                        current /= 10;
-                    }
+                    break;
                 }
 
-                lineCounter++;
+                if (index == 10)
+                {
+                    Console.WriteLine(globalProduct);
+                    globalProduct = 1;
+                }
 
-                line = Console.ReadLine();
+                long num = long.Parse(line);
+                if (index % 2 == 1)
+                {
+                    long product = 1;
+                    while (num > 0)
+                    {
+                        long digit = num % 10;
+                        if (digit != 0)
+                        {
+                            product *= digit;
+                        }
+
+                        num /= 10;
+                    }
+
+                    globalProduct *= product;
+                }
+                index++;
             }
 
-            if(lineCounter <= 10)
-            {
-                Console.WriteLine(productFirsTen);
-            }
-            else
-            {
-                Console.WriteLine(productFirsTen);
-                Console.WriteLine(productSecondTen);
-            }
-        }      
+            Console.WriteLine(globalProduct);
+        }
     }
 }
