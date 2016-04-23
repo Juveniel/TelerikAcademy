@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Numerics;
 
 namespace _03.SaddyKopper
@@ -10,84 +9,42 @@ namespace _03.SaddyKopper
 
         static void Main(string[] args)
         {
-            BigInteger input = BigInteger.Parse(Console.ReadLine());
-            TransformNumber(input);
-        }
+            string input = Console.ReadLine();
+            int transofrmationsCount = 0;
 
-        static BigInteger TransformNumber(BigInteger num)
-        {
-            List<long> productSums = new List<long>();
-
-            while (num.ToString().Length > 1)
+           
+            while(input.Length > 1 && transofrmationsCount < 10)
             {
-                num /= 10;
-                productSums.Add(FindEvenPositionsSum(long.Parse(num.ToString())));
-            }
-            iterationsCount++;
-
-            BigInteger product = GetProductOfSums(productSums);
-            var productDigits = GetDigitsCount(product);
-
-            if (productDigits == 1 && iterationsCount < 10)
-            {
-                Console.WriteLine(iterationsCount);
-                Console.WriteLine(product);
-            }
-            else if (productDigits > 1 && iterationsCount < 10)
-            {
-                BigInteger newNum = product;
-                product = TransformNumber(newNum);
-            }
-            else
-            {
-                Console.WriteLine(product);
-            }
-
-            return product;
-        }
-
-        static long FindEvenPositionsSum(long input)
-        {
-            int counter = 0;
-            long sum = 0;
-            long x = 0;
-
-            long[] digitsArr = new long[input.ToString().Length];
-            while (input > 0)
-            {
-                x = input % 10;
-                digitsArr[counter] = x;
-
-                input = input / 10;
-                counter++;
-            }
-
-            Array.Reverse(digitsArr);
-            for (int i = 0; i < digitsArr.Length; i++)
-            {
-                if (i % 2 == 0)
+                BigInteger product = 1;
+                while (input.Length > 1)
                 {
-                    sum += digitsArr[i];
+                    input = input.Substring(0, input.Length - 1);
+                    int sum = 0;
+                    for (int i = 0; i < input.Length; i += 2)
+                    {
+                        sum += (input[i] - '0');
+                    }
+
+                    if (sum != null)
+                    {
+                        product *= sum;
+                    }
+                    else
+                    {
+                        product = 1;
+                    }
                 }
+
+                transofrmationsCount++;
+                input = product.ToString();
             }
-
-            return sum;
-        }
-
-        static BigInteger GetProductOfSums(List<long> numbers)
-        {
-            BigInteger prod = 1;
-            foreach (int value in numbers)
+                      
+            if(transofrmationsCount < 10)
             {
-                prod *= value;
+                Console.WriteLine(transofrmationsCount);
             }
 
-            return prod;
-        }
-
-        static int GetDigitsCount(BigInteger num)
-        {
-            return num.ToString().Length;
-        }
+            Console.WriteLine(input);
+        }      
     }
 }

@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. TextToNumber", "02. Tex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. SaddyKopper", "03. SaddyKopper\03. SaddyKopper.csproj", "{2FBCCA8C-D50E-42DC-BFAF-1A6AE0985EA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Cube", "04. Cube\04. Cube.csproj", "{1C71E292-EC7D-4B4E-85D4-AA3CB6FA4945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. BitInBits", "05. BitInBits\05. BitInBits.csproj", "{10C86BBC-D61A-42F6-A66C-140C2660E793}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{2FBCCA8C-D50E-42DC-BFAF-1A6AE0985EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FBCCA8C-D50E-42DC-BFAF-1A6AE0985EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FBCCA8C-D50E-42DC-BFAF-1A6AE0985EA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C71E292-EC7D-4B4E-85D4-AA3CB6FA4945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C71E292-EC7D-4B4E-85D4-AA3CB6FA4945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C71E292-EC7D-4B4E-85D4-AA3CB6FA4945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C71E292-EC7D-4B4E-85D4-AA3CB6FA4945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10C86BBC-D61A-42F6-A66C-140C2660E793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10C86BBC-D61A-42F6-A66C-140C2660E793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10C86BBC-D61A-42F6-A66C-140C2660E793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10C86BBC-D61A-42F6-A66C-140C2660E793}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
