@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Problem 3: LinkedIn</title>
+</head>
+
+<body>    
+    <header>
+        <h1>Header</h1>
+    </header>
+    
+    <nav role="navigation">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">What is LinkedIn</a>
+            </li>
+            <li>
+                <a href="#">Join today</a>
+            </li>
+            <li>
+                <a href="#">Sign In</a>
+            </li>
+        </ul>
+        
+         <form action="/" method="POST">
+            <fieldset role="login">
+                <label for="f_email">Email:</label>
+                <input type="text" name="f_email" id="f_email" />
+                
+                <label for="f_password">Password:</label>
+                <input type="text" name="f_password" id="f_password" />
+            </fieldset>
+        </form>
+    </nav>
+       
+    <main role="main">
+        <h2>Over 100 million professionals use LinkedIn to exchange information, ideas and opportunities.</h2>
+        <p>Short description of the main seciont.</p>
+         
+        <section>
+            <h2>Information</h2>
+            <ul>
+                <li>Stay informed about your contacts.</li>
+                <li>Find the people and knowledge you need to achieve your goals.</li>
+                <li>Control your professional identity online.</li>
+            </ul>
+        </section>                
+    </main>
+    
+    <aside role="complementary">
+        <h2>Join LinkedIn Today</h2>
+        <form action="/join" method="POST">
+            <fieldset role="register">
+                 <ul>
+                    <li>
+                        <label for="f_reg_first_name">First Name:</label>
+                        <input type="text" name="f_reg_first_name" id="f_reg_first_name" />
+                    </li>
+                    <li>
+                        <label for="f_reg_last_name">Last Name:</label>
+                        <input type="text" name="f_reg_last_name" id="f_reg_last_name" />
+                    </li>
+                    <li>
+                        <label for="f_reg_email">Email:</label>
+                        <input type="text" name="f_reg_email" id="f_reg_email" />
+                    </li>
+                    <li>
+                         <label for="f_reg_password">Password:</label>
+                        <input type="text" name="f_reg_password" id="f_reg_password" />
+                    </li>
+                </ul>    
+                
+                <p>
+                    <button type="submit">Send me</button>
+                </p>   
+                <p>
+                    Already on LinkedIn ?
+                    <a href="#">Sign In</a>                                            
+                </p>                                        
+            </fieldset>
+        </form>
+    </aside>    
+    
+    <footer>
+        <p>Footer text</p>
+    </footer>
+    
+</body>
+</html>
