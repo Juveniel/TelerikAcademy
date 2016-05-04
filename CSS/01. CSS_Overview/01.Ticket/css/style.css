@@ -1,0 +1,103 @@
+/* Base */
+
+header{
+    float: left;
+    position: relative;
+    width:100%;
+    margin-bottom: 20px;   
+}
+
+.row{
+    float: left;
+    position: relative;
+    width:100%;
+}
+.inner-row{
+    float: left;
+    position: relative;
+    width:100%;
+    margin-bottom: 12px;
+}
+.inner-row:last-child{
+    margin-bottom: 0;
+}
+
+main{
+    float: left;
+    position: relative;
+    width:100%;
+}
+
+.orange{
+    color: #d86b28 !important;
+}
+
+.grey{
+    color: #96aab5 !important;
+}
+.warning{
+    color: #ff0000;
+    font-size: 12px;
+}
+
+/* Ticket table */
+.ticket-wrapper{
+    float: left;
+    position: relative;
+    width:304px;
+    height:205px;
+    background: #595959;
+}
+.ticket-wrapper > .row{
+    margin-bottom: 12px;
+}
+
+.title{
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    text-indent: 1px;
+    line-height: 37px;
+    margin-bottom: 5px;
+}
+.data-lbl{
+    float: left;
+    position: relative;
+    width:93px;
+    margin-right: 10px;
+}
+.data-lbl label{
+    float: left;
+    position: relative;
+    width:100%;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    text-indent: 4px;
+}
+
+.data-val{
+    float: left;
+    position: relative;
+    width:201px;
+    color:#e2d895;
+    font-size: 11px;
+    
+}
+.data-val div{
+    float: left;
+    position: relative;
+    
+}
+.dot{
+    float: left;
+    position: relative;
+    width:10px;
+    height: 10px;
+    background: #71b47a;
+    border-radius:100%;
+    margin-right: 2px;
+}
