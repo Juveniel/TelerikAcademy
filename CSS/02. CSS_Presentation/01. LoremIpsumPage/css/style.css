@@ -1,0 +1,22 @@
+@font-face {
+    font-family: EdwardianScriptITC;
+    src: url('../fonts/EdwardianScriptITC.ttf');
+}
+
+article h4{
+    font-size: 22px; 
+    margin-bottom: 0;   
+}
+article {
+	width: 935px;;
+	font-family: Consolas;
+	color: #0094ff;
+}
+article h4::first-letter {
+	font-family: EdwardianScriptITC;    
+	font-size: 60px !important;
+}
+article  p{
+    margin-top:0;
+    font-size: 18px;
+}
