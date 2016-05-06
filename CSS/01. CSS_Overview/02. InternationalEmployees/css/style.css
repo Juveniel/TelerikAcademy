@@ -23,11 +23,73 @@ main{
     position: static;
     width: 456px;
     height: 133px;
+    border-collapse: collapse;
+    border-bottom: 1px solid #ceccb3;
 }
-#emp-list tr:nth-child(odd){
+#emp-list tr:nth-child(even){
     background: #ececd8;
 }
 #emp-list thead th{
     border-bottom: 1px solid #407f29;
     color:#fff;
+    height: 20px;
+    text-align: left;
+    font-size: 12px;
+    text-indent: 6px;
+    font-weight: normal;
+    border-right: 1px solid #ceccb3;
+    background: -webkit-linear-gradient(top, rgb(94, 195, 6) 0%, rgb(71, 168, 3) 100%);
+    background: -o-linear-gradient(top, rgb(94, 195, 6) 0%, rgb(71, 168, 3) 100%);
+    background: -ms-linear-gradient(top, rgb(94, 195, 6) 0%, rgb(71, 168, 3) 100%);
+    background: -moz-linear-gradient(top, rgb(94, 195, 6) 0%, rgb(71, 168, 3) 100%);
+    background: linear-gradient(to bottom, rgb(94, 195, 6) 0%, rgb(71, 168, 3) 100%);
+}
+
+#emp-list tbody td{
+    font-size: 12px;
+    text-indent: 5px;
+    border-right: 1px solid #ceccb3;
+}
+#emp-list tbody td:last-child{
+    border-right: 1px solid transparent;
+}
+#emp-list .name{
+    width:136px;
+}
+#emp-list .city{
+    width:106px;
+}
+#emp-list .country{
+    width:123px;
+}
+#emp-list .country span{
+    bottom: 3px;
+    position: relative;
+}
+#emp-list tbody .flag{
+    margin-right: 4px;
+}
+#emp-list input[type="checkbox"]{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    -webkit-appearance: none;
+    outline: 0;
+    margin-left: 5px;
+    display: none
+
+}
+#emp-list .styled-checkbox{
+    width: 13px;
+    height: 13px;
+    position: relative;
+    float: left;
+    margin-left: 10px;   
+}
+
+input[type=checkbox] +  label {
+   background-image: url('../img/checkbox.png');
+}
+input[type="checkbox"]:checked + label{
+    background:url('../img/checkbox_checked.png') no-repeat;
 }
