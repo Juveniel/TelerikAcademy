@@ -1,0 +1,33 @@
+/* Base */
+
+header{
+    float: left;
+    position: relative;
+    width:100%; 
+}
+
+main{
+    float: left;
+    position: relative;
+    width:100%;
+}
+
+/* Employees table  */
+.employees{
+     float: left;
+    position: relative;
+    width:100%;
+}
+#emp-list{
+    float: left;
+    position: static;
+    width: 456px;
+    height: 133px;
+}
+#emp-list tr:nth-child(odd){
+    background: #ececd8;
+}
+#emp-list thead th{
+    border-bottom: 1px solid #407f29;
+    color:#fff;
+}
