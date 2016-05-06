@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Money", "01. Money\01. Money.csproj", "{C38E1696-EC0A-48B4-A9F5-772DDA0B17D5}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Cube3D", "03. Cube3D\03. Cube3D.csproj", "{465C7190-2DA1-4B70-BB8E-50FD23DC85E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. Maslan", "04. Maslan\04. Maslan.csproj", "{4FF2B7D6-FC39-4891-B445-3F0264BA3447}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. SequenceOfBits", "05. SequenceOfBits\05. SequenceOfBits.csproj", "{E9C2B004-DAE9-43EE-8952-C6F52DD035EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{4FF2B7D6-FC39-4891-B445-3F0264BA3447}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FF2B7D6-FC39-4891-B445-3F0264BA3447}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FF2B7D6-FC39-4891-B445-3F0264BA3447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9C2B004-DAE9-43EE-8952-C6F52DD035EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9C2B004-DAE9-43EE-8952-C6F52DD035EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9C2B004-DAE9-43EE-8952-C6F52DD035EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9C2B004-DAE9-43EE-8952-C6F52DD035EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
