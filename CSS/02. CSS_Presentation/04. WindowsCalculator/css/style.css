@@ -1,0 +1,275 @@
+/* Base */
+body{
+    font-family: Segoe UI;
+}
+
+main{
+    float: left;
+    position: relative;
+    padding:6px;
+}
+
+
+/*  Calculator header */
+#calculator{
+    float: left;
+    position: relative;
+    width:450px;
+    height:432px;    
+    padding: 6px;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(top, rgb(223, 238, 252) 0%, rgb(184, 213, 243) 97%);
+    background: -o-linear-gradient(top, rgb(223, 238, 252) 0%, rgb(184, 213, 243) 97%);
+    background: -ms-linear-gradient(top, rgb(223, 238, 252) 0%, rgb(184, 213, 243) 97%);
+    background: -moz-linear-gradient(top, rgb(223, 238, 252) 0%, rgb(184, 213, 243) 97%);
+    background: linear-gradient(to bottom, rgb(223, 238, 252) 0%, rgb(184, 213, 243) 97%);
+}
+#calculator header{
+    float: left;
+    position: relative;
+    width:100%;
+    height: 29px;
+}
+#calculator header img{
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    top: 5px;
+}
+#calculator header h4{
+    float: left;
+    position: relative;
+    margin: 0 0 0 7px;
+    padding: 0;
+    top: 2px;
+    font-size: 13px;
+    font-weight: normal;
+    color:#110020;
+}
+
+/* Calculator buttons wrapper */
+#calculator .wrapper{
+    float: left;
+    position: relative;
+    width: 433px;
+    border: 1px solid #969ea7;
+    height: 391px;
+}
+#calculator .wrapper .top{
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 19px;
+    border-bottom: 2px solid #c1c5d1;
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(217, 223, 240) 63%, rgb(207, 213, 229) 100%);
+    background: -o-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(217, 223, 240) 63%, rgb(207, 213, 229) 100%);
+    background: -ms-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(217, 223, 240) 63%, rgb(207, 213, 229) 100%);
+    background: -moz-linear-gradient(top, rgb(255, 255, 255) 0%, rgb(217, 223, 240) 63%, rgb(207, 213, 229) 100%);
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(217, 223, 240) 63%, rgb(207, 213, 229) 100%);
+    
+}
+#calculator .wrapper .top li{
+    float: left;
+    position: relative;
+    width: auto;
+    margin-left: 8px;
+    height: 15px;
+    line-height: 15px;
+    margin-right: 7px;
+}
+
+#calculator .wrapper .top li a{
+    font-size: 13px;
+    color:#110020;
+    text-decoration: none;
+}
+#calculator .wrapper .top li::first-letter{
+    text-decoration: underline !important;
+}
+
+#calculator .buttons-wrapper{
+   float: left;
+    position: relative;
+    width: 409px;
+    height: 345px;
+    padding: 12px 12px 12px;
+    background: #d9e4f1;
+}
+#calculator .buttons-wrapper > input{
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    position: relative;
+    font-family: Consolas;
+    width: 100%;
+    height: 55px;
+    font-size: 26px;
+    border: 1px solid #8E9CAD;
+    border-radius: 2px;
+    background: #edf3fc;
+    background: -moz-linear-gradient(top, #edf3fc 0%, #ffffff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #edf3fc), color-stop(100%, #ffffff));
+    background: -webkit-linear-gradient(top, #edf3fc 0%, #ffffff 100%);
+    background: -o-linear-gradient(top, #edf3fc 0%, #ffffff 100%);
+    background: -ms-linear-gradient(top, #edf3fc 0%, #ffffff 100%);
+    background: linear-gradient(to bottom, #edf3fc 0%, #ffffff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edf3fc', endColorstr='#ffffff', GradientType=0);
+}
+#calculator .bin-row{
+    float: left;
+    position: relative;
+    width: 400px;
+    margin-top: 5px;
+    height: 63px;
+    padding-left: 9px;
+    padding-top: 3px;
+    border: 1px solid #8E9CAD;
+}
+#calculator .bin-row ul{
+    float: left;
+    position: relative;
+    width:50px;
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+#calculator .bin-row ul li{
+    font-family: consolas;
+    font-size: 14px;
+    height: 14px;
+}
+
+#calculator .calcButtons {
+    vertical-align: top;
+    width: 100%;
+    height: 200px;
+    float: left;
+    position: relative;
+    margin-top: 5px;
+}
+#calculator .calcButtons .numsRow {
+  float: left;
+  color: #1E395B;
+  width: 18.5%;
+  height: 50%;
+}
+#calculator .calcButtons .numsRow ul {
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+#calculator .calcButtons .numsRow ul li {
+    margin: -1px;
+    top: 8px;
+    position: relative;
+    left: 3px;
+}
+#calculator .calcButtons .numsRow ul li input {
+ height: 15px;
+ width: 15px;
+ 
+}
+#calculator .calcButtons .numsRow div {
+    border: 1px solid #8E9CAD;
+    padding-left: 5px;
+    margin-right: 10%;
+    width: 94%;
+    height: 99px;
+}
+#calculator .calcButtons .numsRow div:last-child {
+    margin-top: 8%;
+}
+#calculator .calcButtons .numsRow label {
+    font-size: 11px;
+    top: -4px;
+    position: relative;
+    left: -1px;
+}
+#calculator .calcButtons .numsRow input {
+  width: 10px;
+  height: 5px;
+}
+#calculator .calcButtons .buttonRow {
+    vertical-align: top;
+    display: inline-block;
+    height: 209px;
+    width: 7.5%;
+    margin-left: 1.7%;
+}
+#calculator .calcButtons .buttonRow button {
+  color: #1E395B;
+  margin-top: 10%;
+  display: block;
+  width: 116%;
+  height: 15%;
+  background-color: #e1eaf5;
+  border: 1px solid #8E9CAD;
+  border-radius: 2px;
+}
+#calculator .calcButtons .buttonRow .ZeroBigger {
+  width: 242%;
+}
+#calculator .calcButtons .buttonRow .equalCase {
+  height: 31.5%;
+}
+#calculator .calcButtons #lastCol {
+  vertical-align: top;
+}
+#calculator .calcButtons #lastCol:after {
+  clear: both;
+}
+/* button styles */
+.normal {
+  font-size: 11px;
+  box-shadow: 0 0 1px 1px white inset;
+  background: #f5fcff;
+  background: -moz-linear-gradient(top, #f5fcff 0%, #d5e0ee 94%, #f5fcff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f5fcff), color-stop(94%, #d5e0ee), color-stop(100%, #f5fcff));
+  background: -webkit-linear-gradient(top, #f5fcff 0%, #d5e0ee 94%, #f5fcff 100%);
+  background: -o-linear-gradient(top, #f5fcff 0%, #d5e0ee 94%, #f5fcff 100%);
+  background: -ms-linear-gradient(top, #f5fcff 0%, #d5e0ee 94%, #f5fcff 100%);
+  background: linear-gradient(to bottom, #f5fcff 0%, #d5e0ee 94%, #f5fcff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5fcff', endColorstr='#f5fcff', GradientType=0);
+}
+.special {
+  font-size: 11px;
+  box-shadow: 0 0 1px 1px white inset;
+}
+.numButtons {
+  font-size: 16px;
+  box-shadow: 0 0 1px 1px white inset;
+  background: #f7fbff;
+  background: -moz-linear-gradient(top, #f7fbff 0%, #f0f9fd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7fbff), color-stop(100%, #f0f9fd));
+  background: -webkit-linear-gradient(top, #f7fbff 0%, #f0f9fd 100%);
+  background: -o-linear-gradient(top, #f7fbff 0%, #f0f9fd 100%);
+  background: -ms-linear-gradient(top, #f7fbff 0%, #f0f9fd 100%);
+  background: linear-gradient(to bottom, #f7fbff 0%, #f0f9fd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7fbff', endColorstr='#f0f9fd', GradientType=0);
+}
+.special:hover {
+  border: 1px solid #FFDB00 !important;
+  background: #ffce68;
+  background: -moz-linear-gradient(top, #ffce68 0%, #fffff0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffce68), color-stop(100%, #fffff0));
+  background: -webkit-linear-gradient(top, #ffce68 0%, #fffff0 100%);
+  background: -o-linear-gradient(top, #ffce68 0%, #fffff0 100%);
+  background: -ms-linear-gradient(top, #ffce68 0%, #fffff0 100%);
+  background: linear-gradient(to bottom, #ffce68 0%, #fffff0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffce68', endColorstr='#fffff0', GradientType=0);
+}
+.normal:hover,
+.numButtons:hover {
+  border: 1px solid #FFDB00 !important;
+  background: #fffbf6;
+  background: -moz-linear-gradient(top, #fffbf6 0%, #ffcf6a 50%, #fffff0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fffbf6), color-stop(50%, #ffcf6a), color-stop(100%, #fffff0));
+  background: -webkit-linear-gradient(top, #fffbf6 0%, #ffcf6a 50%, #fffff0 100%);
+  background: -o-linear-gradient(top, #fffbf6 0%, #ffcf6a 50%, #fffff0 100%);
+  background: -ms-linear-gradient(top, #fffbf6 0%, #ffcf6a 50%, #fffff0 100%);
+  background: linear-gradient(to bottom, #fffbf6 0%, #ffcf6a 50%, #fffff0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffbf6', endColorstr='#fffff0', GradientType=0);
+}
