@@ -12,10 +12,10 @@ namespace _08.ShortToBinary
         {
             short numToConvert = short.Parse(Console.ReadLine());
 
-            Console.WriteLine(ShortToBinary(numToConvert));
+            Console.WriteLine(ConvertShortToBinary(numToConvert));
         }
 
-        private static string ShortToBinary(short number)
+        private static string ConvertShortToBinary(short number)
         {
             if (number == 0)
                 return new String('0', 16);
