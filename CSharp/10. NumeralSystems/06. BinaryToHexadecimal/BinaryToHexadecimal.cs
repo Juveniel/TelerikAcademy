@@ -32,7 +32,7 @@ namespace _06.BinaryToHexadecimal
                 result.AppendFormat("{0:X2}", Convert.ToByte(halfByte, 2));
             }
 
-            return result.ToString();
+            return result.ToString().TrimStart('0');
         }
     }
 }

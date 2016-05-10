@@ -10,16 +10,16 @@ namespace _01.DecimalToBinary
     {
         static void Main(string[] args)
         {
-            int input = int.Parse(Console.ReadLine());
+            long input = long.Parse(Console.ReadLine());
 
             var binaryRep = ConvertDecimalToBinary(input);
 
             PrintResult(binaryRep);
         }
 
-        static List<int> ConvertDecimalToBinary(int input)
+        static List<long> ConvertDecimalToBinary(long input)
         {
-            var binaryRep = new List<int>();
+            var binaryRep = new List<long>();
             while (input > 0)
             {
                 if (input == 0)
@@ -35,7 +35,7 @@ namespace _01.DecimalToBinary
             return binaryRep;
         }
 
-        static void PrintResult(List<int> binary)
+        static void PrintResult(List<long> binary)
         {
             for (int i = 0; i < binary.Count; i++)
             {

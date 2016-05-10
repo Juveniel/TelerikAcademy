@@ -12,16 +12,16 @@ namespace _07.OneSystemToOther
         static void Main(string[] args)
         {
             string numToConvert = Console.ReadLine();
-            uint fromBase = uint.Parse(Console.ReadLine());
-            uint to = uint.Parse(Console.ReadLine());
+            long fromBase = long.Parse(Console.ReadLine().TrimStart('0'));
+            long to = long.Parse(Console.ReadLine());
 
             string convertedNum = Convert(numToConvert, fromBase, to);
             Console.WriteLine(convertedNum);
         }
 
-        private static string Convert(string numberToConvert, uint from, uint to)
+        private static string Convert(string numberToConvert, long from, long to)
         {
-            uint number = NToDecimal(numberToConvert, from);
+            long number = NToDecimal(numberToConvert, from);
 
             if (number == 0)
                 return number.ToString();
@@ -29,10 +29,10 @@ namespace _07.OneSystemToOther
             return DecimalToN(to, number);
         }
 
-        private static string DecimalToN(uint to, uint number)
+        private static string DecimalToN(long to, long number)
         {
             StringBuilder result = new StringBuilder();
-            uint remainder;
+            long remainder;
             char currentLetter;
             while (number > 0)
             {
@@ -50,9 +50,9 @@ namespace _07.OneSystemToOther
             return result.ToString();
         }
 
-        private static uint NToDecimal(string numberToConvert, uint from)
+        private static long NToDecimal(string numberToConvert, long from)
         {
-            uint number = 0;
+            long number = 0;
             byte currentValue;
             numberToConvert = numberToConvert.ToUpper();
 

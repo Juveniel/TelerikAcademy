@@ -12,14 +12,14 @@ namespace _02.BinaryToDecimal
         {
             string binaryNum = Console.ReadLine();
 
-            int decimalRep = ConvertBinaryToDecimal(binaryNum);
+            long decimalRep = ConvertBinaryToDecimal(binaryNum);
 
             Console.WriteLine(decimalRep);
         }
 
-        static int ConvertBinaryToDecimal(string num)
+        static long ConvertBinaryToDecimal(string num)
         {
-            int decimalRep = 0;
+            long decimalRep = 0;
             for (int i = 0; i < num.Length; i++)
             {
                 decimalRep = decimalRep << 1;
