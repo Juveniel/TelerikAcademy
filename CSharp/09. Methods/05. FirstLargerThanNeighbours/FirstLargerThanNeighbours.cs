@@ -45,6 +45,7 @@ namespace _05.FirstLargerThanNeighbours
         static void PrintFirstFound(int[] arr)
         {
             bool foundFirst = false;
+            int biggestIndex = 0;
             for (int i = 0; i < arr.Length; i++)
             {
                 bool isBigger = IsBiggerThanNeighbours(arr, i);
@@ -52,17 +53,18 @@ namespace _05.FirstLargerThanNeighbours
                 if (isBigger)
                 {
                     foundFirst = true;
+                    biggestIndex = i;
                     break;
                 }
             }
 
             if (foundFirst)
             {
-                Console.WriteLine("1");
+                Console.WriteLine(biggestIndex);
             }
             else
             {
-                Console.WriteLine("-1");
+                Console.WriteLine(-1);
             }
         }
     }

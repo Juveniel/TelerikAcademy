@@ -14,10 +14,10 @@ namespace _09.SortingArray
             int size = int.Parse(Console.ReadLine());
             int[] numbers = FillArray(size);
 
-            int[] sortedArr = SortArray(numbers, "DESC");
+            int[] sortedArr = SortArray(numbers, "ASC");
             foreach (var num in sortedArr)
             {
-                Console.Write(num);
+                Console.Write(num + " ");
             }
         }
 

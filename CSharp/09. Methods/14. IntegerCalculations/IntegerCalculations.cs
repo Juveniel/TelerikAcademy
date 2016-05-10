@@ -54,13 +54,13 @@ namespace _14.IntegerCalculations
             return max;
         }
 
-        private static decimal AverageOfSet(params int[] numArray)
+        private static double AverageOfSet(params int[] numArray)
         {
-            decimal sum = 0;
-            decimal average = 0;
+            double sum = 0;
+            double average = 0;
             for (int i = 0; i < numArray.Length; i++)
             {
-                sum = sum + decimal.Parse(numArray[i].ToString());
+                sum = sum + double.Parse(numArray[i].ToString());
             }
 
             average = sum / numArray.Length;

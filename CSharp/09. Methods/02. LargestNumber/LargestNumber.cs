@@ -12,13 +12,11 @@ namespace _02.LargestNumber
         static void Main()
         {
             int biggestNumber;
+            string[] numbers = Console.ReadLine().Split();
+       
 
-            int firstNumber = int.Parse(Console.ReadLine());
-            int secondNumber = int.Parse(Console.ReadLine());
-            int thirdNumber = int.Parse(Console.ReadLine());
-
-            biggestNumber = GetMax(firstNumber, secondNumber);
-            biggestNumber = GetMax(biggestNumber, thirdNumber);
+            biggestNumber = GetMax(int.Parse(numbers[0]), int.Parse(numbers[1]));
+            biggestNumber = GetMax(biggestNumber, int.Parse(numbers[2]));
 
             Console.WriteLine(biggestNumber);
         }
