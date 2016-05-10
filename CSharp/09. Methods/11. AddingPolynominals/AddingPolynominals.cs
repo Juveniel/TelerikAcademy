@@ -10,29 +10,29 @@ namespace _11.AddingPolynominals
     {
         static void Main(string[] args)
         {
-            short size = short.Parse(Console.ReadLine());
-            short[] firstPolynominalsArr = FillArray(size);
-            short[] secondPolynominalsArr = FillArray(size);
+            int size = int.Parse(Console.ReadLine());
+            int[] firstPolynominalsArr = FillArray(size);
+            int[] secondPolynominalsArr = FillArray(size);
 
             int[] polynominalsSum = SumOfPolynomials(firstPolynominalsArr, secondPolynominalsArr);
 
             PrintPolynominals(polynominalsSum);
         }
 
-        static short[] FillArray(short size)
+        static int[] FillArray(int size)
         {
-            short[] arrNumbers = new short[size];
+            int[] arrNumbers = new int[size];
             var line = Console.ReadLine().Split(' ');
 
             for (int i = 0; i < size; i++)
             {
-                arrNumbers[i] = short.Parse(line[i]);
+                arrNumbers[i] = int.Parse(line[i]);
             }
 
             return arrNumbers;
         }
 
-        static int[] SumOfPolynomials(short[] firstPolynomial, short[] secondPolynomial)
+        static int[] SumOfPolynomials(int[] firstPolynomial, int[] secondPolynomial)
         {
             int[] result = new int[firstPolynomial.Length];
             int minLenght = 0;

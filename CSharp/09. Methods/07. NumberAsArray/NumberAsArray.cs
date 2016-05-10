@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Numerics;
 
 namespace _07.NumberAsArray
 {
@@ -13,46 +12,62 @@ namespace _07.NumberAsArray
     {
         static void Main(string[] args)
         {
-            string[] tokens = Console.ReadLine().Split();
+            string[] tokens = Console.ReadLine().Split(' ');
             int firstArrLength = int.Parse(tokens[0]);
             int secondArrLength = int.Parse(tokens[1]);
 
-            char[] delimiter = new char[] { ',', ' ' };
-            BigInteger[] firstArr = Console.ReadLine().Split(delimiter, StringSplitOptions.RemoveEmptyEntries).Select(BigInteger.Parse).ToArray();       
-            BigInteger[] secondArr = Console.ReadLine().Split(delimiter, StringSplitOptions.RemoveEmptyEntries).Select(BigInteger.Parse).ToArray();
+            char[] delimiter = new char[] { ' ' };
+            int[] firstArr = Console.ReadLine().Split(delimiter, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
+            int[] secondArr = Console.ReadLine().Split(delimiter, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
 
-            BigInteger[] sum = SumArrays(firstArr, secondArr);
-            PrintArray(sum);
+            SumArrays(firstArr, secondArr);
         }
 
-        static BigInteger[] SumArrays(BigInteger[] firstArr, BigInteger[] secondArr)
+        static void SumArrays(int[] firstArr, int[] secondArr)
         {
-
-            int newArrLength = Math.Max(firstArr.Length, secondArr.Length);
-            BigInteger[] arr = new BigInteger[newArrLength];
-
-            int next = 0;
-            for (int i = 0, j = 0; i < arr.Length; i++, j++)
+            int neededLength = 0;
+            if (firstArr.Length > secondArr.Length)
             {
-                BigInteger sum = 0;
-                if (firstArr.Length > i) sum += firstArr[i];
-                if (secondArr.Length > i) sum += secondArr[i];
-                arr[i] = sum % 10 + next;
+                neededLength = firstArr.Length;
+            }
+            else
+            {
+                neededLength = secondArr.Length;
+            }
 
-                if (sum < 10)
+            int[] newNumber = new int[neededLength];
+            for (int i = 0; i < newNumber.Length; i++)
+            {
+                if (i < firstArr.Length)
                 {
-                    next = 0;
+                    newNumber[i] = newNumber[i] + firstArr[i];
+                    if (newNumber[i] >= 10)
+                    {
+                        newNumber[i] = newNumber[i] - 10;
+                        newNumber[i + 1] = newNumber[i + 1] + 1;
+                    }
                 }
-                else
+
+                if (i < secondArr.Length)
                 {
-                    next = 1;
+                    newNumber[i] = newNumber[i] + secondArr[i];
+                    if (newNumber[i] >= 10)
+                    {
+                        newNumber[i] = newNumber[i] - 10;
+                        newNumber[i + 1] = newNumber[i + 1] + 1;
+                    }
                 }
             }
 
-            return arr;
+            for (int i = 0; i < newNumber.Length; i++)
+            {
+                Console.Write(newNumber[i] + " ");
+            }
+
+            Console.WriteLine();
         }
 
-        static void PrintArray(BigInteger[] arr)
+        static void PrintArray(int[] arr)
         {
             for (int i = 0; i < arr.Length; i++)
             {

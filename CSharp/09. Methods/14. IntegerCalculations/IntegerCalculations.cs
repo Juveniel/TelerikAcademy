@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace _14.IntegerCalculations
 {
@@ -11,13 +12,7 @@ namespace _14.IntegerCalculations
     {
         static void Main(string[] args)
         {
-            int[] numbers = new int[5];
-            var userInput = Console.ReadLine().Split(' ');
-
-            for(int i = 0; i < numbers.Length; i++)
-            {
-                numbers[i] = int.Parse(userInput[i]);
-            }
+            int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
 
             Console.WriteLine(MinOfSet(numbers));
             Console.WriteLine(MaxOfSet(numbers));
@@ -54,13 +49,13 @@ namespace _14.IntegerCalculations
             return max;
         }
 
-        private static double AverageOfSet(params int[] numArray)
+        private static decimal AverageOfSet(params int[] numArray)
         {
-            double sum = 0;
-            double average = 0;
+            decimal sum = 0;
+            decimal average = 0;
             for (int i = 0; i < numArray.Length; i++)
             {
-                sum = sum + double.Parse(numArray[i].ToString());
+                sum = sum + decimal.Parse(numArray[i].ToString());
             }
 
             average = sum / numArray.Length;
@@ -68,9 +63,9 @@ namespace _14.IntegerCalculations
             return average;
         }
 
-        private static int SumOfSet(params int[] numArray)
+        private static long SumOfSet(params int[] numArray)
         {
-            int sum = 0;
+            long sum = 0;
             for (int i = 0; i < numArray.Length; i++)
             {
                 sum = sum + numArray[i];
@@ -79,9 +74,9 @@ namespace _14.IntegerCalculations
             return sum;
         }
 
-        private static int ProductOfSet(params int[] numArray)
+        private static long ProductOfSet(params int[] numArray)
         {
-            int product = 0;
+            long product = 1;
             for (int i = 0; i < numArray.Length; i++)
             {
                 product = product * numArray[i];
