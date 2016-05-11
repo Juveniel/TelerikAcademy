@@ -11,8 +11,8 @@ namespace _07.OneSystemToOther
     {
         static void Main(string[] args)
         {
-            string numToConvert = Console.ReadLine();
             long fromBase = long.Parse(Console.ReadLine().TrimStart('0'));
+            string numToConvert = Console.ReadLine();            
             long to = long.Parse(Console.ReadLine());
 
             string convertedNum = Convert(numToConvert, fromBase, to);
