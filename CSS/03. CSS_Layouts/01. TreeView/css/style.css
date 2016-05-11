@@ -1,0 +1,14 @@
+.list{
+    float: left;
+    position: relative;
+    list-style: none;
+}
+.list .first {
+    text-decoration: underline;
+}
+.sub-list{
+    list-style: none;
+    padding: 0 0 0 10px;
+    color: #888;    
+}
+
