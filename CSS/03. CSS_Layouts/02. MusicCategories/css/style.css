@@ -1,0 +1,86 @@
+/* base */ 
+.inner-border{
+    
+}
+
+/* Categories */
+.music-categories{
+  float: left;
+  position: relative;
+  width:421px;
+  height:538px;
+  border-radius: 7px;
+  background: #eeeeee;  
+}
+.music-categories header{
+    float: left;
+    position: relative;
+    width:100%;
+}
+.music-categories header h2{
+   font-size: 15px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 13px 0;
+    text-indent: 14px;
+}
+
+.music-categories .wrapper{
+    float: left;
+    position: relative;
+    width:401px;
+    padding: 25px 10px;
+}
+.music-categories .category-box{
+    float: left;
+    position: relative;
+    width: 362px;
+    padding: 15px 19px 12px;
+    margin-bottom: 35px;
+    border: 1px solid #999999;
+}.music-categories .category-box:last-child{
+    margin-bottom: 0;
+}
+.music-categories .category-image{
+    float: left;
+    position: relative;
+    margin-right: 15px;
+}
+.music-categories .category-description{
+    float: left;
+    position: relative;
+    width:58%;
+    font-size: 14px; 
+}
+.music-categories .category-description p{
+    margin-top: 0;
+    letter-spacing: 0.2px;
+    line-height: 14px;
+}
+
+.music-categories .category-options{
+    float: right;
+    position: relative;
+    width:40%;
+    right: -4px;
+}
+.music-categories .btn{
+    float: right;
+    top: 5px;
+    height: 26px;
+    position: relative;
+    border: none;
+}
+.btn.btn-listen{
+    width:77px;
+    margin-right: 2px;
+    background-image: url('../img/btn_listen.png');
+}
+.btn.btn-add{
+    width: 63px;
+    background-image: url('../img/add_btn.png');
+}
+/*
+.btn.btn-listen{
+    background-image: url('../img/btn_listen.png');
+}*/
