@@ -1,0 +1,65 @@
+#login-wrapper{
+    float: left;
+    position: relative;
+    width: 662px;
+    border:1px solid #806850;
+    border-radius: 10px;   
+}
+
+#login-wrapper header{
+    float: left;
+    position: relative;
+    width: 646px;
+    padding: 6px 8px;
+    
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-image: url(../img/header.png);
+}
+#login-wrapper header img{
+    float: left;
+    position: relative;
+}
+#login-wrapper header form{
+    float: left;
+    position: relative;
+    margin: 8px 0 8px 16px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+#login-wrapper header form label{
+    margin-right: 12px;
+}
+#login-wrapper header form input{
+    height: 17px;
+    top: -1px;
+    position: relative;
+    width: 144px;
+    border: 1px solid rgb(129, 157, 179);
+    margin-right: 20px;
+    text-indent: 9px;
+}
+#login-wrapper .login-btn{
+    width: 56px;
+    height: 28px;
+    border: none;
+    border-radius: 10px;
+    color: #FFF;
+    background-image: url(../img/button.png);
+}
+
+section.intro {
+    float: left;
+    position: relative;
+	color: #888;
+    padding: 5px 12px;
+	background-color: #3b3b3b;
+	border-radius: 0 0 10px 10px;
+}
+section.intro h2 {
+    font-weight: normal;
+    color: #FFE913;
+    font-size: 32px;
+    margin: 12px 0;
+}
