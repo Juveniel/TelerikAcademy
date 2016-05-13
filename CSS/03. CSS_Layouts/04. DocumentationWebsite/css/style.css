@@ -1,0 +1,160 @@
+/* base */
+body{
+    float: left;
+    position: relative;
+    height:100%;
+    margin:3px;       
+    background: #f1f1f1;
+    border:1px solid #010101;
+}
+nav{
+    float: left;
+    position: relative;
+    width:17%;
+    padding:0.5%;
+    /* border:1px solid purple;*/
+}
+aside{
+    float: left;
+    position: relative;
+    width:17%;
+    margin: 0.25% 0.5%;
+    /*  border:1px solid orange;*/
+}
+main{
+    float: left;
+    position: relative;
+    width:64%;
+    top:3px;
+    padding: 5px 5px 35px 5px;
+    box-sizing: border-box;
+    background:#ffffff;
+    border-top:2px solid #818181;
+    border-bottom: 2px solid #a7a7a7;
+    border-left: 3px ridge #a2a2a2;
+    border-right: 3px groove #a5a5a5;
+    
+}
+
+.btn-default{
+    width: 150px;
+    height: 25px;
+    background: transparent;
+    border: 1px solid black;
+    line-height: 25px;
+    cursor: pointer;
+}
+.btn-default i{
+    float: left;
+    height: 25px;
+    line-height: 25px;
+}
+.btn-default.right i{
+    float: right;
+}
+.bold{
+    font-weight: bold;
+}
+
+/* Navigation */
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.nav-home{
+    margin: 17px 0px;
+}
+.nav-home a{
+    font-weight: bold;
+}
+.nav-section{
+    margin-bottom: 17px;
+}
+.nav-section > label{
+    color:#931210;
+    font-weight: bold;
+}
+
+main a,
+aside a{
+    color:#8c0300;
+}
+
+.border{
+    width:100%;
+    float: left;
+    background-image: url('../img/border-grey.png');
+    background-repeat: x;
+    height: 3px;
+    margin:10px 0;
+}
+   
+/* Body */
+.page-section {
+    float: left;
+    position: relative;
+    width:100%;
+    padding-bottom: 20px;
+}
+.page-section .content{
+    float: left;
+    margin: 10px 0px 30px;
+}
+.page-section h2{
+    height:20px;
+    line-height: 22px;
+    margin:0;
+    background:#808080;
+    text-indent: 5px;
+    color:#fff;
+    font-size: 16px;
+}
+.page-section.with-image .image{
+    float: left;
+    position: relative;
+    margin-right: 5%;
+}
+.page-section.with-image .text{
+    float: left;
+    position: relative;
+    width: 83%;
+}
+
+
+/* aside */
+.side-section{
+    float: left;
+    margin-bottom: 5px;
+}
+.side-section > label{
+    height: 20px;
+    line-height: 22px;
+    margin: 0;
+    background: #808080;
+    text-indent: 5px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    float: left;
+    font-weight: bold;
+}
+.side-section ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.side-section ul li{
+    border:1px solid #808080;
+    margin-bottom: 3px;
+}
+.side-section .search-wrap{
+    float: left;
+    position: relative;
+    margin: 10px 7px;
+}
