@@ -150,11 +150,43 @@ aside a{
     padding:0;
 }
 .side-section ul li{
-    border:1px solid #808080;
+    border: 1px solid #808080;
     margin-bottom: 3px;
+    float: left;
+    position: relative;
+    width: 99%;
+    padding: 7px 0;
+    text-align: center;
 }
 .side-section .search-wrap{
     float: left;
     position: relative;
     margin: 10px 7px;
+}
+
+.site-search{
+    float: left;
+    position: relative;
+    width:99%;
+}
+.button-gen{
+    float: left;
+    position: relative;
+    width:99%;
+    text-align: center;
+}
+.button-gen img{
+    margin-top:3px;
+}
+.site-search a,
+.button-gen a{
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.side-section li a{
+    width:100%;
+    text-align: center;
 }

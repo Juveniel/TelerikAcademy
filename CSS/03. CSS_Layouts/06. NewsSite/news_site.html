@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>News Site</title>
+    <meta charset="utf-8" />		
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>	
+    
+    <!-- JS -->
+    <script type="text/javascript" src="js/main.js"></script>	        
+</head>
+
+<body>    
+    <nav role="navigation">
+        <ul class="tab">
+            <li>
+                <a href="#" class="tablinks active" onclick="openNavigationTab(event, 'news')">Новини</a>
+            </li>
+            <li>
+                <a href="#" class="tablinks" onclick="openNavigationTab(event, 'sport')">Спорт</a>
+            </li>
+            <li>
+                <a href="#" class="tablinks" onclick="openNavigationTab(event, 'emissions')">Емисиии</a>
+            </li>
+            <li>
+                <a href="#" class="tablinks" onclick="openNavigationTab(event, 'curiosities')">Любопитно</a>
+            </li>
+            <li>
+                <a href="#" class="tablinks" onclick="openNavigationTab(event, 'i-reporter')">Аз репортерът</a>
+            </li>
+            <li>
+                <a href="#" class="tablinks" onclick="openNavigationTab(event, 'this-morning')">Тази сутрин</a>
+            </li>         
+        </ul>
+    </nav>
+     
+    <main role="main">
+        <section id="news" class="tabcontent">
+            <div class="wrapper">
+                <div class="news left-aligned">
+                    <ul class="content-nav">
+                        <li class="active">
+                            <a href="#">Интернет новини - 13.07.2010г.</a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Проливни дъждове в Дания, Китай и Индия,
+                                необичайни горещини в  Иран
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Интернет новини - 13.07.2010г.</a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Проливни дъждове в Дания, Китай и Индия,
+                                необичайни горещини в  Иран
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="video right-aligned">
+                    <video width="340" height="240"  poster="img/video_cover_fallback.png">
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">                        
+                        Your browser does not support the video tag.
+                    </video> 
+                </div>
+            </div>
+        </section>
+        
+        <section id="sport" class="tabcontent">
+            <div class="wrapper">
+                <div class="news left-aligned">
+                    <ul class="content-nav">
+                        <li class="active">
+                            <a href="#">Спортни новини - 13.07.2010г.</a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Спортни новини от последния час
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Спортни новини - 13.07.2010г.</a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Спортни събития в Дания, Китай и Индия,
+                                необичайни постижения в  Иран
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="video right-aligned">
+                    <video width="340" height="240"  poster="img/video_cover_fallback.png">
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video> 
+                </div>
+            </div>
+        </section>
+        
+        <section id="emissions" class="tabcontent">
+             <div class="wrapper">
+                <div class="news left-aligned">
+                    <ul class="content-nav">
+                        <li class="active">
+                            <a href="#">Емисии ала бала</a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Емисии текст емисии текст емисии текст
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Емисии ала бала - 13.07.2010г.</a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Емисии текст емисии текст емисии текст
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="video right-aligned">
+                    <video width="340" height="240"  poster="img/video_cover_fallback.png">
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video> 
+                </div>
+            </div>
+        </section>
+        
+        <section id="curiosities" class="tabcontent">
+            <div class="wrapper">
+                <div class="news left-aligned">
+                    <ul class="content-nav">
+                        <li class="active">
+                            <a href="#">Любопитни факти</a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Любопитни факти от цял свят ала бала
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Любопитни факти- 13.07.2010г.</a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Любопитни факти от цял свят ала бала
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="video right-aligned">
+                    <video width="340" height="240"  poster="img/video_cover_fallback.png">
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video> 
+                </div>
+            </div>
+        </section>
+        
+        <section id="i-reporter" class="tabcontent">
+             <div class="wrapper">
+                <div class="news left-aligned">
+                    <ul class="content-nav">
+                        <li class="active">
+                            <a href="#">Рубрика "Аз - репортерът"</a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Рубрика "Аз - репортерът"
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Рубрика "Аз - репортерът"- 13.07.2010г.</a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Рубрика "Аз - репортерът" от цял свят ала бала
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="video right-aligned">
+                    <video width="340" height="240"  poster="img/video_cover_fallback.png">
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the html5 video tag.
+                    </video> 
+                </div>
+            </div>
+        </section>
+        
+        <section id="this-morning" class="tabcontent">
+            <div class="wrapper">
+                <div class="news left-aligned">
+                    <ul class="content-nav">
+                        <li class="active">
+                            <a href="#">Рубрика "Тази сутрин"</a>
+                        </li>
+                         <li>
+                            <a href="#">
+                               Рубрика "Тази сутрин"
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Рубрика "Тази сутрин"- 13.07.2010г.</a>
+                        </li>
+                         <li>
+                            <a href="#">
+                                Рубрика "Тази сутрин" от цял свят ала бала
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="video right-aligned">
+                    <video width="340" height="240" poster="img/video_cover_fallback.png">
+                        <source src="movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video> 
+                </div>
+            </div>
+        </section>
+    </main>        
+</body>
+</html>
