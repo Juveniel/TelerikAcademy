@@ -10,8 +10,8 @@ namespace _04.SubstringInText
     {
         static void Main(string[] args)
         {
-            string text = Console.ReadLine();
             string wordToFind = Console.ReadLine();
+            string text = Console.ReadLine();         
 
             Console.WriteLine(CountAppearanceInText(text, wordToFind));
         }

@@ -57,7 +57,7 @@ namespace _12.ParseUrl
             }
 
             //resource
-            urlData.Add("resource", url.Substring(startIndex + 1));
+            urlData.Add("resource", url.Substring(startIndex));
 
             return urlData;
         }

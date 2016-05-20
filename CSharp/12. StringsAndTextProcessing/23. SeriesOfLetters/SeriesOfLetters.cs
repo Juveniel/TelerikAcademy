@@ -7,7 +7,7 @@ namespace _23.SeriesOfLetters
     /// Write a program that reads a string from the console and replaces
     /// all series of consecutive identical letters with a single one.
     /// </summary>
-    class SeriesOfLetters
+    class SeriesOfLetterss
     {
         static void Main(string[] args)
         {
