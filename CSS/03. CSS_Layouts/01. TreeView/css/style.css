@@ -3,12 +3,20 @@
     position: relative;
     list-style: none;
 }
+.list li{
+    cursor: pointer;
+}
 .list .first {
     text-decoration: underline;
 }
+.list li:first-child:hover .sub-list{
+    display: block;
+}
 .sub-list{
+    display: none;
     list-style: none;
     padding: 0 0 0 10px;
-    color: #888;    
+    color: #888;  
+    transition: all 0.5s ease;  
 }
 
