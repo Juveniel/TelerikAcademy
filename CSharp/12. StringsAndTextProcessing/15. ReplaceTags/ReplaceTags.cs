@@ -16,8 +16,8 @@ namespace _15.ReplaceTags
         {
             string result = String.Empty;
 
-            var regEx = new Regex("<a (.*?)>(.*?)</a>");
-            result = regEx.Replace(text, m => "[url]" + m.Groups[2].Value + "[/url]");
+            var regEx = new Regex("<a href=\"(.*?)\">(.*?)</a>");
+            result = regEx.Replace(text, m => "[" + m.Groups[2].Value + "]" + "(" + m.Groups[1].Value + ")");
 
             return result;
         }

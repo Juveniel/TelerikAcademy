@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Text;
-using System.Collections.Generic;
 
 namespace _02.DecatCoding
 {
@@ -10,17 +9,7 @@ namespace _02.DecatCoding
         {
             string[] words = Console.ReadLine().Split(' ');
 
-
-
-            StringBuilder sb = new StringBuilder();
-            for(int i = 0; i < words.Length; i++)
-            {
-                string currentWord = words[i];
-
-                // sb.Append(ConvertWordToBase26(currentWord));
-                Console.WriteLine(ConvertWordToBase26(currentWord));
-            }
-           // Console.WriteLine(sb.ToString());
+            PrintDecodedWords(words);
         }
 
         private static int ConvertCharToInt(char letter)
@@ -33,30 +22,51 @@ namespace _02.DecatCoding
             return Convert.ToChar(num);
         }
 
+        public static long PowerOf21(int digit, int power)
+        {
+            long result = 1;
+
+            for (int i = 0; i < power; i++)
+            {
+                result *= 21;
+            }
+
+            return result;
+        }
+
         private static string ConvertWordToBase26(string word)
         {  
             StringBuilder sb = new StringBuilder();
-            int base21 = 0;
+            long base21 = 0;
 
             for(int i = 0; i < word.Length; i++)
             {
-                char currentLetter = word[i];
-                int currentLEtterIdx = ConvertCharToInt(currentLetter);
-                int power = word.Length - i - 1;
-                double based = Math.Pow(21D, power);
-   
-                //Console.WriteLine(currentLetter + " " + currentLEtterIdx + " " + based + " " + (based ));
-                base21 += currentLEtterIdx * (int)based;
+                int digit = word[word.Length - 1 - i] - 'a';
+                long poweredDigit = PowerOf21(digit, i) * digit;
+
+                base21 += poweredDigit;
             }
-
-            for (int j = 0; j < word.Length; j++)
+        
+            while(base21 > 0)
             {
-                Console.WriteLine((base21 % 26)); 
+                char symbolToAppend = (char)(base21 % 26 + 'a');
+                base21 /= 26;
 
-                base21 %= 26;
+                sb.Insert(0, symbolToAppend);
             }
 
             return sb.ToString();
+        }
+
+        private static void PrintDecodedWords(string[] words)
+        {
+            StringBuilder decodedSentence = new StringBuilder();
+            for (int i = 0; i < words.Length; i++)
+            {
+                decodedSentence.Append(ConvertWordToBase26(words[i])).Append(" ");              
+            }
+
+            Console.WriteLine(decodedSentence.ToString());
         }
     }
 }

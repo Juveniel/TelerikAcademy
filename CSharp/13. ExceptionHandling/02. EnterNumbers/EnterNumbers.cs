@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace _02.EnterNumbers
 {
@@ -8,45 +11,73 @@ namespace _02.EnterNumbers
     /// </summary>
     class EnterNumbers
     {
+        static List<int> numbers = new List<int>();
+        static string exceptionMessage = "Exception";
+
         static void Main()
         {
-            int min = 1;
+            int min = 0;
             int max = 100;
+
             try
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    Console.WriteLine("Enter a number in the range of [ {0} , {1} ]", min, max);
-                    max = ReadNumber(min, max);
+                    numbers.Add(ReadNumber(min, max));
                 }
 
-            }
-            catch (FormatException fe)
+                if (!CheckNumbersAscending())
+                {
+                    throw new Exception(exceptionMessage);
+                }
+
+                PrintResult();
+            }    
+            catch (Exception)
             {
-                Console.WriteLine(fe.Message);
-            }
-            catch (ArgumentOutOfRangeException oe)
-            {
-                Console.WriteLine(oe.Message);
-            }
-            catch (ArgumentException argEx)
-            {
-                Console.WriteLine(argEx.Message);
-            }           
+                Console.WriteLine(exceptionMessage);
+            }                        
         }
 
         private static int ReadNumber(int start, int end)
         {
             if (start > end)
             {
-                throw new ArgumentException("Start is bigger than end!");
+                throw new ArgumentException(exceptionMessage);
             }
             int firstNumber = int.Parse(Console.ReadLine());
-            if (firstNumber > end || firstNumber < start)
+            if (firstNumber >= 100 || firstNumber <= 1)
             {
-                throw new ArgumentOutOfRangeException();
+                throw new ArgumentOutOfRangeException(exceptionMessage);
             }
+
             return firstNumber;
+        }
+
+        private static bool CheckNumbersAscending()
+        {
+            bool numbersAscending = true;
+
+            for (int i = 0; i < numbers.Count - 1; i++)
+            {
+                if (numbers[i] > numbers[i + 1])
+                {
+                    numbersAscending = false;
+                    break;
+                }
+            }
+
+            return numbersAscending;
+        }
+
+        private static void PrintResult()
+        {
+            var output = new StringBuilder();      
+            output.Append("1 < ");
+            output.Append(string.Join(" < ", numbers.Select(n => n.ToString()).ToArray()));
+            output.Append(" < 100");
+
+            Console.WriteLine(output.ToString());            
         }
     }
 }

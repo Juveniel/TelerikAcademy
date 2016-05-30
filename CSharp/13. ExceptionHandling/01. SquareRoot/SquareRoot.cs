@@ -11,24 +11,32 @@ namespace _01.SquareRoot
         {
             try
             {
-                int num = int.Parse(Console.ReadLine());
+                double num = double.Parse(Console.ReadLine());
                 if (num < 0)
                 {
-                    throw new FormatException();
+                    throw new FormatException("Invalid number");
                 }
-                Console.WriteLine(Math.Sqrt(num));
+                Console.WriteLine("{0:F3}", Math.Sqrt(num));
             }
-            catch (FormatException fe)
+            catch (ArgumentNullException)
             {
-                Console.WriteLine("Invalid number: {0}", fe.Message);
+                Console.WriteLine("Argument was null!");
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Invalid number");
             }
             catch (OverflowException)
             {
                 Console.WriteLine("Number was too large or too small!");
             }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception");
+            }
             finally
             {
-                Console.WriteLine("Good bye!");
+                Console.WriteLine("Good bye");
             }
         }
     }

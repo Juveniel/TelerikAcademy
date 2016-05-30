@@ -13,7 +13,8 @@ namespace _06.StringLength
         static void Main(string[] args)
         {          
             string input = Console.ReadLine();
-            
+            input = input.Replace(@"\", string.Empty);
+
             if (input.Length < 20)
             {
                 StringBuilder sb = new StringBuilder();

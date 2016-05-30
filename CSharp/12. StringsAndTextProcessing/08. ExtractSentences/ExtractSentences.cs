@@ -25,7 +25,7 @@ namespace _08.ExtractSentences
 
             for(int i = 0; i < sentences.Length; i++)
             {
-                var pattern = "\\b" + word + "\\b";
+                var pattern = "\\b" + word.Trim() + "\\b";
 
                 if (Regex.IsMatch(sentences[i], pattern, RegexOptions.IgnoreCase))
                 {

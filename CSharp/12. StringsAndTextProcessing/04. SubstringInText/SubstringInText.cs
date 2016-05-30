@@ -19,15 +19,14 @@ namespace _04.SubstringInText
         static int CountAppearanceInText(string text, string wordToFind)
         {
             int appearanceCounter = 0;
-            int startingIndex = 0;       
-
-            while((startingIndex = text.IndexOf(wordToFind, startingIndex)) != -1)
-            { 
-                appearanceCounter++;
-                startingIndex += wordToFind.Length;
+ 
+            for (int i = 0; i < text.Length - wordToFind.Length + 1; i++)
+            {
+                if (text.Substring(i, wordToFind.Length).Equals(wordToFind, StringComparison.OrdinalIgnoreCase))
+                    appearanceCounter++;
             }
 
             return appearanceCounter;
         }
-    }
+    }    
 }
