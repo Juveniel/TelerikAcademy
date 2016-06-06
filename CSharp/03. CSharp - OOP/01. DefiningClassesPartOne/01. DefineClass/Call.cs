@@ -1,18 +1,20 @@
-﻿using System;
-
-namespace _01.DefineClass
+﻿namespace _01.DefineClass
 {
-    public class Call
-    {
-        public DateTime callDateTime { get; set; }
-        public string dialedNumber { get; set; }
-        public TimeSpan callDuration { get; set; }
+    using System;
 
+    public class Call
+    {       
         public Call(DateTime dateTime, string number, TimeSpan duration)
         {
-            this.callDateTime = dateTime;
-            this.dialedNumber = number;
-            this.callDuration = duration;
-        }      
+            this.DateTime = dateTime;
+            this.DialedNumber = number;
+            this.Duration = duration;
+        }
+
+        public DateTime DateTime { get; set; }
+
+        public string DialedNumber { get; set; }
+
+        public TimeSpan Duration { get; set; }
     }
 }

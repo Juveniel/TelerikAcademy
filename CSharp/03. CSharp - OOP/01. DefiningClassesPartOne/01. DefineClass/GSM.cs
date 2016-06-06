@@ -1,26 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
-
-namespace _01.DefineClass
+﻿namespace _01.DefineClass
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+  
     public class GSM
     {
         private string model;
         private string manufacturer;   
         private string owner;
         private double? price;
-        private List<Call> callHistory = new List<Call>();
+        private List<Call> callHistory;
 
         public GSM()
         {
-
+            this.callHistory = new List<Call>();
         }
 
         public GSM(string model, string manufacturer) : this(model, manufacturer, null, null, null, null)
         {
-
+            this.callHistory = new List<Call>();
         }
 
         public GSM(string model, string manufacturer, double? price, string owner, Battery battery, Display display)
@@ -31,6 +31,15 @@ namespace _01.DefineClass
             this.Owner = owner;
             this.Battery = battery;
             this.Display = display;
+            this.callHistory = new List<Call>();
+        }
+
+        public static GSM IPhone4S
+        {
+            get
+            {
+                return new GSM("IPhone4S", "Apple");
+            }
         }
 
         public Battery Battery { get; set; }
@@ -39,8 +48,13 @@ namespace _01.DefineClass
 
         public string Model
         {
-            get { return this.model; }
-            set {
+            get
+            {
+                return this.model;
+            }
+
+            set
+            {
                 if (string.IsNullOrEmpty(value))
                 {
                     throw new ArgumentNullException("Model cannot be null or empty!");
@@ -54,8 +68,13 @@ namespace _01.DefineClass
 
         public string Manufacturer
         {
-            get { return this.manufacturer; }
-            set {
+            get
+            {
+                return this.manufacturer;
+            }
+
+            set
+            {
                 if (string.IsNullOrEmpty(value))
                 {
                     throw new ArgumentNullException("Manufacturer cannot be null or empty!");
@@ -69,8 +88,13 @@ namespace _01.DefineClass
 
         public double? Price
         {
-            get { return this.price; }
-            set {
+            get
+            {
+                return this.price;
+            }
+
+            set
+            {
                 if (value == null || value >= 0)
                 {
                     this.price = value;
@@ -84,41 +108,40 @@ namespace _01.DefineClass
 
         public string Owner
         {
-            get { return this.owner; }
-            set {
+            get
+            {
+                return this.owner;
+            }
+
+            set
+            {
                 if (value == string.Empty)
                 {
                     throw new ArgumentNullException("Owner cannot be empty!");
                 }
-
-                this.owner = value;
-            }
-        }
-
-        public static GSM IPhone4S
-        {
-            get
-            {
-                return new GSM("IPhone4S", "Apple");
+                else
+                {
+                    this.owner = value;
+                }                
             }
         }
 
         public void AddCall(DateTime dateTime, string phoneNumber, TimeSpan duration)
         {
             var call = new Call(dateTime, phoneNumber, duration);
-            callHistory.Add(call);
+            this.callHistory.Add(call);
         }
 
         public void RemoveCall()
         {
-            PrintCallHistory();
+            this.PrintCallHistory();
 
             Console.WriteLine("Enter the index of the call u would like to remove: ");
             int callToRemove = int.Parse(Console.ReadLine());
 
-            if(callHistory.ElementAtOrDefault(callToRemove) != null)
+            if (this.callHistory.ElementAtOrDefault(callToRemove) != null)
             {
-                callHistory.RemoveAt(callToRemove);
+                this.callHistory.RemoveAt(callToRemove);
                 Console.WriteLine("Call log has been removed");
             }
             else
@@ -130,9 +153,10 @@ namespace _01.DefineClass
         public string CalculateCallPrice(double fixedPricePerMinute)
         {
             double callCost = 0;
-            foreach(var call in callHistory)
+
+            foreach (var call in this.callHistory)
             {
-                callCost += fixedPricePerMinute * call.callDuration.Minutes;
+                callCost += fixedPricePerMinute * call.Duration.Minutes;
             }
 
             string result = string.Format("Calls cost: {0:F2}", callCost);
@@ -142,24 +166,30 @@ namespace _01.DefineClass
 
         public void ClearCallHistory()
         {
-            callHistory.Clear();
+            this.callHistory.Clear();
         }
 
         public void PrintCallHistory()
         {
             Console.WriteLine("CALL HISTORY:");
 
-            if(callHistory.Count == 0)
+            if (this.callHistory.Count == 0)
             {
                 Console.WriteLine("Call log is empty.");
             }
             else
             {
                 int counter = 0;
-                foreach(var call in callHistory)
+
+                foreach (var call in this.callHistory)
                 {
-                    Console.WriteLine("{0}) Number: {1}, Date: {2}, Duration: {3}", 
-                                        counter, call.dialedNumber, call.callDateTime, call.callDuration);
+                    Console.WriteLine(
+                        "{0}) Number: {1}, Date: {2}, Duration: {3}", 
+                        counter, 
+                        call.DialedNumber, 
+                        call.DateTime, 
+                        call.Duration);
+
                     counter++;
                 }
             }
@@ -177,12 +207,12 @@ namespace _01.DefineClass
             gsmCharacteristics.Append("Owner: ").Append(this.Owner).AppendLine();
             gsmCharacteristics.AppendLine("===============================");
 
-            if(Battery != null)
+            if (Battery != null)
             {
                 gsmCharacteristics.AppendLine(Battery.ToString());
             }
 
-            if(Display != null)
+            if (Display != null)
             {
                 gsmCharacteristics.AppendLine(Display.ToString());
             }

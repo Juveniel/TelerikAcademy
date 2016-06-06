@@ -1,8 +1,8 @@
-﻿using System;
-using System.Text;
-
-namespace _01.DefineClass
+﻿namespace _01.DefineClass
 {
+    using System;
+    using System.Text;
+
     public enum BatteryType
     {
         LiIon, NiMH, NiCd
@@ -17,12 +17,10 @@ namespace _01.DefineClass
 
         public Battery()
         {
-
         }
 
         public Battery(string batteryModel) : this(batteryModel, null, null, null)
         {
-
         }
 
         public Battery(string batteryModel, BatteryType? batteryType, int? hoursIdle, int? hoursTalked)
@@ -33,14 +31,19 @@ namespace _01.DefineClass
             this.HoursTalked = hoursTalked;
         }
 
-        public BatteryType? BatteryType {
+        public BatteryType? BatteryType
+        {
             get { return this.batteryType; }
             set { this.batteryType = value; }
         }
 
         public string BatteryModel
         {
-            get { return this.batteryModel; }
+            get
+            {
+                return this.batteryModel;
+            }
+
             set
             {
                 if (string.IsNullOrEmpty(value))
@@ -56,10 +59,14 @@ namespace _01.DefineClass
         
         public int? HoursIdle
         {
-            get { return this.hoursIdle; }
+            get
+            {
+                return this.hoursIdle;
+            }
+
             set
             {
-                if(value == null || value >= 0)
+                if (value == null || value >= 0) 
                 {
                     this.hoursIdle = value;
                 }
@@ -72,7 +79,11 @@ namespace _01.DefineClass
 
         public int? HoursTalked
         {
-            get { return this.hoursTalked; }
+            get
+            {
+                return this.hoursTalked;
+            }
+
             set
             {
                 if (value == null || value >= 0)

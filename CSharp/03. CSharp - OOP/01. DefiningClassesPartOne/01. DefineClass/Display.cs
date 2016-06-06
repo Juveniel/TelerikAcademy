@@ -1,8 +1,8 @@
-﻿using System;
-using System.Text;
-
-namespace _01.DefineClass
+﻿namespace _01.DefineClass
 {
+    using System;
+    using System.Text;
+
     public class Display
     {
         private int size;
@@ -10,12 +10,10 @@ namespace _01.DefineClass
 
         public Display()
         {
-
         }
 
         public Display(int size) : this(size, null)
-        {
-
+        {       
         }
 
         public Display(int size, int? numberOfColors)
@@ -26,10 +24,14 @@ namespace _01.DefineClass
 
         public int Size
         {
-            get { return this.size; }
+            get
+            {
+                return this.size;
+            }
+
             set
             {
-                if(value >= 0)
+                if (value >= 0)
                 {
                     this.size = value;
                 }
@@ -42,10 +44,14 @@ namespace _01.DefineClass
 
         public int? NumberOfColors
         {
-            get { return this.numberOfColors; }
+            get
+            {
+                return this.numberOfColors;
+            }
+
             set
             {
-                if(value == null || value >= 0)
+                if (value == null || value >= 0)
                 {
                     this.numberOfColors = value;
                 }
