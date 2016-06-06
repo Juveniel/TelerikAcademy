@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. DefineClass", "01. DefineClass\01. DefineClass.csproj", "{62E84EFE-B742-4C55-9DA9-2264E0FF33C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSM", "GSM\GSM.csproj", "{62E84EFE-B742-4C55-9DA9-2264E0FF33C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
