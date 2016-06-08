@@ -1,20 +1,20 @@
 ﻿namespace _01._3DPoint
 {
     using System;
-    using System.Collections.Generic;
     using System.IO;
+    using System.Linq;
 
     public static class PathStorage
     {
         public static void SavePath(Path path)
         {            
-            using (StreamWriter writer = new StreamWriter(@"../../Paths.txt"))
+            using (StreamWriter writer = new StreamWriter(@"../../PathsSave.txt"))
             {
                 try
                 {
                     foreach (var point in path.PointPathList)
                     {
-                        writer.WriteLine(point);
+                        writer.WriteLine(point.ToString());
                     }
                 }
                 catch (IOException ex)
@@ -28,21 +28,26 @@
             }                       
         }
 
-        public static List<Path> LoadPath(Path path)
+        public static Path LoadPath()
         {
-            List<Path> pathsLoaded = new List<Path>();
+            Path currentPath = new Path();
 
             try
             { 
-                using (StreamReader reader = new StreamReader("TestFile.txt"))
+                using (StreamReader reader = new StreamReader(@"../../PathsSave.txt"))
                 {
-                    string line = reader.ReadLine();
-
-                    while (!string.IsNullOrEmpty(line))
+                    while (!reader.EndOfStream)
                     {
+                        var coordinates = reader.ReadLine()
+                           .Trim()
+                           .Split(new[] { '|', ' ' }, StringSplitOptions.RemoveEmptyEntries)
+                           .Select(double.Parse)
+                           .ToList();
 
-                    }
-                    Console.WriteLine(line);
+                        var pointToAdd = new Point3D(coordinates[0], coordinates[1], coordinates[2]);
+
+                        currentPath.AddPoint(pointToAdd);
+                    }                   
                 }
             }
             catch (Exception e)
@@ -51,7 +56,7 @@
                 Console.WriteLine(e.Message);
             }
 
-            return pathsLoaded;
+            return currentPath;
         }
     }    
 }

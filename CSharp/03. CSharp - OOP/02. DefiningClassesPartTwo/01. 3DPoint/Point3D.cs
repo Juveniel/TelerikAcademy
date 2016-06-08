@@ -23,11 +23,11 @@
         {
             var pointPrinter = new StringBuilder();
 
-            pointPrinter.AppendFormat("{0:F2}", this.PointX.ToString());
-            pointPrinter.AppendLine();
-            pointPrinter.AppendFormat("{0:F2}", this.PointY.ToString());
-            pointPrinter.AppendLine();
-            pointPrinter.AppendFormat("{0:F2}", this.PointY.ToString());
+            pointPrinter.AppendFormat(
+                "{0:F2} | {0:F2} | {0:F2}", 
+                this.PointX.ToString(), 
+                this.PointY.ToString(),
+                this.PointZ.ToString());
 
             return pointPrinter.ToString();
         }

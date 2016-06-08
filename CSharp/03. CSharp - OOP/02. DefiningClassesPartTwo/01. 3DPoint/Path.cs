@@ -38,13 +38,14 @@
         public override string ToString()
         {
             var pathList = new StringBuilder();
-
+                    
             foreach (var point in this.PointPathList)
             {
-                pathList.Append("< " + point + ">, ");
+                pathList.AppendFormat("{0}, {1}, {2}", point.PointX, point.PointY, point.PointZ);
+                pathList.AppendLine();
             }
-
-            return pathList.ToString().TrimEnd(',');
+                    
+            return pathList.ToString();
         }
     }
 }
