@@ -24,11 +24,10 @@
             /* Save newly created path */
             PathStorage.SavePath(firstPath);
 
+            /* Load path and print it */
             var finalPath = PathStorage.LoadPath();
 
-            Console.WriteLine(finalPath.ToString());
-
-           // Path loadedPath = PathStorage.LoadPath(firstPath);                                            
+            Console.WriteLine(finalPath.ToString());                                        
         }
     }
 }
