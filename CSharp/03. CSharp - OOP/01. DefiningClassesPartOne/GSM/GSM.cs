@@ -11,19 +11,13 @@
         private string manufacturer;   
         private string owner;
         private double? price;
-        private List<Call> callHistory;
+        private List<Call> callHistory;         
 
-        public GSM()
+        public GSM(string model, string manufacturer) : this(model, manufacturer, null, null, null, null, null)
         {
-            this.callHistory = new List<Call>();
         }
 
-        public GSM(string model, string manufacturer) : this(model, manufacturer, null, null, null, null)
-        {
-            this.callHistory = new List<Call>();
-        }
-
-        public GSM(string model, string manufacturer, double? price, string owner, Battery battery, Display display)
+        public GSM(string model, string manufacturer, double? price, string owner, Battery battery, Display display, List<Call> callHistory = null)
         {
             this.Model = model;
             this.Manufacturer = manufacturer;
@@ -113,7 +107,7 @@
                 return this.owner;
             }
 
-            set
+            private set
             {
                 if (value == string.Empty)
                 {
