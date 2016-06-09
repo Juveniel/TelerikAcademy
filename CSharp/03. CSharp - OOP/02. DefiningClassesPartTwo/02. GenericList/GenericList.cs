@@ -1,10 +1,8 @@
 ﻿namespace _02.GenericList
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-    using System.Threading.Tasks;
 
     public class GenericList<T> where T : IComparable
     {
@@ -42,7 +40,7 @@
             this.elements[this.Count - 1] = element;
         }
 
-        public int GetByIndex(T element)
+        public int GetByValue(T element)
         {
             return Array.IndexOf(this.elements, element);
         }
@@ -67,40 +65,49 @@
 
         public void InsertAtPosition(int position, T element)
         {
-            if (position < 0 || position > this.Count)
+            if (position < 0 || position >= this.Count)
             {
                 throw new ArgumentOutOfRangeException("Position is outside of the bounds of the collection!");
             }
             else
-            {
+            {         
                 this.Count++;
                 this.Resize(this.Count);
 
+                T[] newElements = new T[this.Count + 1];
+                bool beforeRemove = true;
 
-
-                // store
-                //elements[position] = element; // add the new element
-
-                // shift the elements after the new elements to the right
-                T[] demo = new T[this.elements.Length];
-                for (int i = 0; i < this.elements.Length; i++)
+                for (int i = 0; i < this.Count; i++)
                 {
-                    demo[(i ) % demo.Length] = this.elements[i];
+                    if (i == position)
+                    {
+                        beforeRemove = false;
+                        newElements[i] = element;
+                        continue;
+                    }
+
+                    if (beforeRemove)
+                    {
+                        newElements[i] = this.elements[i];
+                    }
+                    else
+                    {
+                        newElements[i] = this.elements[i - 1];
+                    }
                 }
-                demo[position] = element;
 
-                this.elements = demo;
-
-                // put the element we stored back
-                //elements[position + 1] = store;
-
-               /* for (int i = position + 2; i < this.Capacity; i++)
-                {
-                    elements[i] = elements[i - 1];
-                }
-                */
-               // this.elements[position] = element;
+                this.elements = newElements;
             }
+        }
+
+        public T Min()
+        {
+            return this.elements.Min<T>();
+        }
+
+        public T Max()
+        {
+            return this.elements.Max<T>();
         }
 
         public void Clear()

@@ -29,20 +29,23 @@
 
             // Insert, RemoveAt   
             elements.InsertAtPosition(3, 4323);
-           // elements.InsertAtPosition(0, 3);
-          //  elements.InsertAtPosition(0, 2);
-           // elements.InsertAtPosition(0, 1);
+            elements.InsertAtPosition(0, 3);
+            elements.InsertAtPosition(0, 2);
+            elements.InsertAtPosition(0, 1);
 
-            //elements.RemoveAtIndex(0);
-           // elements.RemoveAtIndex(elements.Count - 1);
+            elements.RemoveAtIndex(0);
+            elements.RemoveAtIndex(elements.Count - 1);
 
             Console.WriteLine("\n" + elements);
             Console.WriteLine("Count: {0}", elements.Count);
             Console.WriteLine("Capacity: {0}", elements.Capacity);
 
             // Contains, IndexOf
-            Console.WriteLine("\nContain element 2: {0}", elements.GetByIndex(2));
-            Console.WriteLine("Index of element 3: {0}", elements.GetByIndex(3));
+            Console.WriteLine("Index of element {0}: {1}", 4323, elements.GetByValue(4323));
+
+            // Min & Max
+            Console.WriteLine("Max value in collection: {0}", elements.Max());
+            Console.WriteLine("Min value in collection: {0}", elements.Min());
         }
     }
 }
