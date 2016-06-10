@@ -8,7 +8,7 @@
         {
             GenericList<int> elements = new GenericList<int>();
 
-            // Empty list
+            // INT COLLECTION TEST
             Console.WriteLine("\n" + elements);
             Console.WriteLine("Count: {0}", elements.Count);
             Console.WriteLine("Capacity: {0}", elements.Capacity);
@@ -38,14 +38,44 @@
 
             Console.WriteLine("\n" + elements);
             Console.WriteLine("Count: {0}", elements.Count);
-            Console.WriteLine("Capacity: {0}", elements.Capacity);
+            Console.WriteLine("Capacity: {0} \n", elements.Capacity);
 
             // Contains, IndexOf
-            Console.WriteLine("Index of element {0}: {1}", 4323, elements.GetByValue(4323));
+            Console.WriteLine("Index of element {0}: {1}", 4323, elements.IndexOf(4323));
+            Console.WriteLine("Element at index 3 is: {0} \n", elements[3]);
 
             // Min & Max
             Console.WriteLine("Max value in collection: {0}", elements.Max());
             Console.WriteLine("Min value in collection: {0}", elements.Min());
+
+            //Celar list
+            elements.Clear();
+            Console.WriteLine("\n" + elements);
+            Console.WriteLine("Count: {0}", elements.Count);
+            Console.WriteLine("Capacity: {0}", elements.Capacity);
+
+            GenericList<string> elements2 = new GenericList<string>();
+
+            // STRINGS COLLECTION TEST
+            Console.WriteLine("\n" + elements2);
+            Console.WriteLine("Count: {0}", elements2.Count);
+            Console.WriteLine("Capacity: {0}", elements2.Capacity);
+
+            // Auto-grow functionality
+            elements2 = new GenericList<string>(3);
+            elements2.Add("a");
+            elements2.Add("s");
+            elements2.Add("d");
+            elements2.Add("a");
+            elements2.Add("b");  
+
+            Console.WriteLine("\n" + elements2);
+            Console.WriteLine("Count: {0}", elements2.Count);
+            Console.WriteLine("Capacity: {0}", elements2.Capacity);
+
+            // Min & Max
+            Console.WriteLine("Max value in collection: {0}", elements2.Max());
+            Console.WriteLine("Min value in collection: {0}", elements2.Min());
         }
     }
 }

@@ -40,7 +40,7 @@
             this.elements[this.Count - 1] = element;
         }
 
-        public int GetByValue(T element)
+        public int IndexOf(T element)
         {
             return Array.IndexOf(this.elements, element);
         }
@@ -102,12 +102,32 @@
 
         public T Min()
         {
-            return this.elements.Min<T>();
+            T minValue = this.elements[0];
+
+            for(int i = 0; i < this.Count; i++)
+            {              
+                if (this.elements[i].CompareTo(minValue) < 0)
+                {
+                    minValue = this.elements[i];
+                }
+            }
+
+            return minValue;
         }
 
         public T Max()
         {
-            return this.elements.Max<T>();
+            T maxValue = this.elements[0];
+
+            for (int i = 0; i < this.Count; i++)
+            {
+                if (this.elements[i].CompareTo(maxValue) > 0)
+                {
+                    maxValue = this.elements[i];
+                }
+            }
+
+            return maxValue;
         }
 
         public void Clear()
