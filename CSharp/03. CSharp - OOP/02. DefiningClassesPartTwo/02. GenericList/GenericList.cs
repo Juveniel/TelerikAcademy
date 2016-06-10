@@ -104,7 +104,7 @@
         {
             T minValue = this.elements[0];
 
-            for(int i = 0; i < this.Count; i++)
+            for (int i = 0; i < this.Count; i++)
             {              
                 if (this.elements[i].CompareTo(minValue) < 0)
                 {

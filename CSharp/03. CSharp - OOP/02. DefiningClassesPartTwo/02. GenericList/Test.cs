@@ -48,7 +48,7 @@
             Console.WriteLine("Max value in collection: {0}", elements.Max());
             Console.WriteLine("Min value in collection: {0}", elements.Min());
 
-            //Celar list
+            // Celar list
             elements.Clear();
             Console.WriteLine("\n" + elements);
             Console.WriteLine("Count: {0}", elements.Count);

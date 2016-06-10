@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Point3D", "01. 3DPoint\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. GenericList", "02. GenericList\02. GenericList.csproj", "{001215AA-75EC-4CE6-A135-0EBB07689F05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Matrix", "03. Matrix\03. Matrix.csproj", "{974C223F-880A-4ACD-9D0E-C8C6CC652526}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. VersionAttribute", "04. Attribute\04. VersionAttribute.csproj", "{7DFF3171-206D-4AA3-9C92-46313A1E265F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{001215AA-75EC-4CE6-A135-0EBB07689F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{001215AA-75EC-4CE6-A135-0EBB07689F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{001215AA-75EC-4CE6-A135-0EBB07689F05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{974C223F-880A-4ACD-9D0E-C8C6CC652526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{974C223F-880A-4ACD-9D0E-C8C6CC652526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{974C223F-880A-4ACD-9D0E-C8C6CC652526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{974C223F-880A-4ACD-9D0E-C8C6CC652526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DFF3171-206D-4AA3-9C92-46313A1E265F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DFF3171-206D-4AA3-9C92-46313A1E265F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DFF3171-206D-4AA3-9C92-46313A1E265F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DFF3171-206D-4AA3-9C92-46313A1E265F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
