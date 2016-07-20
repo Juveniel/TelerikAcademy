@@ -7,6 +7,6 @@
         public Iron(string name, Location location = null) 
             : base(name, Iron.InitialMoneyValue, ItemType.Iron , location)
         {
-        }
+        }       
     }
 }
