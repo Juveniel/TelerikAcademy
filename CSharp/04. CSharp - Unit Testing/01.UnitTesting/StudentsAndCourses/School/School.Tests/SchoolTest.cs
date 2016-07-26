@@ -12,6 +12,7 @@ namespace School.Tests
     {
         private School testSchool;
         private Student testStudent;
+        private Course testCourse;
 
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
@@ -28,7 +29,7 @@ namespace School.Tests
         }
 
         [TestMethod]
-        public void SchoolShouldReturnCorrectName()
+        public void ShouldReturnCorrectName()
         {
             testSchool = new School("Telerik Software Academy");
 
@@ -36,7 +37,7 @@ namespace School.Tests
         }
 
         [TestMethod]
-        public void ShouldAddStudentCorrectly()
+        public void AddStudent_ShouldAddStudentCorrectly()
         {
             testSchool = new School("1521 Special");
             testStudent = new Student("Pesho Ivanov", 12312);
@@ -48,7 +49,7 @@ namespace School.Tests
 
         [TestMethod]
         [ExpectedException(typeof(NullReferenceException))]
-        public void ShouldThrowExceptionIfNullStudentPassed()
+        public void AddStudent_ShouldThrowExceptionIfNullStudentPassed()
         {
             testSchool = new School("1521 Special");       
             testSchool.RegisterStudent(null);
@@ -56,7 +57,7 @@ namespace School.Tests
 
         [TestMethod]
         [ExpectedException(typeof(InvalidOperationException))]
-        public void ShouldThrowExceptionIfStudentAlreadyExists()
+        public void AddStudent_ShouldThrowExceptionIfStudentAlreadyExists()
         {
             testSchool = new School("1521 Special");
             testStudent = new Student("Pesho Ivanov", 12312);
@@ -67,7 +68,7 @@ namespace School.Tests
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
-        public void ShouldThrowExceptionIfStudentIdNotInRange()
+        public void AddStudent_ShouldThrowExceptionIfStudentIdNotInRange()
         {
             testSchool = new School("1521 Special");
             testStudent = new Student("Pesho Ivanov", 1231222);
@@ -75,6 +76,42 @@ namespace School.Tests
             testSchool.RegisterStudent(testStudent);
         }
 
+        [TestMethod]
+        public void AddCourse_ShouldAddCourseCorrectly()
+        {
+            testSchool = new School("Test school");
+            testCourse = new Course("Botanics");        
+            testSchool.CreateCourse(testCourse);
 
+            Assert.AreSame(testCourse, testSchool.Courses.First());
+        }
+   
+        [TestMethod]
+        [ExpectedException(typeof(NullReferenceException))]
+        public void AddCourse_ShouldThrowExceptionIfNullCoursePassed()
+        {
+            testSchool = new School("1521 Special23");
+            testSchool.CreateCourse(null);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void AddCourse_ShouldThrowExceptionIfCourseAlreadyExists()
+        {
+            testSchool = new School("1521 Special");
+            testCourse = new Course("Mathematics");
+
+            testSchool.CreateCourse(testCourse);
+            testSchool.CreateCourse(testCourse);      
+        }
+
+        [TestMethod]
+        public void UnregisterStudent_ShouldRemoveStudentCorrectly()
+        {
+            testSchool = new School("1521 Special");
+            testSchool.Students.Add(new Student("Asdasd", 12322));
+
+           
+        }           
     }
 }

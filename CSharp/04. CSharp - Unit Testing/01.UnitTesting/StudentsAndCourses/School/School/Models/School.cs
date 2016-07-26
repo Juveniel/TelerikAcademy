@@ -55,7 +55,7 @@
             Validator.CheckStudentId(this.students, student, string.Format(ValidatorConstants.StudentWithIExists, student.Id));
 
             this.students.Add(student);
-        }
+        } 
 
         public void UnregisterStudent(IStudent student)
         {
