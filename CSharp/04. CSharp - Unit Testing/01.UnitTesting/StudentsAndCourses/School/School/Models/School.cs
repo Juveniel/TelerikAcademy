@@ -66,11 +66,19 @@
         }
 
         public void CreateCourse(ICourse course)
-        {            
+        {
+            Validator.CheckIfNull(course, string.Format(ValidatorConstants.ValueCannotBeNull, "Course"));
+            Validator.CheckExisting<ICourse>(this.courses, course, string.Format(ValidatorConstants.ValueMustBeUnique, "Course", this.Name));
+
+            this.courses.Add(course);
         }
 
         public void RemoveCourse(ICourse course)
-        {            
+        {
+            Validator.CheckIfNull(course, string.Format(ValidatorConstants.ValueCannotBeNull, "Course"));
+            Validator.CheckNotExisting<ICourse>(this.courses, course, string.Format(ValidatorConstants.ValueNotExisting, "Course", this.Name));
+
+            this.courses.Remove(course);
         }
     }
 }
