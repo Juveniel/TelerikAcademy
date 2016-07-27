@@ -17,9 +17,22 @@ function solve() {
         filterTitleNode.innerHTML = 'Filter';
         filterNodeInput.type = 'text';
         filterNodeInput.className = 'search-images';
+        filterNodeInput.value = '';
 
-        filterNodeInput.addEventListener('change', function() {
-            //todo add search filter
+        filterNodeInput.addEventListener('input', function() {
+            var searchString = this.value.toString();
+
+            for(var i = 0; i < items.length; i++){
+                    var currentItem = document.getElementsByClassName('image-container')[i],
+                    itemTitle = items[i].title.toString();
+
+                if(itemTitle.toLowerCase().indexOf(searchString) === -1){
+                    currentItem.style.display = 'none';
+                }
+                else{
+                    currentItem.style.display = 'block';
+                }
+            }
         });
 
         filterNode.appendChild(filterTitleNode);
