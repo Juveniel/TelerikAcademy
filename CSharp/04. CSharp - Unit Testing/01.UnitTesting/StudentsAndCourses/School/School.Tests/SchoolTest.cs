@@ -1,11 +1,9 @@
-﻿using System.Linq;
-
-namespace School.Tests
+﻿namespace School.Tests
 {
-    using Contracts;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;  
     using System;
+    using System.Linq;
     using Models;
-    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
     public class SchoolTest
@@ -79,8 +77,8 @@ namespace School.Tests
         [TestMethod]
         public void AddCourse_ShouldAddCourseCorrectly()
         {
-            testSchool = new School("Test school");
-            testCourse = new Course("Botanics");        
+            this.testSchool = new School("Test school");
+            this.testCourse = new Course("Botanics");        
             testSchool.CreateCourse(testCourse);
 
             Assert.AreSame(testCourse, testSchool.Courses.First());
@@ -108,10 +106,60 @@ namespace School.Tests
         [TestMethod]
         public void UnregisterStudent_ShouldRemoveStudentCorrectly()
         {
-            testSchool = new School("1521 Special");
-            testSchool.Students.Add(new Student("Asdasd", 12322));
+            testSchool = new School("15213 Special");
+            testStudent = new Student("Asdasd", 12312);
 
-           
-        }           
+            testSchool.RegisterStudent(testStudent);
+            testSchool.UnregisterStudent(testStudent);
+
+            Assert.IsTrue(!testSchool.Students.Any());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(NullReferenceException))]
+        public void UnregisterStudent_ShouldThrowExceptionIfNull()
+        {
+            testSchool = new School("1521 Special");
+            testSchool.UnregisterStudent(null);
+        }
+
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void UnregisterStudent_ShouldThrowExceptionIfNotExisting()
+        {
+            testSchool = new School("1521 Special");
+            testStudent = new Student("Asdasd", 12322);
+
+            testSchool.UnregisterStudent(testStudent);
+        }
+
+        [TestMethod]
+        public void RemoveCourse_ShouldRemoveCourseCorrectly()
+        {
+            testSchool = new School("1521 Special");
+            testCourse = new Course("Biology");
+
+            testSchool.CreateCourse(testCourse);
+            testSchool.RemoveCourse(testCourse);
+
+            Assert.IsTrue(!testSchool.Courses.Any());
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(NullReferenceException))]
+        public void RemoveCourse_ShouldThrowExceptionIfNull()
+        {
+            testSchool = new School("1521");
+
+            testSchool.RemoveCourse(null);
+        }
+
+        [ExpectedException(typeof(InvalidOperationException))]
+        public void RemoveCourse_ShouldThrowExceptionIfNotExisting()
+        {
+            testSchool = new School("1521 Special");
+            testCourse = new Course("QA");
+
+            testSchool.RemoveCourse(testCourse);
+        }
     }
 }
