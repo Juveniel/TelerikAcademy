@@ -1,5 +1,8 @@
-﻿namespace Santase.Tests
+﻿using System.Linq;
+
+namespace Santase.Tests
 {
+    using System.Collections.Generic;
     using Logic;
     using Logic.Cards;
     using NUnit.Framework;
@@ -33,14 +36,14 @@
         {
             var deck = new Deck();
 
-            for (int i = 0; i <= count; i++)
+            for (var i = 0; i <= count; i++)
             {
                 Assert.IsNotNull(deck.GetNextCard());
             }            
         }
 
         [Test]
-        public void Deck_ShouldThrowAnException_WhenCardsOver()
+        public void GetNextCard_ShouldThrowAnException_WhenCardsOver()
         {
             var deck = new Deck();
 
@@ -52,5 +55,24 @@
             Assert.Throws<InternalGameException>(() => deck.GetNextCard());
         }
 
+        [TestCase(5)]
+        [TestCase(10)]
+        [TestCase(15)]
+        [TestCase(20)]
+        [TestCase(24)]
+        public void GetNextCard_ShouldReturnDifferentCards(int count)
+        {
+            var deck = new Deck();
+            var cards = new List<Card>();
+
+            for (var card = 0; card < count; card++)
+            {
+                cards.Add(deck.GetNextCard());
+            }
+
+            var filtered = cards.Distinct().ToList();
+
+            Assert.AreEqual(count, filtered.Count);
+        }
     }
 }
