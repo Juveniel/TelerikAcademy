@@ -6,11 +6,12 @@
     using Contracts;
     using Enumerations;
     using Models;
-
+    
     public class PokerExample
     {
         internal static void Main()
         {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
             ICard card = new Card(CardFace.Ace, CardSuit.Clubs);
             Console.WriteLine(card);
 
@@ -28,6 +29,25 @@
             Console.WriteLine(checker.IsValidHand(hand));
             Console.WriteLine(checker.IsOnePair(hand));
             Console.WriteLine(checker.IsTwoPair(hand));
+        }
+
+        private static IList<ICard> GenerateHand(int numberOfCards)
+        {
+            var rnd = new Random();
+            var faces = Enum.GetValues(typeof(CardFace));
+            var suits = Enum.GetValues(typeof(CardSuit));
+            var fakeHand = new List<ICard>();
+
+            for (var i = 0; i < numberOfCards; i++)
+            {
+                var fakeCard = new Card(
+                    (CardFace)faces.GetValue(rnd.Next(faces.Length)),
+                    (CardSuit)suits.GetValue(rnd.Next(suits.Length)));
+
+                fakeHand.Add(fakeCard);
+            }
+
+            return fakeHand;
         }
     }
 }

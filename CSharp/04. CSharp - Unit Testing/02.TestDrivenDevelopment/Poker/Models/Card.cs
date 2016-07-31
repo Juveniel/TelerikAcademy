@@ -27,7 +27,9 @@
                 "♠"
             };
 
-            return string.Format("{0}{1}", this.Face.ToString()[0], suitSymbols[(int)this.Suit]);
+            var cardFaceToString = (int)this.Face <= 10 ? ((int)this.Face).ToString() : this.Face.ToString()[0].ToString();
+
+            return string.Format("{0}{1}", cardFaceToString, suitSymbols[(int)this.Suit]);
         }
     }
 }

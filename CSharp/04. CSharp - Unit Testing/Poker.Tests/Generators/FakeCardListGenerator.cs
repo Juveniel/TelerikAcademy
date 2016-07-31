@@ -19,7 +19,7 @@
             {
                 var fakeCard = new Card(
                     (CardFace)faces.GetValue(rnd.Next(faces.Length)),
-                    (CardSuit)suits.GetValue(rnd.Next(suits.Length)));
+                    (CardSuit)suits.GetValue(rnd.Next(suits.Length)));               
 
                 fakeList.Add(fakeCard);
             }

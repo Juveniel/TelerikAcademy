@@ -1,8 +1,8 @@
 ﻿namespace Poker.Common
 {
     using System;
-    using Contracts;
     using System.Linq;
+    using Contracts;
 
     public class PokerHandsChecker : IPokerHandsChecker
     {
