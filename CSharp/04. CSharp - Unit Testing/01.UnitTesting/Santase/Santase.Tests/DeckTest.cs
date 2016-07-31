@@ -1,6 +1,4 @@
-﻿
-
-namespace Santase.Tests
+﻿namespace Santase.Tests
 {
     using System.Collections.Generic;
     using Logic;
