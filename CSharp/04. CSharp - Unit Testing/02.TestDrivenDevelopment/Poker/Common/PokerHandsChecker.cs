@@ -30,12 +30,7 @@
 
         public bool IsStraightFlush(IHand hand)
         {
-            if (hand == null)
-            {
-                throw new ArgumentNullException();
-            }
-
-            return true;
+            throw new NotImplementedException();
         }
 
         public bool IsFourOfAKind(IHand hand)

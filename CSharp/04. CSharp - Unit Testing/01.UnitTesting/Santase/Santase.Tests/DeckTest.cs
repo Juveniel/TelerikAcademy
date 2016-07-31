@@ -1,10 +1,11 @@
-﻿using System.Linq;
+﻿
 
 namespace Santase.Tests
 {
     using System.Collections.Generic;
     using Logic;
     using Logic.Cards;
+    using System.Linq;
     using NUnit.Framework;
 
     [TestFixture]
