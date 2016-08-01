@@ -25,7 +25,15 @@
             this.logger = logger;
         }
 
-        public void AddCreatures(CreatureIdentifier creatureIdentifier, int count)
+        public ICreaturesFactory CreatureFactory
+        {
+            get
+            {
+                return this.creaturesFactory;                
+            }
+        }
+
+        public virtual void AddCreatures(CreatureIdentifier creatureIdentifier, int count)
         {
             if (creatureIdentifier == null)
             {
@@ -85,6 +93,11 @@
             foreach (var speciallity in defenderCreature.Creature.Specialties)
             {
                 speciallity.ApplyAfterDefending(defenderCreature);
+            }
+
+            if (attackerIdentifier.ArmyNumber == defenderIdentifier.ArmyNumber)
+            {
+                throw new ArgumentException();
             }
 
             this.logger.WriteLine(string.Format(CultureInfo.InvariantCulture, LogFormat, "Attacker after", attackerCreature));
