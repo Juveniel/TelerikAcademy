@@ -1,5 +1,5 @@
 var homepageData = {title: 'Example heading', body: 'example body'},
-    htmlTemplate  = document.getElementById('homepage').innerHTML,
+    htmlTemplate  = $('#homepage').html(),
     homepageTemplate = Handlebars.compile(htmlTemplate);
 
-document.getElementById('homepage').innerHTML = homepageTemplate(homepageData);
+$('#homepage').html(homepageTemplate(homepageData));
