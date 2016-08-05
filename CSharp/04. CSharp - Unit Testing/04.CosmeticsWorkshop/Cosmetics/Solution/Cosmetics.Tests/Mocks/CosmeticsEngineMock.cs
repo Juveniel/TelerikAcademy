@@ -2,8 +2,8 @@
 {
     using System.Collections;
     using System.Collections.Generic;
-    using Cosmetics.Engine;
     using Cosmetics.Contracts;
+    using Cosmetics.Engine;
 
     internal class CosmeticsEngineMock : CosmeticsEngine
     {
@@ -27,7 +27,5 @@
                 return this.products;                
             }
         }
-
-
     }
 }

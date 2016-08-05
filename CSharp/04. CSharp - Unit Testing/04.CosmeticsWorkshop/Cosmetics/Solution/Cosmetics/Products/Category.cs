@@ -4,17 +4,16 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-
-    using Cosmetics.Contracts;
     using Cosmetics.Common;
+    using Cosmetics.Contracts;
 
     internal class Category : ICategory
     {
         private const int MinCategoryNameLength = 2;
         private const int MaxCategoryNameLength = 15;
 
-        private string name;
         private readonly IList<IProduct> products;
+        private string name;        
 
         public Category(string name)
         {
@@ -28,6 +27,7 @@
             {
                 return this.name;
             }
+
             private set
             {
                 Validator.CheckIfStringIsNullOrEmpty(value, string.Format(GlobalErrorMessages.StringCannotBeNullOrEmpty, "Category name"));

@@ -4,13 +4,15 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-
     using Cosmetics.Common;
     using Cosmetics.Contracts;
     using Cosmetics.Products;
 
     internal class CosmeticsEngine : IEngine
     {
+        protected readonly IDictionary<string, ICategory> categories;
+        protected readonly IDictionary<string, IProduct> products;
+
         private const string InvalidCommand = "Invalid command name: {0}!";
         private const string CategoryExists = "Category with name {0} already exists!";
         private const string CategoryCreated = "Category with name {0} was created!";
@@ -30,9 +32,7 @@
         private const string InvalidUsageType = "Invalid usage type!";
 
         private readonly ICosmeticsFactory factory;
-        private readonly IShoppingCart shoppingCart;
-        protected readonly IDictionary<string, ICategory> categories;
-        protected readonly IDictionary<string, IProduct> products;
+        private readonly IShoppingCart shoppingCart;       
 
         public CosmeticsEngine(
             ICosmeticsFactory factory, 

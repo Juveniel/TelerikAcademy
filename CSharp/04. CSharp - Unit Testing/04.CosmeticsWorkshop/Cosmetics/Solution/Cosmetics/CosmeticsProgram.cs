@@ -1,8 +1,8 @@
-﻿using Cosmetics.Engine;
-using Cosmetics.Products;
-
-namespace Cosmetics
+﻿namespace Cosmetics
 {
+    using Cosmetics.Engine;
+    using Cosmetics.Products;
+
     public class CosmeticsProgram
     {
         public static void Main()

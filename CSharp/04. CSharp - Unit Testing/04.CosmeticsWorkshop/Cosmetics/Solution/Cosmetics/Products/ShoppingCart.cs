@@ -3,9 +3,8 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-
-    using Cosmetics.Contracts;
     using Cosmetics.Common;
+    using Cosmetics.Contracts;
 
     internal class ShoppingCart : IShoppingCart
     {

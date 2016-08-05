@@ -4,9 +4,8 @@
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-
-    using Cosmetics.Contracts;
     using Cosmetics.Common;
+    using Cosmetics.Contracts;
 
     internal class Toothpaste : Product, IToothpaste, IProduct
     {

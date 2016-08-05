@@ -30,6 +30,7 @@
             {
                 return this.name;
             }
+
             private set
             {
                 Validator.CheckIfStringIsNullOrEmpty(value, string.Format(GlobalErrorMessages.StringCannotBeNullOrEmpty, ProductName));
@@ -44,6 +45,7 @@
             {
                 return this.brand;
             }
+
             private set
             {
                 Validator.CheckIfStringIsNullOrEmpty(value, string.Format(GlobalErrorMessages.StringCannotBeNullOrEmpty, ProductBrand));

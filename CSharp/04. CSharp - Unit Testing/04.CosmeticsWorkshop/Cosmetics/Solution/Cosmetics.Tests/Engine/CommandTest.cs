@@ -11,20 +11,20 @@
         public void Prase_ShouldReturnNewCommand_WhenInputStringIsInValidFormat()
         {
             // Arrange
-            const string commandName = "CreateCategory";
+            const string CommandName = "CreateCategory";
 
             // Act & assert
-            Assert.DoesNotThrow(() => Command.Parse(commandName));
+            Assert.DoesNotThrow(() => Command.Parse(CommandName));
         }
 
         [Test]
         public void Parse_ShouldSetCorrectCommandProperties_WhenInputStringIsValid()
         {
             // Arrange
-            const string commandInput = "CreateCategory param1";
+            const string CommandInput = "CreateCategory param1";
 
             // Act
-            var command = Command.Parse(commandInput);
+            var command = Command.Parse(CommandInput);
 
             // Assert
             Assert.AreEqual("CreateCategory", command.Name);
@@ -35,20 +35,20 @@
         public void Parse_ShouldThrowArgumentNullException_WhenCommandNameIsNull()
         {
             // Arrange
-            const string commandInput = " param1 param2";
+            const string CommandInput = " param1 param2";
 
             // Act & Assert
-            Assert.Throws<ArgumentNullException>(() => Command.Parse(commandInput), "Name");
+            Assert.Throws<ArgumentNullException>(() => Command.Parse(CommandInput), "Name");
         }
 
         [Test]
         public void Parse_ShouldThrowArgumentNullException_WhenCommandParametersAreNullOrEmpty()
         {
             // Arrange
-            const string commandInput = "CreateCategory ";
+            const string CommandInput = "CreateCategory ";
 
             // Act & Assert
-            Assert.Throws<ArgumentNullException>(() => Command.Parse(commandInput), "List");
+            Assert.Throws<ArgumentNullException>(() => Command.Parse(CommandInput), "List");
         }
     }
 }
