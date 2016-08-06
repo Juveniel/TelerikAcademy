@@ -9,7 +9,7 @@
     using Mocks;
     using Moq;
     using NUnit.Framework;
-    using Products;
+    using Cosmetics.Products;
 
     [TestFixture]
     public class CosmeticsEngineTest
