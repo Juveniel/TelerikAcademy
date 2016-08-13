@@ -2,7 +2,7 @@ function solve() {
     return function(selector, isCaseSensitive){
         var container = document.querySelector(selector),
             addControls = createAddControls(),
-            searchControls = createSearchControls(),
+            searchControls = createSearchControls(isCaseSensitive),
             resultControls = createResultControls();
 
         container.className = 'items-control';
@@ -26,6 +26,7 @@ function solve() {
         controlButton.addEventListener('click', function() {
             var itemsList = document.getElementsByClassName('items-list')[0],
                 newItem = document.createElement('li'),
+                newItemText = document.createElement('span'),
                 newItemRemoveBtn = document.createElement('button');
 
             newItemRemoveBtn.className = 'button';
@@ -34,8 +35,10 @@ function solve() {
                 this.parentNode.parentNode.removeChild(this.parentNode);
             });
 
+            newItemText.innerHTML = controlInput.value;
+
             newItem.className = 'list-item';
-            newItem.innerHTML = controlInput.value;
+            newItem.appendChild(newItemText);
             newItem.appendChild(newItemRemoveBtn);
 
             itemsList.appendChild(newItem);
@@ -48,15 +51,35 @@ function solve() {
         return controlContainer;
     }
 
-    function createSearchControls(){
+    function createSearchControls(isCaseSensitive){
         var controlContainer = document.createElement('div'),
             controlLabel = document.createElement('label'),
             controlInput = document.createElement('input');
 
         controlContainer.className = 'search-controls';
         controlLabel.innerHTML = 'Search:';
+        
+        controlInput.addEventListener('input', function(){
+            var text,
+                pattern = this.value,
+                items = document.getElementsByClassName('list-item');
 
-        //todo implement search logic
+            if(isCaseSensitive){
+                pattern = pattern.toLowerCase();
+            }
+
+            for(var i = 0; i < items.length; i += 1){
+                text =  items[i].getElementsByTagName('span')[0].innerHTML;
+                text = isCaseSensitive ? text : text.toLowerCase();
+
+                if(text.indexOf(pattern) < 0){
+                    items[i].style.display = 'none';
+                }
+                else{
+                    items[i].style.display = 'block';
+                }
+            }
+        });
 
         controlContainer.appendChild(controlLabel);
         controlContainer.appendChild(controlInput);
