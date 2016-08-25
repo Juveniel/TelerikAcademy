@@ -1,4 +1,4 @@
-﻿
+﻿using ArmyOfCreatures.Logic;
 
 namespace ArmyOfCreatures.Tests.MockedClasses
 {
