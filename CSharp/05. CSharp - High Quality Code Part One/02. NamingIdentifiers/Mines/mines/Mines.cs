@@ -1,30 +1,11 @@
-﻿namespace mines
+﻿namespace Mines
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Text;
 
     public class Mines
-    {
-        public class Score
-        {
-            public Score()
-            {
-                
-            }
-
-            public Score(string name, int points)
-            {
-                this.Name = name;
-                this.Points = points;
-            }
-
-            public string Name { get; set; }
-
-            public int Points { get; set; }                    
-        }
-
+    {        
         public static void Main()
         {
             var gameCommand = string.Empty;
@@ -47,6 +28,7 @@
                     DrawGameField(gameField);
                     isNewGame = false;
                 }
+
                 Console.Write("Enter row or column : ");
                 gameCommand = Console.ReadLine().Trim();
 
@@ -84,6 +66,7 @@
                                 MakeMove(gameField, bombsField, row, column);
                                 pointCounter++;
                             }
+
                             if (MaxScore == pointCounter)
                             {
                                 hasWon = true;
@@ -97,6 +80,7 @@
                         {
                             isDead = true;
                         }
+
                         break;
                     default:
                         Console.WriteLine("Error! Invalid Command");
@@ -127,6 +111,7 @@
                             }
                         }
                     }
+
                     champions.Sort(
                         (Score firstPlayerName, Score secondPlayerName) =>
                                 secondPlayerName.Name.CompareTo(firstPlayerName.Name));
@@ -141,6 +126,7 @@
                     isDead = false;
                     isNewGame = true;
                 }
+
                 if (hasWon)
                 {
                     Console.WriteLine("BRAVOOOS! You have opened all cells without dying.");
@@ -158,7 +144,8 @@
                     isDead = false;
                     hasWon = true;
                 }
-            } while (gameCommand != "exit");
+            }
+            while (gameCommand != "exit");
                      
             Console.Read();
         }
@@ -206,13 +193,14 @@
 
                 board.Append("|").AppendLine();                           
             }
+
             board.AppendLine("---------------------");           
         }
 
         private static char[,] CreateGameField()
         {
-            const int boardRows = 5;
-            const int boardColumns = 10;
+            int boardRows = 5;
+            int boardColumns = 10;
             char[,] board = new char[boardRows, boardColumns];
             for (var i = 0; i < boardRows; i++)
             {
@@ -227,8 +215,8 @@
 
         private static char[,] SetupBombsField()
         {
-            const int rows = 5;
-            const int columns = 10;
+            int rows = 5;
+            int columns = 10;
             char[,] gameField = new char[rows, columns];
 
             for (var i = 0; i < rows; i++)
@@ -252,8 +240,8 @@
 
             foreach (var randomNum in minesList)
             {
-                var column = (randomNum / columns);
-                var row = (randomNum % columns);
+                var column = randomNum / columns;
+                var row = randomNum % columns;
                 if (row == 0 && randomNum != 0)
                 {
                     column--;
@@ -263,6 +251,7 @@
                 {
                     row++;
                 }
+
                 gameField[column, row - 1] = '*';
             }
 
@@ -299,6 +288,7 @@
                     brojkata++;
                 }
             }
+
             if (rows + 1 < fieldRows)
             {
                 if (gameField[rows + 1, columns] == '*')
@@ -306,6 +296,7 @@
                     brojkata++;
                 }
             }
+
             if (columns - 1 >= 0)
             {
                 if (gameField[rows, columns - 1] == '*')
@@ -313,6 +304,7 @@
                     brojkata++;
                 }
             }
+
             if (columns + 1 < fieldColumns)
             {
                 if (gameField[rows, columns + 1] == '*')
@@ -320,6 +312,7 @@
                     brojkata++;
                 }
             }
+
             if ((rows - 1 >= 0) && (columns - 1 >= 0))
             {
                 if (gameField[rows - 1, columns - 1] == '*')
@@ -327,6 +320,7 @@
                     brojkata++;
                 }
             }
+
             if ((rows - 1 >= 0) && (columns + 1 < fieldColumns))
             {
                 if (gameField[rows - 1, columns + 1] == '*')
@@ -334,6 +328,7 @@
                     brojkata++;
                 }
             }
+
             if ((rows + 1 < fieldRows) && (columns - 1 >= 0))
             {
                 if (gameField[rows + 1, columns - 1] == '*')
@@ -341,6 +336,7 @@
                     brojkata++;
                 }
             }
+
             if ((rows + 1 < fieldRows) && (columns + 1 < fieldColumns))
             {
                 if (gameField[rows + 1, columns + 1] == '*')
@@ -348,7 +344,25 @@
                     brojkata++;
                 }
             }
+
             return char.Parse(brojkata.ToString());
+        }
+
+        public class Score
+        {
+            public Score()
+            {
+            }
+
+            public Score(string name, int points)
+            {
+                this.Name = name;
+                this.Points = points;
+            }
+
+            public string Name { get; set; }
+
+            public int Points { get; set; }
         }
     }
 }
