@@ -1,4 +1,10 @@
-﻿namespace StringExtensions
+﻿//-----------------------------------------------------------------------
+// <copyright file="StringExtensions.cs" company="CompanyName">
+//     Company copyright tag.
+// </copyright>
+// <summary>This is the String Extensions class.</summary>
+//-----------------------------------------------------------------------
+namespace StringExtensions
 {
     using System;
     using System.Collections.Generic;
@@ -9,15 +15,15 @@
     using System.Text.RegularExpressions;
 
     /// <summary>
-    /// Contains extension methods for the System.String class. />
+    /// Contains extension methods for the System.String class.
     /// </summary>
     public static class StringExtensions
     {
         /// <summary>
         /// Converts string to md5 hash.
         /// </summary>
-        /// <param name="input"> Input string to convert. </param>
-        /// <returns> md5 hashed string. </returns>
+        /// <param name="input"> Input string to convert.</param>
+        /// <returns> MD5 hashed string.</returns>
         public static string ToMd5Hash(this string input)
         {
             var md5Hash = MD5.Create();     
@@ -46,10 +52,10 @@
         }
 
         /// <summary>
-        /// Converts string to Int16.
+        /// Converts string to short.
         /// </summary>
         /// <param name="input"> String to convert. </param>
-        /// <returns> Int16 representation of the string. </returns>
+        /// <returns> Short representation of the string. </returns>
         public static short ToShort(this string input)
         {
             short shortValue;
@@ -58,10 +64,10 @@
         }
 
         /// <summary>
-        /// Converts string to Int32.
+        /// Converts string to long.
         /// </summary>
         /// <param name="input"> String to convert. </param>
-        /// <returns> Int32 representation of the string. </returns>
+        /// <returns> Integer representation of the string. </returns>
         public static int ToInteger(this string input)
         {
             int integerValue;
@@ -70,10 +76,10 @@
         }
 
         /// <summary>
-        /// Converts string to Int64.
+        /// Converts string to integer.
         /// </summary>
         /// <param name="input"> String to convert. </param>
-        /// <returns> Int64 representation of the string. </returns>
+        /// <returns> Long representation of the string. </returns>
         public static long ToLong(this string input)
         {
             long longValue;
@@ -111,11 +117,11 @@
         /// <summary>
         /// Extracts part of a string between <paramref name="startString" /> and <paramref name="endString" />
         /// </summary>
-        /// <param name="input">String to extract from</param>
-        /// <param name="startString">Extraction part start</param>
-        /// <param name="endString">Extraction part end</param>
-        /// <param name="startFrom">The start position of the search</param>
-        /// <returns> String with capitalized first letter. </returns>
+        /// <param name="input">String to extract from.</param>
+        /// <param name="startString">Extraction part start.</param>
+        /// <param name="endString">Extraction part end.</param>
+        /// <param name="startFrom">The start position of the search.</param>
+        /// <returns> String with capitalized first letter.</returns>
         public static string GetStringBetween(this string input, string startString, string endString, int startFrom = 0)
         {
             input = input.Substring(startFrom);
@@ -197,10 +203,10 @@
         }
 
         /// <summary>
-        /// Convert string to Cyrillic and escapes forbidden symbols
+        /// Convert string to Cyrillic and escapes forbidden symbols.
         /// </summary>
-        /// <param name="input"> String to convert. </param>
-        /// <returns> Formatted string. </returns>
+        /// <param name="input"> String to convert.</param>
+        /// <returns> Formatted string.</returns>
         public static string ToValidUsername(this string input)
         {
             input = input.ConvertCyrillicToLatinLetters();
@@ -208,10 +214,10 @@
         }
 
         /// <summary>
-        /// Convert string to Latin and escapes forbidden symbols
+        /// Convert string to Latin and escapes forbidden symbols.
         /// </summary>
-        /// <param name="input"> String to convert. </param>
-        /// <returns> Formatted string. </returns>
+        /// <param name="input"> String to convert.</param>
+        /// <returns> Formatted string.</returns>
         public static string ToValidLatinFileName(this string input)
         {
             input = input.Replace(" ", "-").ConvertCyrillicToLatinLetters();
@@ -219,21 +225,21 @@
         }
 
         /// <summary>
-        /// Extracts first n characters from the string
+        /// Extracts first n characters from the string.
         /// </summary>
-        /// <param name="input"> String to extract from. </param>
-        /// <param name="charsCount"> Number of characters to extract. </param>
-        /// <returns> Extracted characters as string. </returns>
+        /// <param name="input"> String to extract from.</param>
+        /// <param name="charsCount"> Number of characters to extract.</param>
+        /// <returns> Extracted characters as string.</returns>
         public static string GetFirstCharacters(this string input, int charsCount)
         {
             return input.Substring(0, Math.Min(input.Length, charsCount));
         }
 
         /// <summary>
-        /// Extracts extension from a filename
+        /// Extracts extension from a filename.
         /// </summary>
-        /// <param name="fileName"> Filename to extract from. </param>
-        /// <returns> Extracted extension as string. </returns>
+        /// <param name="fileName"> Filename to extract from.</param>
+        /// <returns> Extracted extension as string.</returns>
         public static string GetFileExtension(this string fileName)
         {
             if (string.IsNullOrWhiteSpace(fileName))
@@ -251,10 +257,10 @@
         }
 
         /// <summary>
-        /// Convert file extension to content type
+        /// Convert file extension to content type.
         /// </summary>
-        /// <param name="fileExtension"> Extension to convert. </param>
-        /// <returns> Content type of the file extension. </returns>
+        /// <param name="fileExtension"> Extension to convert.</param>
+        /// <returns> Content type of the file extension.</returns>
         public static string ToContentType(this string fileExtension)
         {
             var fileExtensionToContentType = new Dictionary<string, string>
@@ -280,10 +286,10 @@
         }
 
         /// <summary>
-        /// Convert string to byte array
+        /// Convert string to byte array.
         /// </summary>
-        /// <param name="input"> String to convert. </param>
-        /// <returns> Returns the string as byte array. </returns>
+        /// <param name="input"> String to convert.</param>
+        /// <returns> Returns the string as byte array.</returns>
         public static byte[] ToByteArray(this string input)
         {
             var bytesArray = new byte[input.Length * sizeof(char)];
