@@ -4,8 +4,8 @@
 
     public class BoolExtended
     {
-       // private const int MaxCount = 6;
-       
+        private const int MaxCount = 6;    
+           
         public static void Main()
         {
             var converter = new BoolConverter();
