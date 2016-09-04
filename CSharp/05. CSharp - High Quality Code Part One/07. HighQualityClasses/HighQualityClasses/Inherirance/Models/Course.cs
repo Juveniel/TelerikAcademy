@@ -82,7 +82,7 @@
         public override string ToString()
         {
             var result = new StringBuilder();
-            result.Append("OffsiteCourse { Name = ");
+            result.Append($"{this.GetType().Name} {{ Name = ");
             result.Append(this.Name);
 
             if (this.TeacherName != null)
