@@ -32,6 +32,21 @@
     }, delay || 2000)
   }
 
+  // refresh threads
+  function refreshThreadsList() {
+      data.threads.get()
+          .then((data) => {
+              loadThreadsContent(data.result)
+          })
+  }
+
+  //refresh messages
+
+  function refreshMessagesList(threadId) {
+    data.threads.getById(threadId)
+        .then(loadMessagesContent);
+  }
+
   // start threads
   function loadThreadsContent(threads) {
     let container = $($('#threads-container-template').text()),
@@ -125,7 +140,7 @@
   contentContainer.on('click', '#btn-add-thread', (ev) => {
     let title = $(ev.target).parents('form').find('input#input-add-thread').val() || null;
     data.threads.add(title)
-        .then(/* add to UI */)
+        .then(refreshThreadsList())
         .then(showMsg('Successfuly added the new thread', 'Success', 'alert-success'))
         .catch((err) => showMsg(JSON.parse(err.responseText).err, 'Error', 'alert-danger'));
   })
@@ -146,7 +161,7 @@
         msg = $container.find('.input-add-message').val();
 
     data.threads.addMessage(thId, msg)
-        .then(/* add to UI */)
+        .then(refreshMessagesList(thId))
         .then(showMsg('Successfuly added the new mssagee', 'Success', 'alert-success'))
         .catch((err) => showMsg(JSON.parse(err.responseText).err, 'Error', 'alert-danger'));
   })

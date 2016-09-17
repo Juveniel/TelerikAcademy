@@ -27,15 +27,50 @@ var data = (function () {
   }
 
   function threadsAdd(title) {
-    
+      var body = {
+        title: title
+      };
+
+      return new Promise((resolve, reject) => {
+          $.ajax({
+              url: 'api/threads',
+              contentType: 'application/json',
+              method: 'POST',
+              data: JSON.stringify(body)
+          })
+          .done(resolve)
+          .fail(reject)
+      });
   }
 
   function threadById(id) {
-
+      return new Promise((resolve, reject) => {
+          $.ajax({
+              url: 'api/threads/' + id,
+              contentType: 'application/json',
+              method: 'GET'
+          })
+          .done(resolve)
+          .fail(reject)
+      });
   }
 
   function threadsAddMessage(threadId, content) {
+      var body = {
+          username: data.users.current(),
+          content: content
+      };
 
+      return new Promise((resolve, reject) => {
+          $.ajax({
+              url: 'api/threads/' + threadId + '/messages',
+              contentType: 'application/json',
+              method: 'POST',
+              data: JSON.stringify(body)
+          })
+          .done(resolve)
+          .fail(reject)
+      });
   }
   // end threads
 

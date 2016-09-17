@@ -110,7 +110,7 @@ function threadsCreate(thread) {
     if (typeof thread !== 'object' ||
       typeof thread.title !== 'string') {
       reject({
-        err: 'Thead is missing title'
+        err: 'Thread is missing title'
       });
       return;
     }
