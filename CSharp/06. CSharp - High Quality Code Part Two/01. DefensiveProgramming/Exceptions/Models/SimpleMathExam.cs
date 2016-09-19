@@ -4,38 +4,65 @@
 
     public class SimpleMathExam : Exam
     {
-        public int ProblemsSolved { get; private set; }
+        private const int MinProblemsSolved = 0;
+        private const int MaxProblemsSolved = 2;
+
+        private const int BadGradeProblemsCount = 0;
+        private const int AverageGradeProblemsCount = 1;
+        private const int ExcellentGradeProblemsCount = 2;
+
+        private int problemsSolved;
 
         public SimpleMathExam(int problemsSolved)
+        {            
+            this.ProblemsSolved = problemsSolved;
+        }
+
+        public int ProblemsSolved
         {
-            if (problemsSolved < 0)
+            get
             {
-                problemsSolved = 0;
-            }
-            if (problemsSolved > 10)
-            {
-                problemsSolved = 10;
+                if (this.problemsSolved < MinProblemsSolved)
+                {
+                    return MinProblemsSolved;
+                }
+                else if (this.problemsSolved > MaxProblemsSolved)
+                {
+                    return MaxProblemsSolved;
+                }
+                else
+                {
+                    return this.problemsSolved;
+                }                        
             }
 
-            this.ProblemsSolved = problemsSolved;
+            set
+            {               
+                this.problemsSolved = value;
+            }
         }
 
         public override ExamResult Check()
         {
-            if (ProblemsSolved == 0)
+            var gradeComment = string.Empty;
+
+            switch (this.ProblemsSolved)
             {
-                return new ExamResult(2, 2, 6, "Bad result: nothing done.");
-            }
-            else if (ProblemsSolved == 1)
-            {
-                return new ExamResult(4, 2, 6, "Average result: nothing done.");
-            }
-            else if (ProblemsSolved == 2)
-            {
-                return new ExamResult(6, 2, 6, "Average result: nothing done.");
+                case BadGradeProblemsCount:
+                    gradeComment = "Bad result: nothing done.";
+                    break;             
+                case AverageGradeProblemsCount:
+                    gradeComment = "Average result: almost everything done.";
+                    break;
+                case ExcellentGradeProblemsCount:
+                    gradeComment = "Excellent result: everything is done.";
+                    break;
+                default:
+                    gradeComment = "Invalid number of problems solved!";
+                    break;
             }
 
-            return new ExamResult(0, 0, 0, "Invalid number of problems solved!");
+            return new ExamResult(this.ProblemsSolved, MinProblemsSolved, MaxProblemsSolved, gradeComment);
         }
     }
 }

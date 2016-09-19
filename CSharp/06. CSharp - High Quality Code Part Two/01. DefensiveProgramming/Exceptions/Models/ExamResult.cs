@@ -28,7 +28,7 @@
             {
                 if (value < 0)
                 {
-                    throw new ArgumentException("grade must be a positive number");
+                    throw new ArgumentException("Grade must be a positive number.");
                 }
 
                 this.grade = value;
@@ -59,6 +59,7 @@
             {
                 return this.maxGrade;                
             }
+
             private set
             {
                 if (value <= this.MinGrade)
@@ -79,9 +80,9 @@
 
             private set
             {
-                if (string.IsNullOrEmpty(comments))
+                if (string.IsNullOrEmpty(value))
                 {
-                    throw new ArgumentException("comments cannot be empty");
+                    throw new ArgumentException("Comments cannot be empty");
                 }
 
                 this.comments = value;

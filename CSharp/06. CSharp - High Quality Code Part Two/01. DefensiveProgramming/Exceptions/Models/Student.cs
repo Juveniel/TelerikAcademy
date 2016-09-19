@@ -1,8 +1,8 @@
 ﻿namespace Exceptions.Models
 {
-    using System;
-    using System.Linq;
+    using System;  
     using System.Collections.Generic;
+    using System.Linq;
 
     public class Student
     {
@@ -84,7 +84,7 @@
             }
 
             var examScore = new double[this.Exams.Count];
-            var examResults = CheckExams();
+            var examResults = this.CheckExams();
             for (var i = 0; i < examResults.Count; i++)
             {
                 examScore[i] =

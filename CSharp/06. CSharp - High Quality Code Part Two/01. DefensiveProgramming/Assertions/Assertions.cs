@@ -5,7 +5,7 @@
 
     internal class Assertions
     {
-        internal static void Main()
+        public static void Main()
         {
             var arr = new int[] { 3, -1, 15, 4, 17, 2, 33, 0 };
             Console.WriteLine($"arr = [{string.Join(", ", arr)}]");
@@ -34,6 +34,14 @@
             }
         }
 
+        public static int BinarySearch<T>(T[] arr, T value) where T : IComparable<T>
+        {
+            Debug.Assert(arr != null, "Arr ix null.");
+            Debug.Assert(value != null, "Value is null.");
+
+            return BinarySearch(arr, value, 0, arr.Length - 1);
+        }
+
         private static int FindMinElementIndex<T>(T[] arr, int startIndex, int endIndex)
             where T : IComparable<T>
         {
@@ -50,6 +58,7 @@
                     minElementIndex = i;
                 }
             }
+
             return minElementIndex;
         }
 
@@ -62,15 +71,7 @@
             x = y;
             y = oldX;
         }
-
-        public static int BinarySearch<T>(T[] arr, T value) where T : IComparable<T>
-        {
-            Debug.Assert(arr != null, "Arr ix null.");
-            Debug.Assert(value != null, "Value is null.");
-
-            return BinarySearch(arr, value, 0, arr.Length - 1);
-        }
-
+       
         private static int BinarySearch<T>(T[] arr, T value, int startIndex, int endIndex)
             where T : IComparable<T>
         {
@@ -86,6 +87,7 @@
                 {
                     return midIndex;
                 }
+
                 if (arr[midIndex].CompareTo(value) < 0)
                 {
                     startIndex = midIndex + 1;

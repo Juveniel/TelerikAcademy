@@ -4,6 +4,9 @@
 
     public class CSharpExam : Exam
     {
+        private const int MinGrade = 0;
+        private const int MaxGrade = 100;
+
         private int score;
 
         public CSharpExam(int score)
@@ -20,7 +23,7 @@
 
             private set
             {
-                if (value < 0 || value > 100)
+                if (value < MinGrade || value > MaxGrade)
                 {
                     throw new ArgumentOutOfRangeException("Score must be in range 0 to 100!");
                 }
@@ -31,10 +34,12 @@
 
         public override ExamResult Check()
         {
-            var result = new ExamResult(this.Score, 0, 100, "Exam results calculated by score.");
+            if (this.Score < CSharpExam.MinGrade || this.Score > CSharpExam.MaxGrade)
+            {
+                throw new InvalidOperationException();
+            }
 
-            return result;
-
+            return new ExamResult(this.Score, 0, 100, "Exam results calculated by score.");
         }
     }
 }
