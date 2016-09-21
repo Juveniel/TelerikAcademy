@@ -1,8 +1,8 @@
-﻿using System.Windows;
-
-namespace SolarSystem
+﻿namespace SolarSystem
 {
-    public class PropertyHolder<TPropertyType, THoldingType> where THoldingType:DependencyObject
+    using System.Windows;
+
+    public class PropertyHolder<TPropertyType, THoldingType> where THoldingType : DependencyObject
     {
         public PropertyHolder(string name, TPropertyType defaultValue, PropertyChangedCallback propertyChangedCallback)
         {

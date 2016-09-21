@@ -1,10 +1,10 @@
-using System;
-using System.Windows;
-using System.Windows.Input;
-using System.Windows.Media.Media3D;
-
 namespace SolarSystem
 {
+    using System;
+    using System.Windows;
+    using System.Windows.Input;
+    using System.Windows.Media.Media3D;
+
     /// <summary>
     ///     Trackball is a utility class which observes the mouse events
     ///     on a specified FrameworkElement and produces a Transform3D
@@ -42,26 +42,26 @@ namespace SolarSystem
     /// </summary> 
     public class Trackball
     {
-        private FrameworkElement _eventSource;
-        private Point _previousPosition2D;
-        private Vector3D _previousPosition3D = new Vector3D(0, 0, 1);
+        private FrameworkElement eventSource;
+        private Point previousPosition2D;
+        private Vector3D previousPosition3D = new Vector3D(0, 0, 1);
 
-        private Transform3DGroup _transform;
-        private ScaleTransform3D _scale = new ScaleTransform3D();
-        private AxisAngleRotation3D _rotation = new AxisAngleRotation3D();
+        private Transform3DGroup transform;
+        private ScaleTransform3D scale = new ScaleTransform3D();
+        private AxisAngleRotation3D rotation = new AxisAngleRotation3D();
 
         public Trackball()
         {
-            _transform = new Transform3DGroup();
-            _transform.Children.Add(_scale);
-            _transform.Children.Add(new RotateTransform3D(_rotation));
+            this.transform = new Transform3DGroup();
+            this.transform.Children.Add(this.scale);
+            this.transform.Children.Add(new RotateTransform3D(this.rotation));
         }
 
         /// <summary>
         ///     A transform to move the camera or scene to the trackball's
         ///     current orientation and scale.
         /// </summary>
-        public Transform3D Transform => _transform;
+        public Transform3D Transform => this.transform;
 
         #region Event Handling
 
@@ -70,80 +70,26 @@ namespace SolarSystem
         /// </summary>
         public FrameworkElement EventSource
         {
-            get { return _eventSource; }
+            get
+            {
+                return this.eventSource;
+            }
             
             set
             {
-                if (_eventSource != null)
+                if (this.eventSource != null)
                 {
-                    _eventSource.MouseDown -= this.OnMouseDown;
-                    _eventSource.MouseUp -= this.OnMouseUp;
-                    _eventSource.MouseMove -= this.OnMouseMove;
+                    this.eventSource.MouseDown -= this.OnMouseDown;
+                    this.eventSource.MouseUp -= this.OnMouseUp;
+                    this.eventSource.MouseMove -= this.OnMouseMove;
                 }
 
-                _eventSource = value;
+                this.eventSource = value;
 
-                _eventSource.MouseDown += this.OnMouseDown;
-                _eventSource.MouseUp += this.OnMouseUp;
-                _eventSource.MouseMove += this.OnMouseMove;
+                this.eventSource.MouseDown += this.OnMouseDown;
+                this.eventSource.MouseUp += this.OnMouseUp;
+                this.eventSource.MouseMove += this.OnMouseMove;
             }
-        }
-
-        private void OnMouseDown(object sender, MouseEventArgs e)
-        {
-            Mouse.Capture(EventSource, CaptureMode.Element);
-            _previousPosition2D = e.GetPosition(EventSource);
-            _previousPosition3D = ProjectToTrackball(
-                EventSource.ActualWidth,
-                EventSource.ActualHeight,
-                _previousPosition2D);
-        }
-
-        private void OnMouseUp(object sender, MouseEventArgs e)
-        {
-            Mouse.Capture(EventSource, CaptureMode.None);
-        }
-
-        private void OnMouseMove(object sender, MouseEventArgs e)
-        {
-            var currentPosition = e.GetPosition(EventSource);
-
-            // Prefer tracking to zooming if both buttons are pressed.
-            if (e.LeftButton == MouseButtonState.Pressed)
-            {
-                Track(currentPosition);
-            }
-            else if (e.RightButton == MouseButtonState.Pressed)
-            {
-                Zoom(currentPosition);
-            }
-
-            _previousPosition2D = currentPosition;
-        }
-
-        #endregion Event Handling
-
-        private void Track(Point currentPosition)
-        {
-            var currentPosition3D = ProjectToTrackball(
-                EventSource.ActualWidth, EventSource.ActualHeight, currentPosition);
-
-            var axis = Vector3D.CrossProduct(_previousPosition3D, currentPosition3D);
-            var angle = Vector3D.AngleBetween(_previousPosition3D, currentPosition3D);
-            var delta = new Quaternion(axis, -angle);
-
-            // Get the current orientantion from the RotateTransform3D
-            var r = _rotation;
-            var q = new Quaternion(_rotation.Axis, _rotation.Angle);
-
-            // Compose the delta with the previous orientation
-            q *= delta;
-
-            // Write the new orientation back to the Rotation3D
-            _rotation.Axis = q.Axis;
-            _rotation.Angle = q.Angle;
-
-            _previousPosition3D = currentPosition3D;
         }
 
         private static Vector3D ProjectToTrackball(double width, double height, Point point)
@@ -154,21 +100,78 @@ namespace SolarSystem
             x = x - 1;                           // Translate 0,0 to the center
             y = 1 - y;                           // Flip so +Y is up instead of down
 
-            var z2 = 1 - x * x - y * y;       // z^2 = 1 - x^2 - y^2
+            var z2 = 1 - (x * x) - (y * y);
             var z = z2 > 0 ? Math.Sqrt(z2) : 0;
 
             return new Vector3D(x, y, z);
         }
 
+        private void OnMouseDown(object sender, MouseEventArgs e)
+        {
+            Mouse.Capture(this.EventSource, CaptureMode.Element);
+            this.previousPosition2D = e.GetPosition(this.EventSource);
+            this.previousPosition3D = ProjectToTrackball(
+                this.EventSource.ActualWidth,
+                this.EventSource.ActualHeight,
+                this.previousPosition2D);
+        }
+
+        private void OnMouseUp(object sender, MouseEventArgs e)
+        {
+            Mouse.Capture(this.EventSource, CaptureMode.None);
+        }
+
+        private void OnMouseMove(object sender, MouseEventArgs e)
+        {
+            var currentPosition = e.GetPosition(this.EventSource);
+
+            // Prefer tracking to zooming if both buttons are pressed.
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.Track(currentPosition);
+            }
+            else if (e.RightButton == MouseButtonState.Pressed)
+            {
+                this.Zoom(currentPosition);
+            }
+
+            this.previousPosition2D = currentPosition;
+        }
+
+        #endregion Event Handling
+    
+        private void Track(Point currentPosition)
+        {
+            var currentPosition3D = ProjectToTrackball(
+                this.EventSource.ActualWidth, this.EventSource.ActualHeight, currentPosition);
+
+            var axis = Vector3D.CrossProduct(this.previousPosition3D, currentPosition3D);
+            var angle = Vector3D.AngleBetween(this.previousPosition3D, currentPosition3D);
+            var delta = new Quaternion(axis, -angle);
+
+            // Get the current orientantion from the RotateTransform3D
+            var r = this.rotation;
+            var q = new Quaternion(this.rotation.Axis, this.rotation.Angle);
+
+            // Compose the delta with the previous orientation
+            q *= delta;
+
+            // Write the new orientation back to the Rotation3D
+            this.rotation.Axis = q.Axis;
+            this.rotation.Angle = q.Angle;
+
+            this.previousPosition3D = currentPosition3D;
+        }
+        
         private void Zoom(Point currentPosition)
         {
-            var yDelta = currentPosition.Y - _previousPosition2D.Y;
+            var delta = currentPosition.Y - this.previousPosition2D.Y;
             
-            var scale = Math.Exp(yDelta / 100);    // e^(yDelta/100) is fairly arbitrary.
+            var scale = Math.Exp(delta / 100);    // e^(yDelta/100) is fairly arbitrary.
 
-            _scale.ScaleX *= scale;
-            _scale.ScaleY *= scale;
-            _scale.ScaleZ *= scale;
+            this.scale.ScaleX *= scale;
+            this.scale.ScaleY *= scale;
+            this.scale.ScaleZ *= scale;
         }
     }
 }

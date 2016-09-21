@@ -1,8 +1,7 @@
-﻿
-using System.Windows;
-
-namespace SolarSystem
+﻿namespace SolarSystem
 {
+    using System.Windows;
+
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>

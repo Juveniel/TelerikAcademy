@@ -5,9 +5,15 @@
 
     internal class MathOperationsPerformance
     {
-        private static readonly Stopwatch sw = new Stopwatch();
-        private static readonly Random rnd = new Random();
         private const int Count = 1000;
+
+        private static readonly Stopwatch Sw = new Stopwatch();
+        private static readonly Random Rnd = new Random();
+
+        public static int GetRandomValue()
+        {
+            return Rnd.Next(1, int.MaxValue);
+        }
 
         internal static void Main()
         {
@@ -21,7 +27,7 @@
         private static void IntTest()
         {
             var result = GetRandomValue();
-            sw.Start();
+            Sw.Start();
 
             for (var i = 0; i < Count; i++)
             {
@@ -35,15 +41,15 @@
                 }
             }
 
-            sw.Stop();
-            Console.WriteLine($"Int test passed. Total elapsed: {sw.Elapsed}");
-            sw.Reset();
+            Sw.Stop();
+            Console.WriteLine($"Int test passed. Total elapsed: {Sw.Elapsed}");
+            Sw.Reset();
         }
 
         private static void LongTest()
         {
             long result = GetRandomValue();
-            sw.Start();
+            Sw.Start();
 
             for (var i = 0; i < Count; i++)
             {
@@ -57,15 +63,15 @@
                 }
             }
 
-            sw.Stop();
-            Console.WriteLine($"Long test time elapsed: {sw.Elapsed}");
-            sw.Reset();
+            Sw.Stop();
+            Console.WriteLine($"Long test time elapsed: {Sw.Elapsed}");
+            Sw.Reset();
         }
 
         private static void FloatTest()
         {
             float result = GetRandomValue();
-            sw.Start();
+            Sw.Start();
 
             for (var i = 0; i < Count; i++)
             {              
@@ -76,15 +82,15 @@
                 result /= GetRandomValue();                 
             }
 
-            sw.Stop();
-            Console.WriteLine($"Float tests time elapsed: {sw.Elapsed}");
-            sw.Reset();
+            Sw.Stop();
+            Console.WriteLine($"Float tests time elapsed: {Sw.Elapsed}");
+            Sw.Reset();
         }
 
         private static void DoubleTest()
         {
             double result = GetRandomValue();
-            sw.Start();
+            Sw.Start();
 
             for (var i = 0; i < Count; i++)
             {                
@@ -95,15 +101,15 @@
                 result /= GetRandomValue();                 
             }
 
-            sw.Stop();
-            Console.WriteLine($"Double test time elapsed {sw.Elapsed}: ");
-            sw.Reset();
+            Sw.Stop();
+            Console.WriteLine($"Double test time elapsed {Sw.Elapsed}: ");
+            Sw.Reset();
         }
 
         private static void DecimalTest()
         {
             decimal result = GetRandomValue();
-            sw.Start();
+            Sw.Start();
 
             for (var i = 0; i < Count; i++)
             {
@@ -116,14 +122,9 @@
                 }                
             }
 
-            sw.Stop();
-            Console.WriteLine($"Decimal test time elapsed: {sw.Elapsed}");
-            sw.Reset();
-        }
-
-        public static int GetRandomValue()
-        {
-            return rnd.Next(1, int.MaxValue);
-        }
+            Sw.Stop();
+            Console.WriteLine($"Decimal test time elapsed: {Sw.Elapsed}");
+            Sw.Reset();
+        }        
     }
 }

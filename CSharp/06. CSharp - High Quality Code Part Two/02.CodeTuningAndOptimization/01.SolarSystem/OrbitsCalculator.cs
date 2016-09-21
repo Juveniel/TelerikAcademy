@@ -1,127 +1,139 @@
-﻿using System;
-using System.ComponentModel;
-using System.Windows.Threading;
-
-namespace SolarSystem
+﻿namespace SolarSystem
 {
+    using System;
+    using System.ComponentModel;
+    using System.Windows.Threading;
+
     internal class OrbitsCalculator : INotifyPropertyChanged
     {
-        private DateTime startTime;
-        private double startDays;
-        private DispatcherTimer timer;
-        private double daysPerSecond = 2;
-
         private const double EarthYear = 365.25;
         private const double EarthRotationPeriod = 1.0;
         private const double SunRotationPeriod = 25.0;
-        // const double TwoPi = Math.PI * 2; never used and useless in general
+
+        private DateTime startTime;
+        private DispatcherTimer timer;
+        private double daysPerSecond = 2;
+        
+        public OrbitsCalculator()
+        {
+            this.EarthOrbitPositionX = this.EarthOrbitRadius;
+            this.DaysPerSecond = 2;
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public double DaysPerSecond
         {
             get
             {
-                return daysPerSecond;
+                return this.daysPerSecond;
             }
 
             set
             {
-                daysPerSecond = value; Update("DaysPerSecond");
+                this.daysPerSecond = value;
+                this.Update("DaysPerSecond");
             }
         }
 
         public double EarthOrbitRadius => 40;
+
         public double Days { get; set; }
+
         public double EarthRotationAngle { get; set; }
+
         public double SunRotationAngle { get; set; }
+
         public double EarthOrbitPositionX { get; set; }
+
         public double EarthOrbitPositionY { get; set; }
+
         public double EarthOrbitPositionZ { get; set; }
+
         public bool ReverseTime { get; set; }
+
         public bool Paused { get; set; }
-
-        public OrbitsCalculator()
-        {
-            EarthOrbitPositionX = EarthOrbitRadius;
-            DaysPerSecond = 2;
-        }
-
+       
         public void StartTimer()
         {
-            startTime = DateTime.Now;
-            timer = new DispatcherTimer {Interval = TimeSpan.FromMilliseconds(10)};
-            timer.Tick += new EventHandler(OnTimerTick);
-            timer.Start();
-        }
-
-        private void StopTimer()
-        {
-            timer.Stop();
-            timer.Tick -= OnTimerTick;
-            timer = null;
+            this.startTime = DateTime.Now;
+            this.timer = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromMilliseconds(10)
+            };
+            this.timer.Tick += new EventHandler(this.OnTimerTick);
+            this.timer.Start();
         }
 
         public void Pause(bool doPause)
         {
             if (doPause)
             {
-                StopTimer();
+                this.StopTimer();
             }
             else
             {
-                StartTimer();
+                this.StartTimer();
             }
         }
 
+        private void StopTimer()
+        {
+            this.timer.Stop();
+            this.timer.Tick -= this.OnTimerTick;
+            this.timer = null;
+        }
+        
         private void OnTimerTick(object sender, EventArgs e)
         {
             var now = DateTime.Now;
-            Days += (now - startTime).TotalMilliseconds * DaysPerSecond / 1000.0 * (ReverseTime ? -1 : 1);
-            startTime = now;
-            Update("Days");
-            OnTimeChanged();
+            this.Days += (now - this.startTime).TotalMilliseconds * this.DaysPerSecond / 1000.0 * (this.ReverseTime ? -1 : 1);
+            this.startTime = now;
+            this.Update("Days");
+            this.OnTimeChanged();
         }
 
         private void OnTimeChanged()
         {
-            EarthPosition();
-            EarthRotation();
-            SunRotation();
+            this.EarthPosition();
+            this.EarthRotation();
+            this.SunRotation();
         }
 
         private void EarthPosition()
         {
-            var angle = 2 * Math.PI * Days / EarthYear;
-            EarthOrbitPositionX = EarthOrbitRadius * Math.Cos(angle);
-            EarthOrbitPositionY = EarthOrbitRadius * Math.Sin(angle);
-            Update("EarthOrbitPositionX");
-            Update("EarthOrbitPositionY");
+            var angle = 2 * Math.PI * this.Days / EarthYear;
+            this.EarthOrbitPositionX = this.EarthOrbitRadius * Math.Cos(angle);
+            this.EarthOrbitPositionY = this.EarthOrbitRadius * Math.Sin(angle);
+            this.Update("EarthOrbitPositionX");
+            this.Update("EarthOrbitPositionY");
         }
 
         private void EarthRotation()
         {
             for (var step = 0; step <= 360; step += 1)
             {
-                EarthRotationAngle = step * Days / EarthRotationPeriod;
+                this.EarthRotationAngle = step * this.Days / EarthRotationPeriod;
             }
-            Update("EarthRotationAngle");
+
+            this.Update("EarthRotationAngle");
         }
 
         private void SunRotation()
         {
-            SunRotationAngle = 360 * Days / SunRotationPeriod;
-            Update("SunRotationAngle");
+            this.SunRotationAngle = 360 * this.Days / SunRotationPeriod;
+            this.Update("SunRotationAngle");
         }
 
         private void Update(string propertyName)
         {
-            if (PropertyChanged == null)
+            if (this.PropertyChanged == null)
             {
                 return;
             }
-            var args = new PropertyChangedEventArgs(propertyName);
-            PropertyChanged(this, args);
-        }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+            var args = new PropertyChangedEventArgs(propertyName);
+            this.PropertyChanged(this, args);
+        }        
     }
 }

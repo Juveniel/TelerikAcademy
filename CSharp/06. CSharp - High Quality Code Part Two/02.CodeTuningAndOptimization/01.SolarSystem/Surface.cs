@@ -1,36 +1,38 @@
-using System;
-using System.Windows;
-using System.Windows.Media.Media3D;
-
 namespace SolarSystem
 {
+    using System;
+    using System.Windows;
+    using System.Windows.Media.Media3D;
+
     public abstract class Surface : ModelVisual3D
-    {
-        protected Surface()
-        {
-            Content = _content;
-            _content.Geometry = CreateMesh();
-        }
-
-        public static PropertyHolder<Material, Surface> MaterialProperty =
-            new PropertyHolder<Material,Surface>("Material", null, OnMaterialChanged);
-
-        public static PropertyHolder<Material, Surface> BackMaterialProperty =
+    {       
+        private static PropertyHolder<Material, Surface> backMaterialProperty =
             new PropertyHolder<Material, Surface>("BackMaterial", null, OnBackMaterialChanged);
 
-        public static PropertyHolder<bool, Surface> VisibleProperty =
+        private static PropertyHolder<bool, Surface> visibleProperty =
             new PropertyHolder<bool, Surface>("Visible", true, OnVisibleChanged);
+
+        private static PropertyHolder<Material, Surface> materialProperty =
+            new PropertyHolder<Material, Surface>("Material", null, OnMaterialChanged);
+
+        private readonly GeometryModel3D content = new GeometryModel3D();
+
+        protected Surface()
+        {
+            this.Content = this.content;
+            this.content.Geometry = this.CreateMesh();
+        }        
 
         public Material Material
         {
             get
             {
-                return MaterialProperty.Get(this);
+                return materialProperty.Get(this);
             }
 
             set
             {
-                MaterialProperty.Set(this, value);
+                materialProperty.Set(this, value);
             }
         }
 
@@ -38,12 +40,12 @@ namespace SolarSystem
         {
             get
             {
-                return BackMaterialProperty.Get(this);
+                return backMaterialProperty.Get(this);
             }
 
             set
             {
-                BackMaterialProperty.Set(this, value);
+                backMaterialProperty.Set(this, value);
             }
         }
 
@@ -51,15 +53,27 @@ namespace SolarSystem
         {
             get
             {
-                return VisibleProperty.Get(this);
+                return visibleProperty.Get(this);
             }
 
             set
             {
-                VisibleProperty.Set(this, value);
+                visibleProperty.Set(this, value);
             }
         }
 
+        protected static void OnGeometryChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (sender == null)
+            {
+                throw new ArgumentNullException(nameof(sender));
+            }
+
+            ((Surface)sender).OnGeometryChanged();
+        }
+
+        protected abstract Geometry3D CreateMesh();
+        
         private static void OnMaterialChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
             if (sender == null)
@@ -88,51 +102,37 @@ namespace SolarSystem
             }
 
             ((Surface)sender).OnVisibleChanged();
-        }
-
-        protected static void OnGeometryChanged(object sender, DependencyPropertyChangedEventArgs e)
-        {
-            if (sender == null)
-            {
-                throw new ArgumentNullException(nameof(sender));
-            }
-
-            ((Surface)sender).OnGeometryChanged();
-        }
+        }        
 
         private void OnMaterialChanged()
         {
-            SetContentMaterial();
+            this.SetContentMaterial();
         }
 
         private void OnBackMaterialChanged()
         {
-            SetContentBackMaterial();
+            this.SetContentBackMaterial();
         }
 
         private void OnVisibleChanged()
         {
-            SetContentMaterial();
-            SetContentBackMaterial();
+            this.SetContentMaterial();
+            this.SetContentBackMaterial();
         }
 
         private void SetContentMaterial()
         {
-            _content.Material = Visible ? Material : null;
+            this.content.Material = this.Visible ? this.Material : null;
         }
 
         private void SetContentBackMaterial()
         {
-            _content.BackMaterial = Visible ? BackMaterial : null;
+            this.content.BackMaterial = this.Visible ? this.BackMaterial : null;
         }
 
         private void OnGeometryChanged()
         {
-            _content.Geometry = CreateMesh();
-        }
-
-        protected abstract Geometry3D CreateMesh();
-
-        private readonly GeometryModel3D _content = new GeometryModel3D();
+            this.content.Geometry = this.CreateMesh();
+        }                
     }
 }
