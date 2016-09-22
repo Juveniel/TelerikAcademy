@@ -35,7 +35,6 @@ LC.currentLocation = (function() {
                     };
                     
                     resolve(coordinates);
-
                 },
                 function resolveError(error) {
 
@@ -46,7 +45,6 @@ LC.currentLocation = (function() {
                     }
 
                     reject('Geolocation error: ' + errorMessage);
-
                 }
             );
         });
