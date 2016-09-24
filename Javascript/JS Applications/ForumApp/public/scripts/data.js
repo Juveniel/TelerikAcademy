@@ -15,6 +15,10 @@ var data = (function () {
   function userGetCurrent() {
     return Promise.resolve(localStorage.getItem(USERNAME_STORAGE_KEY));
   }
+
+  function getUsernameString(){
+      return localStorage.getItem(USERNAME_STORAGE_KEY);
+  }
   // end users
 
   // start threads
@@ -27,8 +31,9 @@ var data = (function () {
   }
 
   function threadsAdd(title) {
-      var body = {
-        title: title
+      const body = {
+        title: title,
+        username: getUsernameString() || 'anonymous'
       };
 
       return new Promise((resolve, reject) => {
@@ -56,8 +61,8 @@ var data = (function () {
   }
 
   function threadsAddMessage(threadId, content) {
-      var body = {
-          username: data.users.current(),
+      const body = {
+          username: getUsernameString() || 'anonymous',
           content: content
       };
 
@@ -76,7 +81,16 @@ var data = (function () {
 
   // start gallery
   function galleryGet() {
-    const REDDIT_URL = `https://www.reddit.com/r/aww.json?jsonp=?`;
+      const REDDIT_URL = `https://www.reddit.com/r/aww.json?jsonp=?`;
+
+      return new Promise((resolve, reject) => {
+          $.ajax({
+              url: REDDIT_URL,
+              dataType: 'jsonp'
+          })
+          .done(resolve)
+          .fail(reject);
+      })
     
   }
   // end gallery

@@ -137,10 +137,17 @@ function threadsAddMessage(id, msg) {
         thread.messages = [];
       }
 
+      if(msg.content === '') {
+        reject({
+          err: 'Content is empty!'
+        });
+        return;
+      }
+
       msg.postDate = new Date();
       thread.messages.push(msg);
       return thread;
-    });
+    }).catch(function(err) {});
 }
 
 module.exports = {
