@@ -111,11 +111,8 @@
 
         private void EarthRotation()
         {
-            for (var step = 0; step <= 360; step += 1)
-            {
-                this.EarthRotationAngle = step * this.Days / EarthRotationPeriod;
-            }
-
+    
+            this.EarthRotationAngle = 360 * this.Days / EarthRotationPeriod;                   
             this.Update("EarthRotationAngle");
         }
 
