@@ -1,0 +1,10 @@
+<div class="well">
+    <h1>Users list: </h1>
+</div>
+<ul class="list-group">
+    {{#each result}}
+        <li class="list-group-item">
+            <a href="#/home?userId={{this.id}}">{{this.username}}</a>
+        </li>
+    {{/each}}
+</ul>

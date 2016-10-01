@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "username": "Minkov",
+      "passHash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "usernameToLower": "minkov",
+      "id": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+      "authKey": "16655985-e510-43d4-ad1c-2388c76d1ef6FwHCPd*bP:.;Fu&:evl)RPGg"
+    },
+    {
+      "username": "Minkov3",
+      "passHash": "1234567890123456789012345678901234567890",
+      "usernameToLower": "minkov3",
+      "id": "bd04b3b8-5586-47ad-bf8f-db6c531dbb73",
+      "authKey": "bd04b3b8-5586-47ad-bf8f-db6c531dbb73erxSIAJyVOzIEIrpMFbanscO"
+    },
+    {
+      "username": "test1234",
+      "passHash": "test",
+      "usernameToLower": "test1234",
+      "id": "b8ee537a-8f29-490c-a957-b1c1890698a1",
+      "authKey": "b8ee537a-8f29-490c-a957-b1c1890698a1EBsouPoASMRRbbnPwRgLTDAg"
+    }
+  ],
+  "cookies": [
+    {
+      "text": "Test",
+      "category": "Home",
+      "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+      "likes": 10,
+      "dislikes": 15,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-09T14:53:30.290Z",
+      "id": "2dae28aa-ee64-4bc1-8591-29284d88c9e9"
+    },
+    {
+      "text": "May the Force with you",
+      "category": "WOrk",
+      "userId": "16655985-e510-43d4-ad1c-2388c76d1ef6",
+      "likes": 20,
+      "dislikes": 4,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-09T14:53:56.482Z",
+      "id": "e2fdbf82-54c3-488f-add4-9af3262c2572",
+      "hours": 9
+    },
+    {
+      "text": "Hello!",
+      "category": "Home",
+      "userId": "bd04b3b8-5586-47ad-bf8f-db6c531dbb73",
+      "likes": 11,
+      "dislikes": 9,
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "shareDate": "2015-09-10T06:24:18.743Z",
+      "id": "ea91a233-bcf3-48b6-933f-05857f4aea87"
+    },
+    {
+      "text": "zaglavie",
+      "category": "kategoriq",
+      "img": "snimka",
+      "userId": "bf068463-db02-4946-bd19-94aa82ca37f0",
+      "likes": 0,
+      "dislikes": 0,
+      "shareDate": "2016-10-01T09:17:08.865Z",
+      "id": "3231b872-07bd-4fc7-889a-533f804f63f7"
+    },
+    {
+      "text": "teasdasd",
+      "category": "asdasdad",
+      "img": "adsasdas",
+      "userId": "b8ee537a-8f29-490c-a957-b1c1890698a1",
+      "likes": 0,
+      "dislikes": 0,
+      "shareDate": "2016-10-01T11:02:45.029Z",
+      "id": "fa8a8d97-f774-4160-b0c9-267ead708ec8"
+    },
+    {
+      "text": "das",
+      "category": "asdasd",
+      "img": "asdasdasd",
+      "userId": "b8ee537a-8f29-490c-a957-b1c1890698a1",
+      "likes": 0,
+      "dislikes": 0,
+      "shareDate": "2016-10-01T11:30:03.922Z",
+      "id": "416f5ba5-d81d-49e8-a4de-0dc72a3b6fe3"
+    },
+    {
+      "text": "",
+      "category": "",
+      "img": "https://dayinthelifeofapurpleminion.files.wordpress.com/2014/12/batman-exam.jpg",
+      "userId": "b8ee537a-8f29-490c-a957-b1c1890698a1",
+      "likes": 0,
+      "dislikes": 0,
+      "shareDate": "2016-10-01T11:34:53.219Z",
+      "id": "3261b337-438c-47bf-a03b-b65625a6d4f4"
+    }
+  ]
+}

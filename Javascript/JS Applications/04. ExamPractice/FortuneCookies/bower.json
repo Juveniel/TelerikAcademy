@@ -1,0 +1,23 @@
+{
+  "name": "forture-cookies-sep-2015",
+  "version": "0.0.0",
+  "authors": [
+    "DonchoMinkov <donchominkov@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "handlebars": "^4.0.5",
+    "navigo": "^3.0.0",
+    "toastr": "^2.1.3"
+  }
+}
