@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GithubRepo", "GithubRepo", "{CBBA4870-D52A-49A1-8855-5B0A6389AFCF}"
+	ProjectSection(SolutionItems) = preProject
+		Link.txt = Link.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{009AD291-32F6-4298-BB96-F37792D46F5F}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\..\Desktop\ILspy.png = ..\..\..\..\..\..\Desktop\ILspy.png
+		..\..\..\..\..\..\Desktop\SandCastle.png = ..\..\..\..\..\..\Desktop\SandCastle.png
+		..\..\..\..\..\..\Desktop\StyleCop.png = ..\..\..\..\..\..\Desktop\StyleCop.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
