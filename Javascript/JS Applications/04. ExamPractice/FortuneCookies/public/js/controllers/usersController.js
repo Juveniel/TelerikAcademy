@@ -41,7 +41,6 @@ let usersController = {
                 dataService.isLoggedIn()
                     .then(isLoggedIn => {
                         if (isLoggedIn) {
-                            //redirect to
                             window.location = "#/home";
                             return;
                         }
@@ -133,7 +132,27 @@ let usersController = {
             },
 
             myCookie() {
-                console.log("My Cookie");
+                dataService.isLoggedIn()
+                    .then(isLoggedIn => {
+                        if (!isLoggedIn) {
+                            window.location = "#/home";
+                            return;
+                        }
+
+                        dataService.myCookie()
+                            .then((cookie) => {
+                                templates.get("my-cookie")
+                                    .then((templateHtml) => {
+                                        let templateFunc = handlebars.compile(templateHtml);
+                                        let html = templateFunc(cookie.result);
+                                        $("#container").html(html);
+                                    });
+                            })
+                            .catch((error) => {
+                                toastr.error(error.responseText);
+                            })
+
+                    });
             }
         }
     }

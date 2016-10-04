@@ -1,16 +1,35 @@
 let homeController = {
-    get(dataService, template) {
+    get(dataService, templates) {
         return {
-            index() {
+            index(params) {
                 var cookies;
                 dataService.cookies()
                     .then((cookiesResponse) => {
-                        cookies = cookiesResponse;
-                        console.log(cookies);
+                        cookies = cookiesResponse.result;
+                        //console.log(cookies);
+
+                        if(params.userId) {
+                            const userId = params.userId;
+
+                            if(cookies.length > 0) {
+                                cookies = cookies.filter(cookie => {
+                                    return cookie.userId === userId;
+                                });
+                            }
+                        }
+
+                        if(params.category) {
+                            const category = params.category;
+                            
+                            cookies = cookies.filter(cookie => {
+                                return cookie.category === category;
+                            });
+                        }
 
                         return templates.get("home");
                     })
                     .then((templateHtml) => {
+
                         let templateFunc = handlebars.compile(templateHtml);
                         let html = templateFunc(cookies);
                         $("#container").html(html);
@@ -25,7 +44,9 @@ let homeController = {
 
                         });
                     });
-            }
+            },
+
+
         }
     }
 };

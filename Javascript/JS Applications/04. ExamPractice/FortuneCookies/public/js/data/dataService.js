@@ -54,6 +54,16 @@ var dataService = {
         return requester.putJSON("/api/cookies/" + cookieId, { type }, options);
     },
 
+    myCookie() {
+        let options = {
+            headers: {
+                [HTTP_HEADER_KEY]: localStorage.getItem(KEY_STORAGE_AUTH_KEY)
+            }
+        };
+
+        return requester.getJSON("/api/my-cookie", options);
+    },
+
     getUsers() {
         let options = {
             headers: {
@@ -62,5 +72,15 @@ var dataService = {
         };
 
         return requester.getJSON("/api/users", options);
+    },
+
+    getCategories() {
+        let options = {
+            headers: {
+                [HTTP_HEADER_KEY]: localStorage.getItem(KEY_STORAGE_AUTH_KEY)
+            }
+        };
+
+        return requester.getJSON("/api/categories", options);
     }
 };
