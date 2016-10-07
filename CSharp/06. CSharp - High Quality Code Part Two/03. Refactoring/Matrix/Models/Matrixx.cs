@@ -95,6 +95,34 @@
             }
         }
 
+        private static void ChangeDirectionToNextPossible(ref Direction direction)
+        {
+            var currentDirection = 0;
+            int[] dirX = { 1, 1, 1, 0, -1, -1, -1, 0 };
+            int[] dirY = { 1, 0, -1, -1, -1, 0, 1, 1 };
+
+            for (var count = 0; count < DirectionsCount; count++)
+            {
+                if (dirX[count] != direction.X || dirY[count] != direction.Y)
+                {
+                    continue;
+                }
+
+                currentDirection = count;
+                break;
+            }
+
+            if (currentDirection == 7)
+            {
+                direction.X = dirX[0];
+                direction.Y = dirY[0];
+                return;
+            }
+
+            direction.X = dirX[currentDirection + 1];
+            direction.Y = dirY[currentDirection + 1];
+        }
+
         private bool CheckForDeadEnd()
         {
             int[] dirX = { 1, 1, 1, 0, -1, -1, -1, 0 };
@@ -129,34 +157,6 @@
             return this.Row + direction.X >= this.Size || this.Row + direction.X < 0 ||
                    this.Col + direction.Y >= this.Size || this.Col + direction.Y < 0 ||
                    this.Cells[this.Row + direction.X, this.Col + direction.Y] != 0;
-        }
-
-        private static void ChangeDirectionToNextPossible(ref Direction direction)
-        {
-            var currentDirection = 0;
-            int[] dirX = { 1, 1, 1, 0, -1, -1, -1, 0 };
-            int[] dirY = { 1, 0, -1, -1, -1, 0, 1, 1 };
-
-            for (var count = 0; count < DirectionsCount; count++)
-            {
-                if (dirX[count] != direction.X || dirY[count] != direction.Y)
-                {
-                    continue;
-                }
-
-                currentDirection = count;
-                break;
-            }
-
-            if (currentDirection == 7)
-            {
-                direction.X = dirX[0];
-                direction.Y = dirY[0];
-                return;
-            }
-
-            direction.X = dirX[currentDirection + 1];
-            direction.Y = dirY[currentDirection + 1];
-        }
+        }    
     }
 }
