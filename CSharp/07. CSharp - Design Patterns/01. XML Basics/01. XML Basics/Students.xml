@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="Students.xslt"?>
+<studentsystem>
+  <student>
+    <name>Marina Marinova</name>
+    <sex>Female</sex>
+    <birthdate>12.12.2000</birthdate>
+    <phone>+359868686</phone>
+    <email>marina.marinova@asdmail.com</email>
+    <course>CSharp</course>
+    <specialty>Informatics</specialty>
+    <facultynumber>006549687</facultynumber>
+    <exams>
+      <exam>
+        <name>CSharp Fundamentals</name>
+        <tutor>Pencho Pencho</tutor>
+        <score>10</score>
+      </exam>
+      <exam>
+        <name>CSharp Advanced</name>
+        <tutor>Pencho Pencho</tutor>
+        <score>100</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Ivan Ivanov</name>
+    <sex>Male</sex>
+    <birthdate>12.12.1990</birthdate>
+    <phone>+359885858585</phone>
+    <email>ivan.ivanov@asdmail.com</email>
+    <course>Javascript</course>
+    <specialty>Informatics</specialty>
+    <facultynumber>02468746513</facultynumber>
+    <exams>
+      <exam>
+        <name>Javascript UI</name>
+        <tutor>Test Testov</tutor>
+        <score>270</score>
+      </exam>
+      <exam>
+        <name>Javascript Applications</name>
+        <tutor>Test Testov</tutor>
+        <score>250</score>
+      </exam>
+      <exam>
+        <name>Javascript Fundamentals</name>
+        <tutor>Test Testov</tutor>
+        <score>100</score>
+      </exam>
+    </exams>
+  </student>
+</studentsystem>
