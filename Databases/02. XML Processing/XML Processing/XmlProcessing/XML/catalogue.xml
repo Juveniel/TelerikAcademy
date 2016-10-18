@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xslt" href="catalogue.xslt"?>
+<catalogue>
+  <album>
+    <name>Tryhards #126</name>
+    <artist>Jo Hastings</artist>
+    <year>2015</year>
+    <producer>Ameba</producer>
+    <price>12</price>
+    <songs>
+      <song>
+        <title>Try harder</title>
+        <duration>10.20</duration>
+      </song>
+      <song>
+        <title>Nameless song</title>
+        <duration>5.20</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Tryhards #1267</name>
+    <artist>Jo Asdasdasd</artist>
+    <year>2000</year>
+    <producer>Test</producer>
+    <price>132</price>
+    <songs>
+      <song>
+        <title>Try harder</title>
+        <duration>10.20</duration>
+      </song>
+      <song>
+        <title>Nameless song</title>
+        <duration>5.20</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Tryhards #135426</name>
+    <artist>Jo Hastings 123 1</artist>
+    <year>2035</year>
+    <producer>Asd</producer>
+    <price>126</price>
+    <songs>
+      <song>
+        <title>Try harder</title>
+        <duration>10.20</duration>
+      </song>
+      <song>
+        <title>Nameless song</title>
+        <duration>5.20</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>

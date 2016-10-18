@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<directories>
+  <dir name="XmlProcessing">
+    <file>App.config</file>
+    <file>Startup.cs</file>
+    <file>StyleCop.Cache</file>
+    <file>XmlProcessing.csproj</file>
+    <dir name="bin">
+      <dir name="Debug">
+        <file>XmlFile.Xml</file>
+        <file>XmlProcessing.exe</file>
+        <file>XmlProcessing.exe.config</file>
+        <file>XmlProcessing.pdb</file>
+        <file>XmlProcessing.vshost.exe</file>
+        <file>XmlProcessing.vshost.exe.config</file>
+        <file>XmlProcessing.vshost.exe.manifest</file>
+      </dir>
+    </dir>
+    <dir name="obj">
+      <dir name="Debug">
+        <file>DesignTimeResolveAssemblyReferencesInput.cache</file>
+        <file>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+        <file>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+        <file>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+        <file>XmlProcessing.csproj.FileListAbsolute.txt</file>
+        <file>XmlProcessing.csprojResolveAssemblyReference.cache</file>
+        <file>XmlProcessing.exe</file>
+        <file>XmlProcessing.pdb</file>
+      </dir>
+    </dir>
+    <dir name="Properties">
+      <file>AssemblyInfo.cs</file>
+    </dir>
+    <dir name="XML">
+      <file>album.xml</file>
+      <file>catalogue.xml</file>
+      <file>catalogue.xsd</file>
+      <file>catalogue.xslt</file>
+      <file>directory.xml</file>
+      <file>people.xml</file>
+      <file>Person.txt</file>
+    </dir>
+  </dir>
+</directories>

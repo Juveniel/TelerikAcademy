@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<people>
+  <person>
+    <name>Ivan Ivanov</name>
+    <address>Bulgaria bul. 12</address>
+    <telephone>+359885858585</telephone>
+  </person>
+  <person>
+    <name>Iliana Georgieva</name>
+    <address>14 OC str. 1000</address>
+    <telephone>+3592 598 8547</telephone>
+  </person>
+  <person>
+    <name>Georgi Georgiev</name>
+    <address>12 Ivan Rilski str.</address>
+    <telephone>+35989565152415</telephone>
+  </person>
+</people>
