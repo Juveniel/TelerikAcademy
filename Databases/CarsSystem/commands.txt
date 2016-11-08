@@ -1,0 +1,2 @@
+DBCC CHECKIDENT ('[Departments]', RESEED, 0);
+GO
