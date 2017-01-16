@@ -8,6 +8,7 @@ Implementing Control Logic in C#
  - Write a program that reads two double values from the console A and B, stores them in variables and exchanges 
  their values if the first one is greater than the second one. Use an if-statement. 
 1. [Bonus Score](./02. BonusScore)
+
   Write a program that applies bonus score to given score in the range [1…9] by the following rules:
    - If the score is between 1 and 3, the program multiplies it by 10.
    - If the score is between 4 and 6, the program multiplies it by 100.
@@ -27,6 +28,7 @@ Implementing Control Logic in C#
 1. [Digit as Word](./08. DigitAsWord)
  - Write a program that read a digit [0-9] from the console, and depending on the input, shows the digit as a word (in English).
 1. [Int, Double, String](./09. IntDoubleString)
+
   Write a program that, depending on the first line of the input, reads an int, double or string variable.
    - If the variable is int or double, the program increases it by one.
    - If the variable is a string, the program appends * at the end.
