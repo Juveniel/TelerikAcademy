@@ -28,11 +28,11 @@ Reading and Writing to the Console
 1. [Interval](./11. Interval)
  - Write a program that reads two positive integer numbers N and M and prints how many numbers exist between them such that the reminder of the division by 5 is 0.
 1. [Falling Rocks](./12. Falling rocks)
-- Implement the "Falling Rocks" game in the text console.
+ Implement the "Falling Rocks" game in the text console.
 	- A small dwarf stays at the bottom of the screen and can move left and right (by the arrows keys).	
 	- A number of rocks of different sizes and forms constantly fall down and you need to avoid a crash.	
 	- Rocks are the symbols `^, @, *, &, +, %, $, #, !, ., ;, -` distributed with appropriate density. The dwarf is `(O)`.
-- Ensure a constant game speed by `Thread.Sleep(150)`.
-- Implement collision detection and scoring system.
+ Ensure a constant game speed by `Thread.Sleep(150)`.
+ Implement collision detection and scoring system.
 
 ![console-falling-rocks](https://cloud.githubusercontent.com/assets/3106986/5611219/7126b0b6-94cc-11e4-8610-28ffa78d0cf7.png)
