@@ -5,7 +5,7 @@ Homework: Introduction to Programming
 ### Problem List
 
 1. [Hello World](./01. HelloWorld)
-Create, compile and run a Hello World application - it should print the string Hello, C#! on the console.
+ - Create, compile and run a Hello World application - it should print the string Hello, C#! on the console.
 1. [Print Name](./02. PrintMName)
 1. [Print Numbers](./03. PrintNumbers)
 1. [Print First and Last Name](./06. PrintNumbers)
