@@ -27,7 +27,7 @@ Implementing Control Logic in C#
 1. [Digit as Word](./08. DigitAsWord)
  - Write a program that read a digit [0-9] from the console, and depending on the input, shows the digit as a word (in English).
 1. [Int, Double, String](./09. IntDoubleString)
- Write a program that, depending on the first line of the input, reads an int, double or string variable.
+  Write a program that, depending on the first line of the input, reads an int, double or string variable.
    - If the variable is int or double, the program increases it by one.
    - If the variable is a string, the program appends * at the end.
    - Print the result at the console. Use switch statement.
