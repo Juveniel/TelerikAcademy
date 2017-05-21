@@ -2,8 +2,6 @@
 
 Reading and Writing to the Console
 
-### Problem List
-
 #### [01. Sum of 3 numbers](01.%20SumOfThreeNum)
  - Write a program that reads 3 real numbers from the console and prints their sum.
 #### [02. Company info](02.%20CompanyInfo)
