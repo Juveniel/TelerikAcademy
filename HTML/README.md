@@ -1,6 +1,6 @@
 # HTML Basics Course Repository
 
-Repository for the Course HTML Basics at Telerik Academy
+Repository for the course [HTML Basics](http://telerikacademy.com/Courses/Courses/Details/324) at Telerik Academy
 
 1. [HTML - Fundamentals](https://github.com/Juveniel/TelerikAcademy/tree/master/HTML/01.%20HTML_Fundamentals)
 2. [HTML - Tables](https://github.com/Juveniel/TelerikAcademy/tree/master/HTML/02.%20HTML_Tables)
