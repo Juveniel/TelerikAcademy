@@ -38,4 +38,4 @@ Repository for the JavaScript courses at Telerik Academy
 4. [Class, Methods and Properties](https://github.com/Juveniel/TelerikAcademy/tree/master/Javascript/04.%20JS%20OOP/04.%20ClassMethodsAndProperties)
 5. [JS OOP Exam Practice](https://github.com/Juveniel/TelerikAcademy/tree/master/Javascript/04.%20JS%20OOP/ExamPractice)
 
-## [Node JS]()
+## Node JS
