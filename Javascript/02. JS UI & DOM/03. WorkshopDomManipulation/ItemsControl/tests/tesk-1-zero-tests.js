@@ -14,6 +14,7 @@ describe('Task #1 Zero Tests', function () {
         global.window = window;
         global.document = window.document;
         global.$ = jq(window);
+        global.jQuery = jq(window);
         Object.keys(window)
           .filter(function (prop) {
             return prop.toLowerCase().indexOf('html') >= 0;
